@@ -24,60 +24,6 @@ The project focuses on **learning engineering workflows and building real system
 
 # 🏗️ Proposed System Architecture
 
-The system architecture may evolve, but the current concept includes the following components.
-
-### 1️⃣ Data Sources
-
-* Bureau of Meteorology public datasets
-* Weather observations
-* Forecast data
-* Radar data
-* Historical climate datasets
-
-### 2️⃣ Data Ingestion
-
-Scripts to collect and ingest datasets:
-
-* Python ingestion scripts
-* Scheduled data fetching
-* Data format parsing
-
-### 3️⃣ Data Processing
-
-Transforming raw data into usable datasets:
-
-* Data cleaning
-* Normalisation
-* Feature extraction
-* Time-series preparation
-
-### 4️⃣ Data Storage
-
-Possible storage options include:
-
-* Time-series database
-* SQL or NoSQL databases
-* Object storage for large datasets
-
-### 5️⃣ Analysis / Machine Learning
-
-Experimental analysis including:
-
-* Weather pattern analysis
-* Short-term prediction experiments
-* Machine learning approaches for nowcasting
-
-### 6️⃣ API Layer
-
-A REST API for exposing processed datasets and models.
-
-### 7️⃣ Visualisation
-
-A simple dashboard or UI for exploring weather data:
-
-* Charts
-* Time-series visualisation
-* Geographic visualisation
 
 ---
 
@@ -105,73 +51,24 @@ These roles were assigned through the ANU TechLauncher project allocation.
 
 # ⚙️ Development Workflow
 
-The team will follow a **collaborative engineering workflow**.
 
-Typical development process:
-
-1. Create an issue
-2. Create a feature branch
-3. Implement changes
-4. Submit a pull request
-5. Review and merge
-
-Example branch naming:
-
-```
-feature/data-ingestion
-feature/weather-analysis
-bugfix/parser-error
-```
 
 ---
 
 # 🧪 Development Environment
 
-The project may use tools such as:
-
-* Python
-* Jupyter notebooks
-* Data science libraries
-* Machine learning frameworks
-
-Students will also have access to:
-
-* 🧠 JupyterHub environment
-* ⚡ GPU compute resources
-* 🔐 WireGuard VPN for remote access
-
-Detailed setup instructions will be provided separately.
 
 ---
 
 # 📊 Example Project Areas
 
-Students may work on areas such as:
-
-* Data engineering
-* Machine learning
-* Weather data analysis
-* Backend APIs
-* Visualisation dashboards
-* Infrastructure and pipelines
-
-Students are encouraged to work on **areas they find interesting and want to improve in**.
 
 ---
 
 # 📁 Repository Structure (Example)
 
 ```
-nowcasting/
-│
-├── data/               # Raw or sample datasets
-├── notebooks/          # Jupyter notebooks
-├── ingestion/          # Data ingestion scripts
-├── processing/         # Data cleaning and transformations
-├── models/             # Machine learning experiments
-├── api/                # REST API services
-├── dashboard/          # Visualisation tools
-└── docs/               # Documentation
+
 ```
 
 ---
@@ -406,22 +303,5 @@ TechLauncher
 
 # 🚀 Getting Started
 
-Clone the repository:
 
-```bash
-git clone <repo-url>
-cd nowcasting
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Start exploring the notebooks:
-
-```
-notebooks/
-```
 
