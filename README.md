@@ -29,31 +29,6 @@ Use the **GitHub Project board called `BOM Team`** for:
 
 
 
-
-
-
----
-
-# 🏴‍☠️ Pirate Tools (Working Repository)
-
-The **technical work for the project will primarily happen in a different repository called `Pirate Tools`.**
-
-Students will begin working with that repository in **Week 2**.
-
-Pirate Tools is based on the **PyEarthTools framework**, which is a Python system for building machine learning pipelines for Earth system science, including weather and climate data.
-
-It supports:
-
-* 🌍 Earth system data processing
-* 🤖 Machine learning models
-* 📦 Large-scale data pipelines
-* 🖥️ Running on laptops, workstations, cloud, or HPC systems
-
-Source repository:
-[https://github.com/ACCESS-Community-Hub/PyEarthTools](https://github.com/ACCESS-Community-Hub/PyEarthTools)
-
----
-
 # 📂 How the Two Repositories Are Used
 
 ### BOM Team Repo (this repository)
@@ -66,7 +41,7 @@ Used for:
 * project planning
 * communication with tutor
 
-### Pirate Tools Repo
+### Pyearthe Tools Repo
 
 Used for:
 
