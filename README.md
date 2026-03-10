@@ -1,18 +1,37 @@
 # 🌦️ BoM Nowcasting – Team Repository
 
-This repository is used by the **TechLauncher BoM Team** to manage the project organisation, documentation, and weekly progress.
+This repository is used by the **TechLauncher BoM Team** to manage project organisation, documentation, and weekly progress.
 
-⚠️ **All team documentation must be kept inside this repository. Do not use external tools.**
+⚠️ **All project documentation and project management must be kept inside this repository and GitHub. Do not use external tools.**
+GitHub already provides everything needed for this project.
 
-This repo should contain:
+Students may organise folders however they prefer, but the repository should include:
 
 * 📄 Weekly reports
 * 📝 Project documentation
 * 👥 Team structure and roles
-* 📊 Planning and task tracking
-* 📚 Notes and meeting summaries
+* 📚 Meeting notes and summaries
 
-The purpose of this repository is to keep **everything related to the team and course reporting in one place** so the tutor and stakeholder can easily review progress.
+---
+
+## 📊 Project Planning
+
+Use the **GitHub Project board called `BOM Team`** for:
+
+* task tracking
+* project planning
+* progress updates
+
+All planning and tracking should be managed **in that GitHub Project board**.
+
+---
+
+## ✍️ Documentation Style
+
+* Use **Markdown (`.md`) files for all documentation**
+* Use **emojis** to make documents easy to scan and read
+
+
 
 ---
 
