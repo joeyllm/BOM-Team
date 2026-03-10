@@ -125,76 +125,11 @@ The goal of this project is to build a **data-driven platform for analysing mete
 
 # 📁 Repository Structure (Example)
 
-```
-
-```
-
 ---
 
 # 🎯 Project Goals
 
 
-
-🧑‍💻 Team
-Stakeholder
-
-Matthew Altenburg
-Tutor
-
-Lifan Zhao
-Student Team
-
-    Dylan Han (Zhaokun Han)
-
-    Olivia Maftukhaturrizqoh
-
-    Adam Ahammed Basheer
-
-    Junling Yu
-
-    Kecheng Zhang
-
-These roles were assigned through the ANU TechLauncher project allocation.
-⚙️ Development Workflow
-
-
-
-🧪 Development Environment
-
-The project may use tools such as:
-
-    Python
-
-    Jupyter notebooks
-
-    Data science libraries
-
-    Machine learning frameworks
-
-Students will also have access to:
-
-    🧠 JupyterHub environment
-
-    ⚡ GPU compute resources
-
-    🔐 WireGuard VPN for remote access
-
-Detailed setup instructions will be provided separately.
-📊 Example Project Areas
-
-Students may work on areas such as:
-
-    Data engineering
-
-    Machine learning
-
-    Weather data analysis
-
-    Backend APIs
-
-    Visualisation dashboards
-
-    Infrastructure and pipelines
 
 
 🎯 Project Goals
@@ -203,28 +138,6 @@ Students may work on areas such as:
 
 📚 Resources
 
-Bureau of Meteorology
-https://www.bom.gov.au/
-
-TechLauncher
-https://cs.anu.edu.au/TechLauncher/
-🚀 Getting Startedng collaboration
-* Data engineering pipelines
-* Machine learning workflows
-* Working with meteorological datasets
-* Git-based development
-
----
-
-# 📚 Resources
-
-Bureau of Meteorology
-[https://www.bom.gov.au/](https://www.bom.gov.au/)
-
-TechLauncher
-[https://cs.anu.edu.au/TechLauncher/](https://cs.anu.edu.au/TechLauncher/)
-
----
 
 # 🚀 Getting Started
 
