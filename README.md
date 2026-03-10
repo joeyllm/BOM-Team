@@ -63,7 +63,7 @@ Used for:
 
 **Week 2**
 
-* Begin working with the **Pirate Tools repository**
+* Begin working with the **Pyearth Tools repository**
 * Explore PyEarthTools
 * Run initial examples and notebooks
 
@@ -86,8 +86,6 @@ Tutor: **Lifan Zhao**
 
 ---
 
-If useful, a **very clean GitHub folder structure for this repo (which TechLauncher tutors tend to like)** can also be provided.
-
 
 
 
@@ -100,46 +98,12 @@ The goal of this project is to build a **data-driven platform for analysing mete
 
 ---
 
-# 📌 Project Overview
-
-This repository contains the code and resources for the **Nowcasting TechLauncher project**.
-
-Students will build a **prototype system** capable of:
-
-* Ingesting weather datasets
-* Cleaning and processing meteorological data
-* Performing exploratory analysis
-* Building experimental machine learning models
-* Visualising weather data through dashboards or APIs
-
-The project focuses on **learning engineering workflows and building real systems**, not on producing a production-ready product.
-
----
 
 # 🏗️ Proposed System Architecture
 
 
 ---
 
-# 🧑‍💻 Team
-
-### Stakeholder
-
-Matthew Altenburg
-
-### Tutor
-
-Lifan Zhao
-
-### Student Team
-
-* Dylan Han (Zhaokun Han)
-* Olivia Maftukhaturrizqoh
-* Adam Ahammed Basheer
-* Junling Yu
-* Kecheng Zhang
-
-These roles were assigned through the ANU TechLauncher project allocation. 
 
 ---
 
