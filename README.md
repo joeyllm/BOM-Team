@@ -1,3 +1,104 @@
+# 🌦️ BoM Nowcasting – Team Repository
+
+This repository is used by the **TechLauncher BoM Team** to manage the project organisation, documentation, and weekly progress.
+
+⚠️ **All team documentation must be kept inside this repository. Do not use external tools.**
+
+This repo should contain:
+
+* 📄 Weekly reports
+* 📝 Project documentation
+* 👥 Team structure and roles
+* 📊 Planning and task tracking
+* 📚 Notes and meeting summaries
+
+The purpose of this repository is to keep **everything related to the team and course reporting in one place** so the tutor and stakeholder can easily review progress.
+
+---
+
+# 🏴‍☠️ Pirate Tools (Working Repository)
+
+The **technical work for the project will primarily happen in a different repository called `Pirate Tools`.**
+
+Students will begin working with that repository in **Week 2**.
+
+Pirate Tools is based on the **PyEarthTools framework**, which is a Python system for building machine learning pipelines for Earth system science, including weather and climate data.
+
+It supports:
+
+* 🌍 Earth system data processing
+* 🤖 Machine learning models
+* 📦 Large-scale data pipelines
+* 🖥️ Running on laptops, workstations, cloud, or HPC systems
+
+Source repository:
+[https://github.com/ACCESS-Community-Hub/PyEarthTools](https://github.com/ACCESS-Community-Hub/PyEarthTools)
+
+---
+
+# 📂 How the Two Repositories Are Used
+
+### BOM Team Repo (this repository)
+
+Used for:
+
+* team coordination
+* documentation
+* weekly reporting
+* project planning
+* communication with tutor
+
+### Pirate Tools Repo
+
+Used for:
+
+* code development
+* experimentation
+* data pipelines
+* machine learning models
+
+---
+
+# 📅 Development Timeline
+
+**Week 1**
+
+* Team setup
+* Project overview
+* Roles and interests
+* Documentation setup in this repository
+
+**Week 2**
+
+* Begin working with the **Pirate Tools repository**
+* Explore PyEarthTools
+* Run initial examples and notebooks
+
+---
+
+# 👥 Team
+
+TechLauncher BoM Team
+
+Students:
+
+* Dylan Han
+* Olivia Maftukhaturrizqoh
+* Adam Ahammed Basheer
+* Junling Yu
+* Kecheng Zhang
+
+Stakeholder: **Matthew Altenburg**
+Tutor: **Lifan Zhao** 
+
+---
+
+If useful, a **very clean GitHub folder structure for this repo (which TechLauncher tutors tend to like)** can also be provided.
+
+
+
+
+
 # 🌦️ Nowcasting – TechLauncher Project
 
 Prototype system for exploring and analysing **Bureau of Meteorology (BoM) weather data** as part of the **ANU TechLauncher program**.
