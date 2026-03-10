@@ -5,6 +5,8 @@ This repository is used by the **TechLauncher BoM Team** to manage project organ
 ⚠️ **All project documentation and project management must be kept inside this repository and GitHub. Do not use external tools.**
 GitHub already provides everything needed for this project.
 
+You may receive suggestions from tutors or others to use different tools for planning or documentation. **Treat those only as suggestions.** Everything required for this project is already available in GitHub, so **do not move project work to external tools.**
+
 Students may organise folders however they prefer, but the repository should include:
 
 * 📄 Weekly reports
