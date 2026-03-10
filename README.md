@@ -2,8 +2,10 @@
 
 This repository is used by the **TechLauncher BoM Team** to organise the project, manage documentation, and track progress.
 
-⚠️ **Keep all project work inside GitHub. Do not use external tools.**
+⚠️ **Keep all project work inside GitHub.**
 GitHub already provides everything needed for documentation, planning, and task tracking.
+
+⛔ **Important:** You may receive suggestions from tutors or others to use different tools for planning or documentation. Those are **only suggestions**. For this project, keep everything **inside this repository and GitHub** so the work stays organised and easy to review.
 
 ---
 
@@ -22,9 +24,7 @@ Use the **GitHub Project board called `BOM Team`** to track tasks and progress.
 
 ## ✍️ Documentation Style
 
-* Use **Markdown (`.md`) files**
+* Use only **Markdown (`.md`) files**
 * Use **emojis** to make documentation easy to scan and read
-
----
 
 Students can organise the repository structure however they prefer as the project develops.
