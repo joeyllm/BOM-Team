@@ -1,30 +1,85 @@
-# 🌦️ BoM Nowcasting – TechLauncher Team
+# BOM Nowcasting
 
-This repository is used by the **TechLauncher BoM Team** to organise the project, manage documentation, and track progress.
-
-⚠️ **Keep all project work inside GitHub.**
-GitHub already provides everything needed for documentation, planning, and task tracking.
-
-⛔ **Important:** You may receive suggestions from tutors or others to use different tools for planning or documentation. Those are **only suggestions**. For this project, keep everything **inside this repository and GitHub** so the work stays organised and easy to review.
+Welcome. This repository is the central hub for the BOM Nowcasting team. We use this space to organize the project, manage documentation, and track progress.
 
 ---
 
-## 📋 What This Repository Is For
+## Project Vision
 
-Use this repository for:
+BOM Nowcasting is focused on building practical short-term forecasting workflows end to end.
 
-* 📄 Project documentation
-* 📊 Planning and task tracking
-* 📚 Notes and weekly reports
-* 👥 Team organisation
+The team's work moves through a practical pipeline:
+* **Collect & Organize:** Work with observational, historical, and derived weather data.
+* **Prepare & Validate:** Clean inputs, align time windows, and validate data quality.
+* **Model & Evaluate:** Develop nowcasting models and assess forecast accuracy against operational needs.
 
-Use the **GitHub Project board called `BOM Team`** to track tasks and progress.
+The goal is to build reliable nowcasting workflows while understanding how data quality, infrastructure, and modeling choices affect forecast performance.
 
 ---
 
-## ✍️ Documentation Style
+## 🛑 The "Stay in GitHub" Rule
 
-* Use only **Markdown (`.md`) files**
-* Use **emojis** to make documentation easy to scan and read
+**Keep all project work inside GitHub.** GitHub already provides everything we need for documentation, planning, and task tracking. 
 
-Students can organise the repository structure however they prefer as the project develops.
+> **⛔ Important:** You may receive suggestions from tutors, lecturers, or others to use different third-party tools (like Notion, Jira, or Trello) for planning or documentation. **Those are only suggestions.** For this project, keep *everything* inside this repository and the GitHub platform so our work stays organized, consolidated, and easy to review.
+
+---
+
+## 🚀 Where to Start
+
+If you are a new team member, please read these documents first to get oriented:
+
+1. `Project/ProjectGoal.md`
+2. `ComputeInfrastructure/Wireguard.md`
+3. `Team/Introductions.md`
+4. `Weekly/README.md`
+
+---
+
+## 🗂️ Repository Structure
+
+This repository is strictly for documentation and project management (no code!). Here is how our knowledge base is organized:
+
+| Folder | Purpose |
+| :--- | :--- |
+| **`ComputeInfrastructure/`** | Access setup, VPN instructions, and GPU/system documentation. |
+| **`Data/`** | Data sources, dataset rules, and cleaning/preprocessing documentation. |
+| **`LearningResources/`** | Shared notes, references, and useful links for the team. |
+| **`Models/`** | Documentation regarding our model architectures and training plans. |
+| **`Project/`** | Project goals, planning docs, and semester overviews. |
+| **`Team/`** | Team member info, roles, and contact details. |
+| **`Weekly/`** | Meeting notes, weekly reports, and reporting templates. |
+| **`Repos/`** | Rules and links for our code repositories, platforms, and related setups. |
+
+---
+
+## 📊 Project Tracking & Usage
+
+**📦 What This Repository Is For**
+* Project documentation and architecture rules
+* Planning and task tracking
+* Combined weekly meeting notes and progress reports
+* Team organization
+
+**📋 The GitHub Project Board**
+We use a GitHub Project Kanban board called **BOM Nowcasting Team** to manage tasks and track progress. All tasks, issues, and progress updates should be recorded on this board so the work remains visible and organized for everyone.
+
+---
+
+## 📚 Documentation Guidelines
+
+All documentation here should be written so it is easy to read directly in GitHub's web interface. When adding or editing files, please follow these rules:
+
+**✍️ Format**
+* Use standard Markdown (`.md`) files.
+* Write documents so they are clear and highly scannable.
+* Use headers, bullet points, and lists to break up walls of text.
+* Keep files structured and logically organized within their folders.
+
+**✂️ Keep It Short**
+* Try not to let documentation pages grow too massive.
+* Keep documents short, punchy, and concise.
+* If a document becomes too long, split it into a new, separate file.
+* Each document should ideally focus on **one main topic**. 
+
+*This makes the documentation easier to read, maintain, and navigate for the whole team! 🙂*
