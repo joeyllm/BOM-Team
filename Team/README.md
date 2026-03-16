@@ -7,4 +7,4 @@
 | [Junling Yu](MemberProfiles/JunlingYu.md) | 🎓 Student | u8013765 | [Junling.Yu@anu.edu.au](mailto:Junling.Yu@anu.edu.au) | `Codfish36` | _Optional_ | ✅ Yes |
 | [Olivia Maftukhaturrizqoh](MemberProfiles/OliviaMaftukhaturrizqoh.md) | 🎓 Student | u7947359 | [Olivia.Maftukhaturrizqoh@anu.edu.au](mailto:Olivia.Maftukhaturrizqoh@anu.edu.au) | `olivia-m96` | _Optional_ | ✅ Yes |
 | [Kecheng Zhang](MemberProfiles/KechengZhang.md) | 🎓 Student | u7244282 | [Kecheng.Zhang@anu.edu.au](mailto:Kecheng.Zhang@anu.edu.au) | `kechengzhang28` | _Optional_ | ✅ Yes |
-| [Lifan Zhao](MemberProfiles/LifanZhao.md) | 🧑‍🏫 Tutor | — | [Lifan.Zhao@anu.edu.au](mailto:Lifan.Zhao@anu.edu.au) | _Username_ | _Optional_ | — |
+| [Lifan Zhao](MemberProfiles/LifanZhao.md) | 🏫 Tutor | — | [Lifan.Zhao@anu.edu.au](mailto:Lifan.Zhao@anu.edu.au) | _Username_ | _Optional_ | — |
