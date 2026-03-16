@@ -17,3 +17,5 @@ This repository contains team information, member profiles, and project coordina
 
 - 👤
 
+
+We use Microsoft teams to communicate: https://teams.microsoft.com/l/channel/19%3AXwgkdOne_LAyc7X-OkHZPNv73sNuxRv1_ojhNgBJDGU1%40thread.tacv2/General?groupId=b86d28d5-be59-436d-985a-250af127a9ff&tenantId=e37d725c-ab5c-4624-9ae5-f0533e486437 
