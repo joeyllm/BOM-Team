@@ -1,0 +1,25 @@
+<nav class="navbar is-fixed-top is-blur" style="background-color: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(64, 64, 64, 0.1);" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <div class="navbar-item has-text-weight-bold">
+                <a class="has-text-text" href="{{ site.baseurl }}/">{{ site.title }}</a>
+            </div>
+            <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="nav-menu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="nav-menu" class="navbar-menu">
+            <div class="navbar-end">
+                {% for item in site.data.nav %}
+                    <a class="navbar-item is-tab" href="{{ item.url }}">
+                        {{ item.title }}
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</nav>
