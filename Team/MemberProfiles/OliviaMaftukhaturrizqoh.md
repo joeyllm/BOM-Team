@@ -1,21 +1,45 @@
 # Olivia Maftukhaturrizqoh 👤
 
-## Basic Info
-
-**Role:** Student
+**Role:** 🎓 Student
 **Student ID:** u7947359
-**Email:** u7947359@anu.edu.au
-**GitHub:** [olivia-m96](https://github.com/olivia-m96)
+**Email:** [u7947359@anu.edu.au](mailto:u7947359@anu.edu.au)
 
 ---
 
-## Background
+## 📇 Contact & Socials
 
-To be added.
+| | |
+|---|---|
+| 📱 Phone | null |
+| 🌏 From | null |
+| 💼 LinkedIn | null |
+| 🐙 GitHub | https://github.com/olivia-m96 |
+| 🤗 Hugging Face | null |
+| 🎮 Discord | null |
+| 💬 WeChat | null |
+| 📘 Facebook | null |
 
 ---
 
-## Project Focus
+## 🎓 Education
+
+| | |
+|---|---|
+| 🏫 University | Australian National University |
+| 📚 Degree | null |
+| 📅 Year | null |
+| 🗓️ Expected Graduation | null |
+| 🌐 Exchange / International | null |
+
+---
+
+## 🏗️ Background
+
+> To be added.
+
+---
+
+## 🧠 Interests / Skills
 
 - To be added
 - To be added
@@ -23,16 +47,26 @@ To be added.
 
 ---
 
-## Links
+## 🛠️ Technical Background
 
-| Platform | Link |
-|----------|------|
-| GitHub | https://github.com/olivia-m96 |
-| LinkedIn | _URL_ |
-| Portfolio | _URL_ |
+- To be added
+- To be added
+- To be added
 
 ---
 
-## Notes
+## 📁 Previous Projects
 
-To be added.
+> To be added.
+
+---
+
+## 🙋 About Me
+
+> To be added.
+
+---
+
+## 🎯 Project Goals
+
+> To be added.

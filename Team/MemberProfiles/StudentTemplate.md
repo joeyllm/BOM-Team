@@ -1,21 +1,45 @@
 # Student Name 👤
 
-## Basic Info
-
-**Role:** Student
+**Role:** 🎓 Student
 **Student ID:** uXXXXXXX
-**Email:** student.name@anu.edu.au
-**GitHub:** [github-username](https://github.com/github-username)
+**Email:** [student.name@anu.edu.au](mailto:student.name@anu.edu.au)
 
 ---
 
-## Background
+## 📇 Contact & Socials
 
-Write 2-3 sentences about your degree, experience, and technical interests.
+| | |
+|---|---|
+| 📱 Phone | null |
+| 🌏 From | null |
+| 💼 LinkedIn | null |
+| 🐙 GitHub | https://github.com/github-username |
+| 🤗 Hugging Face | null |
+| 🎮 Discord | null |
+| 💬 WeChat | null |
+| 📘 Facebook | null |
 
 ---
 
-## Project Focus
+## 🎓 Education
+
+| | |
+|---|---|
+| 🏫 University | Australian National University |
+| 📚 Degree | null |
+| 📅 Year | null |
+| 🗓️ Expected Graduation | null |
+| 🌐 Exchange / International | null |
+
+---
+
+## 🏗️ Background
+
+> Write 2-3 sentences about your degree, experience, and technical interests.
+
+---
+
+## 🧠 Interests / Skills
 
 - Area 1
 - Area 2
@@ -23,16 +47,26 @@ Write 2-3 sentences about your degree, experience, and technical interests.
 
 ---
 
-## Links
+## 🛠️ Technical Background
 
-| Platform | Link |
-|----------|------|
-| GitHub | _URL_ |
-| LinkedIn | _URL_ |
-| Portfolio | _URL_ |
+- Tool / language 1
+- Tool / language 2
+- Tool / language 3
 
 ---
 
-## Notes
+## 📁 Previous Projects
 
-Add anything the team should know about your responsibilities, availability, or current work.
+> Project name, dates, and a short summary.
+
+---
+
+## 🙋 About Me
+
+> Add anything the team should know about your responsibilities, availability, or current work.
+
+---
+
+## 🎯 Project Goals
+
+> Add 2-3 project goals for the semester.

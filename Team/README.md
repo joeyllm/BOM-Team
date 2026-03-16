@@ -1,21 +1,10 @@
-# BOM Nowcasting Team
+# 👤 Team Members
 
-This repository contains team information, member profiles, and project coordination documents.
-
-## Team Members
-
-| Name                     | Role                       | Student ID | Profile                                              |
-| ------------------------ | -------------------------- | ---------- | ---------------------------------------------------- |
-| Adam Ahammed Basheer     | Student                    | u7628910   | [Profile](MemberProfiles/AdamAhammedBasheer.md)      |
-| Dylan Han                | Student                    | u8002343   | [Profile](MemberProfiles/DylanHan.md)                |
-| Junling Yu               | Student                    | u8013765   | [Profile](MemberProfiles/JunlingYu.md)               |
-| Olivia Maftukhaturrizqoh | Student                    | u7947359   | [Profile](MemberProfiles/OliviaMaftukhaturrizqoh.md) |
-| Kecheng Zhang            | Student                    | u7244282   | [Profile](MemberProfiles/KechengZhang.md)            |
-| Staff Name               | Tutor / Supervisor / Staff | -          | [Profile](MemberProfiles/StaffTemplate.md)           |
-
-## 📬 Contact Emails
-
-- 👤
-
-
-We use Microsoft teams to communicate: https://teams.microsoft.com/l/channel/19%3AXwgkdOne_LAyc7X-OkHZPNv73sNuxRv1_ojhNgBJDGU1%40thread.tacv2/General?groupId=b86d28d5-be59-436d-985a-250af127a9ff&tenantId=e37d725c-ab5c-4624-9ae5-f0533e486437 
+| Name | Role | Student ID | Email | GitHub | Phone | Replied |
+| ---- | ---- | ---------- | ----- | ------ | ----- | ------- |
+| [Adam Ahammed Basheer](MemberProfiles/AdamAhammedBasheer.md) | 🎓 Student | u7628910 | [u7628910@anu.edu.au](mailto:u7628910@anu.edu.au) | `adambashbash` | _Optional_ | ✅ Yes |
+| [Dylan Han](MemberProfiles/DylanHan.md) | 🎓 Student | u8002343 | [u8002343@anu.edu.au](mailto:u8002343@anu.edu.au) | `dylanlovescode` | _Optional_ | ✅ Yes |
+| [Junling Yu](MemberProfiles/JunlingYu.md) | 🎓 Student | u8013765 | [u8013765@anu.edu.au](mailto:u8013765@anu.edu.au) | `Codfish36` | _Optional_ | ✅ Yes |
+| [Olivia Maftukhaturrizqoh](MemberProfiles/OliviaMaftukhaturrizqoh.md) | 🎓 Student | u7947359 | [u7947359@anu.edu.au](mailto:u7947359@anu.edu.au) | `olivia-m96` | _Optional_ | ✅ Yes |
+| [Kecheng Zhang](MemberProfiles/KechengZhang.md) | 🎓 Student | u7244282 | [u7244282@anu.edu.au](mailto:u7244282@anu.edu.au) | `kechengzhang28` | _Optional_ | ✅ Yes |
+| [Staff Name](MemberProfiles/StaffTemplate.md) | 🧑‍🏫 Tutor | — | [staff.name@anu.edu.au](mailto:staff.name@anu.edu.au) | `github-username` | _Optional_ | — |
