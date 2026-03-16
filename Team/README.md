@@ -12,12 +12,8 @@ This repository contains team information, member profiles, and project coordina
 | Olivia Maftukhaturrizqoh | Student | u7947359 | [Profile](MemberProfiles/OliviaMaftukhaturrizqoh.md) |
 | Staff Name | Tutor / Supervisor / Staff | - | [Profile](MemberProfiles/StaffTemplate.md) |
 
-## Project Files
 
-- [Contact Info](ContactInfo.md)
-- [Introductions](Introductions.md)
-- [Roles](Roles.md)
 
-## Contact
+## 📬 Contact Emails
 
-See [ContactInfo.md](ContactInfo.md) for the latest team contact details.
+- 👤 
