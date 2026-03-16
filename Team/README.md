@@ -6,12 +6,11 @@ This repository contains team information, member profiles, and project coordina
 
 | Name | Role | Student ID | Profile |
 |------|------|------------|---------|
-| Yingzhe Xu | Student | u8260186 | [Profile](MemberProfiles/YingzheXu.md) |
-| Wen Sun | Student | u8018638 | [Profile](MemberProfiles/WenSun.md) |
-| Xiang Chang | Student | u8125484 | [Profile](MemberProfiles/XiangChang.md) |
-| Xingyu Li | Student | u7994712 | [Profile](MemberProfiles/XingyuLi.md) |
-| Nuo Chen | Student | u8188942 | [Profile](MemberProfiles/NuoChen.md) |
-| Solomon Inyang | Tutor | - | [Profile](MemberProfiles/SolomonInyang.md) |
+| Adam Ahammed Basheer | Student | u7628910 | [Profile](MemberProfiles/AdamAhammedBasheer.md) |
+| Dylan Han | Student | u8002343 | [Profile](MemberProfiles/DylanHan.md) |
+| Junling Yu | Student | u8013765 | [Profile](MemberProfiles/JunlingYu.md) |
+| Olivia Maftukhaturrizqoh | Student | u7947359 | [Profile](MemberProfiles/OliviaMaftukhaturrizqoh.md) |
+| Staff Name | Tutor / Supervisor / Staff | - | [Profile](MemberProfiles/StaffTemplate.md) |
 
 ## Project Files
 
