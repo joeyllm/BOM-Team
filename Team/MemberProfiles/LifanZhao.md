@@ -1,8 +1,8 @@
-# Junling Yu 👤
+# Lifan Zhao 🧑‍🏫
 
-**Role:** 🎓 Student
-**Student ID:** u8013765
-**Email:** [Junling.Yu@anu.edu.au](mailto:Junling.Yu@anu.edu.au)
+**Role:** 🧑‍🏫 Tutor
+**Student ID:** —
+**Email:** [Lifan.Zhao@anu.edu.au](mailto:Lifan.Zhao@anu.edu.au)
 
 ---
 
@@ -13,7 +13,7 @@
 | 📱 Phone | null |
 | 🌏 From | null |
 | 💼 LinkedIn | null |
-| 🐙 GitHub | https://github.com/Codfish36 |
+| 🐙 GitHub | null |
 | 🤗 Hugging Face | null |
 | 🎮 Discord | null |
 | 💬 WeChat | null |
@@ -35,7 +35,7 @@
 
 ## 🏗️ Background
 
-> To be added.
+> Hi Everyone, I'm Lia, and I'll be your tutor for TechLauncher this semester.
 
 ---
 
@@ -63,10 +63,10 @@
 
 ## 🙋 About Me
 
-> To be added.
+> Lia
 
 ---
 
 ## 🎯 Project Goals
 
-> To be added.
+> Support the BOM team throughout the semester.

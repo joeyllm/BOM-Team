@@ -2,7 +2,7 @@
 
 **Role:** 🎓 Student
 **Student ID:** u7947359
-**Email:** [u7947359@anu.edu.au](mailto:u7947359@anu.edu.au)
+**Email:** [Olivia.Maftukhaturrizqoh@anu.edu.au](mailto:Olivia.Maftukhaturrizqoh@anu.edu.au)
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Role:** 🎓 Student
 **Student ID:** u7244282
-**Email:** [u7244282@anu.edu.au](mailto:u7244282@anu.edu.au)
+**Email:** [Kecheng.Zhang@anu.edu.au](mailto:Kecheng.Zhang@anu.edu.au)
 
 ---
 
