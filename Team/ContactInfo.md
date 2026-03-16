@@ -9,6 +9,7 @@ Contact details for BOM Nowcasting team members.
 | Adam Ahammed Basheer | u7628910@anu.edu.au | adambashbash |
 | Dylan Han | u8002343@anu.edu.au | dylanlovescode | 
 | Junling Yu | u8013765@anu.edu.au | Codfish36 |
+| Olivia Maftukhaturrizqoh | u7947359@anu.edu.au | olivia-m96 |
 | Staff Name | staff.name@anu.edu.au | github-username |
 
 ---
