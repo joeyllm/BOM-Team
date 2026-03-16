@@ -7,7 +7,7 @@ Contact details for BOM Nowcasting team members.
 | Name | Email | GitHub |
 |------|-------|--------|
 | Adam Ahammed Basheer | u7628910@anu.edu.au | adambashbash |
-| Student Name | student.name@anu.edu.au | github-username | 
+| Dylan Han | u8002343@anu.edu.au | dylanlovescode | 
 | Student Name | student.name@anu.edu.au | github-username |
 | Staff Name | staff.name@anu.edu.au | github-username |
 
