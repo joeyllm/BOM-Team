@@ -4,7 +4,7 @@ gl.canvas.height = innerHeight;
 gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
 
 // perlin noise settings
-const freq = 200;
+const freq = 30;
 const thresh = 0;
 
 noise.seed(8715);
@@ -43,9 +43,9 @@ function generatePoints() {
     cols = Math.ceil(innerWidth / length) + 1;
     rows = Math.ceil(innerHeight / length) + 1;
     d = [];
-    var thisSize = size
+    var thisSize = size;
     for(let y=0;y<rows;y++) for(let x=0;x<cols;x++) {
-        d.push(x*length,y*length,thisSize);
+        d.push(x*length,y*length,thisSize,x,y);
     }
 }
 
@@ -57,11 +57,11 @@ gl.bindBuffer(gl.ARRAY_BUFFER,b);
 gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(d),gl.STATIC_DRAW);
 const a = gl.getAttribLocation(p,'p');
 gl.enableVertexAttribArray(a);
-gl.vertexAttribPointer(a,3,gl.FLOAT,false,0,0);
+gl.vertexAttribPointer(a,2,gl.FLOAT,false,20,0);
 
 const sizeLoc = gl.getAttribLocation(p, 'size');
 gl.enableVertexAttribArray(sizeLoc);
-gl.vertexAttribPointer(sizeLoc, 1, gl.FLOAT, false, 12, 8);
+gl.vertexAttribPointer(sizeLoc, 1, gl.FLOAT, false, 20, 8);
 
 function updateBuffer() {
     gl.bindBuffer(gl.ARRAY_BUFFER,b);
@@ -76,6 +76,15 @@ function render(t) {
     gl.uniform1f(gl.getUniformLocation(p,'t'),t);
     gl.uniform1f(gl.getUniformLocation(p,'w'),innerWidth);
     gl.uniform1f(gl.getUniformLocation(p,'h'),innerHeight);
+    
+    for(let i=0;i<cols*rows;i++) {
+        let gridX = d[i*5+3];
+        let gridY = d[i*5+4];
+        let n = noise.perlin3(gridX/freq, gridY/freq, t);
+        d[i*5+2] = n < thresh ? 0 : size;
+    }
+    updateBuffer();
+    
     gl.drawArrays(gl.POINTS,0,cols*rows);
     requestAnimationFrame(render);
 }
