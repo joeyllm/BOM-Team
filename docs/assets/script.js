@@ -1,0 +1,1 @@
+import { animate } from 'https://esm.sh/animejs';
