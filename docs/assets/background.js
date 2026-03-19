@@ -4,8 +4,9 @@ gl.canvas.height = innerHeight;
 gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
 
 // perlin noise settings
-const freq = 30;
+const freq = 40;
 const thresh = 0;
+const speed = 2;
 
 noise.seed(8715);
 
@@ -85,10 +86,10 @@ function render(t) {
     for(let i=0;i<cols*rows;i++) {
         let gridX = d[i*5+3];
         let gridY = d[i*5+4];
-        let n = noise.perlin3(gridX/freq, gridY/freq, t);
+        let n = noise.perlin3(gridX/freq, gridY/freq, t * speed);
         let scaledN = n * 4;
-        let probability = sigmoid(scaledN);
-        d[i*5+2] = Math.random() < probability ? size : 0;
+        let prob = sigmoid(scaledN);
+        d[i*5+2] = Math.random() < prob ? size * prob : 0;
     }
     updateBuffer();
     
