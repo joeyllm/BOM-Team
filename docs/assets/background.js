@@ -22,10 +22,10 @@ const fs = `#version 300 es
 precision mediump float; in vec3 c; out vec4 f;
 void main() { 
     vec2 coord = gl_PointCoord-0.5;
-    f = vec4(1,1,1,1);
+    f = vec4(0.15,0.25,0.45,1);
 }`;
 
-// 编译着色器
+// Compile shaders
 const p = gl.createProgram();
 [vs,fs].forEach((src,i)=>{
     const s = gl.createShader(i?gl.FRAGMENT_SHADER:gl.VERTEX_SHADER);
@@ -33,7 +33,7 @@ const p = gl.createProgram();
 });
 gl.linkProgram(p); gl.useProgram(p);
 
-// 生成点数据（固定间距）
+// Generate point data (fixed spacing)
 const spacing = 10;
 let d = [], cols = 0, rows = 0;
 
@@ -46,7 +46,7 @@ function generatePoints() {
 
 generatePoints();
 
-// 设置缓冲区
+// Setup buffer
 const b = gl.createBuffer();
 gl.bindBuffer(gl.ARRAY_BUFFER,b);
 gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(d),gl.STATIC_DRAW);
@@ -59,7 +59,7 @@ function updateBuffer() {
     gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(d),gl.STATIC_DRAW);
 }
 
-// 渲染循环
+// Render loop
 function render(t) {
     t*=0.001;
     gl.clearColor(0,0,0,1);
@@ -72,7 +72,7 @@ function render(t) {
 }
 requestAnimationFrame(render);
 
-// 窗口大小调整
+// Window resize
 addEventListener('resize',()=>{
     gl.canvas.width=innerWidth;
     gl.canvas.height=innerHeight;
