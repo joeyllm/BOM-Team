@@ -12,5 +12,14 @@
         {% include header.html %}
         {{ content }}
     </body>
+    <script type="importmap">
+    {
+    "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@v0.180.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.180.0/examples/jsm/"
+        }
+    }
+    </script>
     <script type="module" src="{{ site.baseurl }}/assets/script.js"></script>
+    <script type="module" src="{{ site.baseurl }}/assets/background.js"></script>
 </html>
