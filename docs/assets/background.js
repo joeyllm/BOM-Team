@@ -68,9 +68,14 @@ function updateBuffer() {
     gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(d),gl.STATIC_DRAW);
 }
 
+// Sigmoid function
+function sigmoid(x) {
+    return 1 / (1 + Math.exp(-x));
+}
+
 // Render loop
 function render(t) {
-    t*=0.001;
+    t*=0.0001;
     gl.clearColor(0,0,0,1);
     gl.clear(gl.COLOR_BUFFER_BIT);
     gl.uniform1f(gl.getUniformLocation(p,'t'),t);
@@ -81,7 +86,9 @@ function render(t) {
         let gridX = d[i*5+3];
         let gridY = d[i*5+4];
         let n = noise.perlin3(gridX/freq, gridY/freq, t);
-        d[i*5+2] = n < thresh ? 0 : size;
+        let scaledN = n * 4;
+        let probability = sigmoid(scaledN);
+        d[i*5+2] = Math.random() < probability ? size : 0;
     }
     updateBuffer();
     
