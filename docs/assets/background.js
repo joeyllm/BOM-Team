@@ -4,9 +4,9 @@ gl.canvas.height = innerHeight;
 gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
 
 // perlin noise settings
-const freq = 40;
-const thresh = 0;
-const speed = 2;
+const freq = 64;
+const thresh = 0.6;
+const speed = 3;
 
 noise.seed(8715);
 
@@ -35,8 +35,8 @@ const p = gl.createProgram();
 gl.linkProgram(p); gl.useProgram(p);
 
 // Generate point data (fixed spacing)
-const size = 8.0; // change size here
-const spacing = 2; // change spacing here
+const size = 3.0; // change size here
+const spacing = 8; // change spacing here
 let d = [], cols = 0, rows = 0;
 
 function generatePoints() {
@@ -74,6 +74,27 @@ function sigmoid(x) {
     return 1 / (1 + Math.exp(-x));
 }
 
+// Scalar potential
+function scalarPotential(x, y, t) {
+    let p1 = noise.perlin3(x, y, t);
+    let p2 = noise.perlin3(x * 1.7 + 5.123, y * 1.7 + 8.456, t * 0.3);
+    return (p1 + p2) * 0.5;
+}
+
+// curlNoise
+function curlNoise(x, y, time, eps = 0.0001) {
+
+    let x1 = scalarPotential(x - eps, y, time);
+    let x2 = scalarPotential(x + eps, y, time);
+    let dy = (x2 - x1) / (2 * eps);
+
+    let y1 = scalarPotential(x, y - eps, time);
+    let y2 = scalarPotential(x, y + eps, time);
+    let dx = (y2 - y1) / (2 * eps);
+
+    return Math.sqrt(dy * dy + dx * dx) / (2 * Math.sqrt(2));
+}
+
 // Render loop
 function render(t) {
     t*=0.0001;
@@ -86,10 +107,17 @@ function render(t) {
     for(let i=0;i<cols*rows;i++) {
         let gridX = d[i*5+3];
         let gridY = d[i*5+4];
-        let n = noise.perlin3(gridX/freq, gridY/freq, t * speed);
-        let scaledN = n * 4;
+        let n = scalarPotential(gridX/freq, gridY/freq, t * speed);
+        let n2 = curlNoise(gridX/freq, gridY/freq, t * 0.7);
+        let scaledN = (n + 0.2 * n2) * 4;
         let prob = sigmoid(scaledN);
-        d[i*5+2] = Math.random() < prob ? size * prob : 0;
+        let value = 0;
+        if (n2 > thresh) {
+            value = size * prob;
+        } else {
+            value = size * prob * 0.5;
+        };
+        d[i*5+2] = prob * size; 
     }
     updateBuffer();
     
