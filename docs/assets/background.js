@@ -11,11 +11,11 @@ noise.seed(8715);
 
 // render function
 const vs = `#version 300 es
-in vec2 p; uniform float t; uniform float w; uniform float h; out vec3 c;
+in vec2 p; in float size; uniform float t; uniform float w; uniform float h; out vec3 c;
 void main() {
     vec2 pos = p*2.0/vec2(w,h)-1.0;
     gl_Position = vec4(pos,0,1);
-    gl_PointSize = 5.0;
+    gl_PointSize = size;
 }`;
 
 const fs = `#version 300 es
@@ -34,14 +34,19 @@ const p = gl.createProgram();
 gl.linkProgram(p); gl.useProgram(p);
 
 // Generate point data (fixed spacing)
-const spacing = 10;
+const size = 8.0; // change size here
+const spacing = 2; // change spacing here
 let d = [], cols = 0, rows = 0;
 
 function generatePoints() {
-    cols = Math.ceil(innerWidth / spacing) + 1;
-    rows = Math.ceil(innerHeight / spacing) + 1;
+    var length = size + spacing;
+    cols = Math.ceil(innerWidth / length) + 1;
+    rows = Math.ceil(innerHeight / length) + 1;
     d = [];
-    for(let y=0;y<rows;y++) for(let x=0;x<cols;x++) d.push(x*spacing,y*spacing);
+    var thisSize = size
+    for(let y=0;y<rows;y++) for(let x=0;x<cols;x++) {
+        d.push(x*length,y*length,thisSize);
+    }
 }
 
 generatePoints();
@@ -52,7 +57,11 @@ gl.bindBuffer(gl.ARRAY_BUFFER,b);
 gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(d),gl.STATIC_DRAW);
 const a = gl.getAttribLocation(p,'p');
 gl.enableVertexAttribArray(a);
-gl.vertexAttribPointer(a,2,gl.FLOAT,false,0,0);
+gl.vertexAttribPointer(a,3,gl.FLOAT,false,0,0);
+
+const sizeLoc = gl.getAttribLocation(p, 'size');
+gl.enableVertexAttribArray(sizeLoc);
+gl.vertexAttribPointer(sizeLoc, 1, gl.FLOAT, false, 12, 8);
 
 function updateBuffer() {
     gl.bindBuffer(gl.ARRAY_BUFFER,b);
