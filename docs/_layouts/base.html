@@ -5,21 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Wind Nowcasting</title>
         <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-        <link rel="stylesheet" href="">
     </head>
     <body class="has-navbar-fixed-top">
         {% include header.html %}
         {{ content }}
     </body>
-    <script type="importmap">
-    {
-    "imports": {
-        "three": "https://cdn.jsdelivr.net/npm/three@v0.180.0/build/three.module.js",
-        "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.180.0/examples/jsm/"
-        }
-    }
-    </script>
-    <script type="module" src="{{ site.baseurl }}/assets/script.js"></script>
-    <script type="module" src="{{ site.baseurl }}/assets/background.js"></script>
+    <script src="{{ site.baseurl }}/assets/two.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/perlin.js"></script>
+    <script src="{{ site.baseurl }}/assets/script.js"></script>
+    <script src="{{ site.baseurl }}/assets/background.js"></script>
 </html>

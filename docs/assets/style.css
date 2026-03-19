@@ -8,4 +8,13 @@
     height: 100%;
     z-index: -1;
     pointer-events: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#index-background canvas {
+    margin: 0;
+    padding: 0;
+    display: block;
 }

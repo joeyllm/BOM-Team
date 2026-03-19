@@ -1,29 +1,52 @@
-import * as THREE from 'three';
+const C = document.getElementById('index-background');
 
-// Get the container
-let container = document.getElementById('index-background');
+// create a new Two.js instance
+const two = new Two({
+    width: C.clientWidth,
+    height: C.clientHeight
+}).appendTo(C);
 
-// Create the scene
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+// calculate coordinates
+const ITEM_SIZE = 10;
+const THRESHOLD = 0;
+const FREQ = 200;
+noise.seed(8715)
 
-const renderer = new THREE.WebGLRenderer();
-renderer.setSize( window.innerWidth, window.innerHeight );
-renderer.setAnimationLoop( animate );
-container.appendChild(renderer.domElement);
-
-const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-const cube = new THREE.Mesh( geometry, material );
-scene.add( cube );
-
-camera.position.z = 5;
-
-function animate( time ) {
-
-  cube.rotation.x = time / 2000;
-  cube.rotation.y = time / 1000;
-
-  renderer.render( scene, camera );
-
+// function: createParticles
+function createParticles() {
+    // Clear existing particles
+    two.clear();
+    
+    // Get current size
+    const width = C.clientWidth;
+    const height = C.clientHeight;
+    
+    // Update Two.js instance size
+    two.width = width;
+    two.height = height;
+    
+    // create a circle
+    for (let i = 0; i + ITEM_SIZE / 2 < width; i += ITEM_SIZE) {
+        for (let j = 0; j + ITEM_SIZE / 2 < height; j += ITEM_SIZE) {
+            var n = noise.perlin3(i/FREQ, j/FREQ, 0);
+            if (n > THRESHOLD) {
+                const circle = two.makeCircle(i + ITEM_SIZE / 2, j + ITEM_SIZE / 2, 2);
+                circle.fill = 'cyan';
+                circle.stroke = 'black';
+                circle.linewidth = 0;
+            }
+        }
+    }
+    
+    two.update();
 }
+
+// Initial creation of particles
+createParticles();
+
+// Add window resize event listener
+window.addEventListener('resize', function() {
+    createParticles();
+});
+
+two.play();
