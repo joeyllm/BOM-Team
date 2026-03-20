@@ -7,15 +7,14 @@ A curated list of links relevant to the project.
 ## Internal Project Docs
 
 - [`../README.md`](../README.md) — repository overview and documentation rules
-- [`../Project/README.md`](../Project/README.md) — project scope across both semesters
-- [`../Project/ProjectGoal.md`](../Project/ProjectGoal.md) — project outcomes and goals
-- [`../Project/Semester1DataInfrastructure.md`](../Project/Semester1DataInfrastructure.md) — semester 1 data and infrastructure focus
-- [`../Project/Semester2ModelTraining.md`](../Project/Semester2ModelTraining.md) — semester 2 model training focus
-- [`../Project/GithubProjectBoard.md`](../Project/GithubProjectBoard.md) — board workflow and maintenance expectations
+- [`../../planning/README.md`](../../planning/README.md) — project scope across both semesters
+- [`../../planning/ProjectGoal.md`](../../planning/ProjectGoal.md) — project outcomes and goals
+- [`../../planning/Semester1DataInfrastructure.md`](../../planning/Semester1DataInfrastructure.md) — semester 1 data and infrastructure focus
+- [`../../planning/Semester2ModelTraining.md`](../../planning/Semester2ModelTraining.md) — semester 2 model training focus
+- [`../../planning/GithubProjectBoard.md`](../../planning/GithubProjectBoard.md) — board workflow and maintenance expectations
 - [`../Progress/Weekly/README.md`](../Progress/Weekly/README.md) — reporting schedule and weekly report index
 - [`../Progress/WeeklyTODOs/README.md`](../Progress/WeeklyTODOs/README.md) — weekly task list templates and planning notes
-- [`../Progress/JupyterNotebooks/README.md`](../Progress/JupyterNotebooks/README.md) — student notebook uploads and progress tracking
-- [`../Team/README.md`](../Team/README.md) — team roster and contact links
+- [`../../team-members/README.md`](../../team-members/README.md) — team roster, profiles, and notebook progress tracking
 
 ## External References
 
