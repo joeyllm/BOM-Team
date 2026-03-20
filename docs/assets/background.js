@@ -16,20 +16,23 @@ noise.seed(Math.random());
 
 // render function
 const vs = `#version 300 es
-in vec2 p; in float brightness; uniform float t; uniform float w; uniform float h; out float v_brightness;
+in vec2 p; in float brightness; in float colorType; uniform float t; uniform float w; uniform float h; out float v_brightness; out float v_colorType;
 void main() {
     vec2 pos = p*2.0/vec2(w,h)-1.0;
     gl_Position = vec4(pos,0,1);
     gl_PointSize = ${size.toFixed(1)};
     v_brightness = brightness;
+    v_colorType = colorType;
 }`;
 
 const fs = `#version 300 es
-precision mediump float; in float v_brightness; out vec4 f;
+precision mediump float; in float v_brightness; in float v_colorType; out vec4 f;
 void main() { 
     vec2 coord = gl_PointCoord-0.5;
-    f = vec4(0.15, 0.25, 0.45, 1);
-    f.rgb *= v_brightness;
+    vec3 blue = vec3(0.15, 0.25, 0.45);
+    vec3 gray = vec3(0.1, 0.2, 0.3);
+    vec3 color = mix(blue, gray, v_colorType);
+    f = vec4(color * v_brightness, 1);
 }`;
 
 // Compile shaders
@@ -49,7 +52,8 @@ function generatePoints() {
     rows = Math.ceil(innerHeight / length) + 1;
     d = [];
     for(let y=0;y<rows;y++) for(let x=0;x<cols;x++) {
-        d.push(x*length,y*length,1.0,x,y);
+        let colorType = Math.random() < 0.6 ? 1.0 : 0.0; // 60% probability of gray
+        d.push(x*length,y*length,1.0,x,y,colorType);
     }
 }
 
@@ -61,11 +65,15 @@ gl.bindBuffer(gl.ARRAY_BUFFER,b);
 gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(d),gl.STATIC_DRAW);
 const a = gl.getAttribLocation(p,'p');
 gl.enableVertexAttribArray(a);
-gl.vertexAttribPointer(a,2,gl.FLOAT,false,20,0);
+gl.vertexAttribPointer(a,2,gl.FLOAT,false,24,0);
 
 const brightnessLoc = gl.getAttribLocation(p, 'brightness');
 gl.enableVertexAttribArray(brightnessLoc);
-gl.vertexAttribPointer(brightnessLoc, 1, gl.FLOAT, false, 20, 8);
+gl.vertexAttribPointer(brightnessLoc, 1, gl.FLOAT, false, 24, 8);
+
+const colorTypeLoc = gl.getAttribLocation(p, 'colorType');
+gl.enableVertexAttribArray(colorTypeLoc);
+gl.vertexAttribPointer(colorTypeLoc, 1, gl.FLOAT, false, 24, 20);
 
 function updateBuffer() {
     gl.bindBuffer(gl.ARRAY_BUFFER,b);
@@ -123,8 +131,8 @@ function render(t) {
     gl.uniform1f(gl.getUniformLocation(p,'h'),innerHeight);
     
     for(let i=0;i<cols*rows;i++) {
-        let gridX = d[i*5+3];
-        let gridY = d[i*5+4];
+        let gridX = d[i*6+3];
+        let gridY = d[i*6+4];
         let n = fbmNoise(gridX/freq, gridY/freq, t * speed);
         let prob = sigmoid(n * 10);
         let brightness = 0;
@@ -134,7 +142,7 @@ function render(t) {
         } else {
             brightness = 0;
         }
-        d[i*5+2] = brightness;
+        d[i*6+2] = brightness;
     }
     updateBuffer();
     
