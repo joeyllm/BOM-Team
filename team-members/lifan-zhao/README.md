@@ -1,8 +1,8 @@
-# Kecheng Zhang 👤
+# Lifan Zhao 🧑‍🏫
 
-**Role:** 🎓 Student
-**Student ID:** u7244282
-**Email:** [Kecheng.Zhang@anu.edu.au](mailto:Kecheng.Zhang@anu.edu.au)
+**Role:** 🧑‍🏫 Tutor
+**Student ID:** —
+**Email:** [Lifan.Zhao@anu.edu.au](mailto:Lifan.Zhao@anu.edu.au)
 
 ---
 
@@ -13,7 +13,7 @@
 | 📱 Phone | null |
 | 🌏 From | null |
 | 💼 LinkedIn | null |
-| 🐙 GitHub | https://github.com/kechengzhang28 |
+| 🐙 GitHub | null |
 | 🤗 Hugging Face | null |
 | 🎮 Discord | null |
 | 💬 WeChat | null |
@@ -35,7 +35,7 @@
 
 ## 🏗️ Background
 
-> To be added.
+> Hi Everyone, I'm Lia, and I'll be your tutor for TechLauncher this semester.
 
 ---
 
@@ -63,10 +63,19 @@
 
 ## 🙋 About Me
 
-> To be added.
+> Lia
 
 ---
 
 ## 🎯 Project Goals
 
-> To be added.
+> Support the BOM team throughout the semester.
+
+---
+
+## Notebook Progress
+
+Place LifanZhao's Jupyter notebook files in this folder.
+
+Add new notebooks here each week after downloading them from Jupyter.
+

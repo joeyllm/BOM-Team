@@ -1,8 +1,8 @@
-# Olivia Maftukhaturrizqoh 👤
+# Kecheng Zhang 👤
 
 **Role:** 🎓 Student
-**Student ID:** u7947359
-**Email:** [Olivia.Maftukhaturrizqoh@anu.edu.au](mailto:Olivia.Maftukhaturrizqoh@anu.edu.au)
+**Student ID:** u7244282
+**Email:** [Kecheng.Zhang@anu.edu.au](mailto:Kecheng.Zhang@anu.edu.au)
 
 ---
 
@@ -13,7 +13,7 @@
 | 📱 Phone | null |
 | 🌏 From | null |
 | 💼 LinkedIn | null |
-| 🐙 GitHub | https://github.com/olivia-m96 |
+| 🐙 GitHub | https://github.com/kechengzhang28 |
 | 🤗 Hugging Face | null |
 | 🎮 Discord | null |
 | 💬 WeChat | null |
@@ -70,3 +70,12 @@
 ## 🎯 Project Goals
 
 > To be added.
+
+---
+
+## Notebook Progress
+
+Place KechengZhang's Jupyter notebook files in this folder.
+
+Add new notebooks here each week after downloading them from Jupyter.
+

@@ -1,8 +1,8 @@
-# Adam Ahammed Basheer 👤
+# Olivia Maftukhaturrizqoh 👤
 
 **Role:** 🎓 Student
-**Student ID:** u7628910
-**Email:** [u7628910@anu.edu.au](mailto:u7628910@anu.edu.au)
+**Student ID:** u7947359
+**Email:** [Olivia.Maftukhaturrizqoh@anu.edu.au](mailto:Olivia.Maftukhaturrizqoh@anu.edu.au)
 
 ---
 
@@ -13,7 +13,7 @@
 | 📱 Phone | null |
 | 🌏 From | null |
 | 💼 LinkedIn | null |
-| 🐙 GitHub | https://github.com/adambashbash |
+| 🐙 GitHub | https://github.com/olivia-m96 |
 | 🤗 Hugging Face | null |
 | 🎮 Discord | null |
 | 💬 WeChat | null |
@@ -70,3 +70,12 @@
 ## 🎯 Project Goals
 
 > To be added.
+
+---
+
+## Notebook Progress
+
+Place OliviaMaftukhaturrizqoh's Jupyter notebook files in this folder.
+
+Add new notebooks here each week after downloading them from Jupyter.
+

@@ -1,8 +1,8 @@
-# Lifan Zhao 🧑‍🏫
+# Adam Ahammed Basheer 👤
 
-**Role:** 🧑‍🏫 Tutor
-**Student ID:** —
-**Email:** [Lifan.Zhao@anu.edu.au](mailto:Lifan.Zhao@anu.edu.au)
+**Role:** 🎓 Student
+**Student ID:** u7628910
+**Email:** [u7628910@anu.edu.au](mailto:u7628910@anu.edu.au)
 
 ---
 
@@ -13,7 +13,7 @@
 | 📱 Phone | null |
 | 🌏 From | null |
 | 💼 LinkedIn | null |
-| 🐙 GitHub | null |
+| 🐙 GitHub | https://github.com/adambashbash |
 | 🤗 Hugging Face | null |
 | 🎮 Discord | null |
 | 💬 WeChat | null |
@@ -35,7 +35,7 @@
 
 ## 🏗️ Background
 
-> Hi Everyone, I'm Lia, and I'll be your tutor for TechLauncher this semester.
+> To be added.
 
 ---
 
@@ -63,10 +63,19 @@
 
 ## 🙋 About Me
 
-> Lia
+> To be added.
 
 ---
 
 ## 🎯 Project Goals
 
-> Support the BOM team throughout the semester.
+> To be added.
+
+---
+
+## Notebook Progress
+
+Place AdamAhammedBasheer's Jupyter notebook files in this folder.
+
+Add new notebooks here each week after downloading them from Jupyter.
+
