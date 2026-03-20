@@ -8,73 +8,77 @@
 
 ## 📇 Contact & Socials
 
-| | |
-|---|---|
-| 📱 Phone | 0430 378 887 |
-| 🌏 From | _Optional_ |
-| 💼 LinkedIn | _Optional_ |
-| 🐙 GitHub | `matthewaltenburg` |
-| 🤗 Hugging Face | _Optional_ |
-| 🎮 Discord | _Optional_ |
-| 💬 WeChat | _Optional_ |
-| 📘 Facebook | _Optional_ |
+- 📱 Phone: 0430 378 887
+- 🌏 From: United States
+- 💼 LinkedIn: Matthew Altenburg
+- 🐙 GitHub: matthewaltenburg
+- 🤗 Hugging Face: —
+- 🎮 Discord: matthewaltenburg
+- 💬 WeChat: —
+- 📘 Facebook: Matthew Altenburg
 
 ---
 
 ## 🎓 Education
 
-| | |
-|---|---|
-| 🏫 University | _Optional_ |
-| 📚 Degree | _Optional_ |
-| 📅 Year | _Optional_ |
-| 🗓️ Expected Graduation | _Optional_ |
-| 🌐 Exchange / International | _Optional_ |
+- 🏫 University: University of Central Florida
+- 📚 Degree: Bachelor of Chemistry
+- 📅 Year: 1999
+- 🗓️ Expected Graduation: —
+- 🌐 Exchange / International: Lived in Japan during childhood; lived across multiple U.S. states
 
 ---
 
 ## 🏗️ Background
 
-> To be added.
+Started working in computer vision around 2014, focusing on drone programming and autonomous systems. Since then, has specialized extensively in AI, neural networks, and applied machine learning across government and research domains.
 
 ---
 
 ## 🧠 Interests / Skills
 
-- To be added
-- To be added
-- To be added
+- AI system design and development
+- Swimming and competitive performance
+- Salsa dancing
+- Advanced AI research (optical / holographic neural networks)
 
 ---
 
 ## 🛠️ Technical Background
 
-- To be added
-- To be added
-- To be added
+- Programming since the 1980s
+- Languages: Python, JavaScript, C++, Bash, and others
+- Expertise in machine learning and neural networks
+- Expertise in Large Language Models (LLMs)
+- Expertise in computer vision systems
+- Expertise in end-to-end AI pipelines and infrastructure
 
 ---
 
 ## 📁 Previous Projects
 
-> To be added.
+- OpenCV-based computer vision systems
+- Arduino-based drone/autonomous control projects
+- Work related to Comma.ai ecosystem
 
 ---
 
 ## 🙋 About Me
 
-> To be added.
+Easygoing and practical. Strong belief in learning through iteration and making mistakes. Focused on continuous improvement and real-world application of AI systems.
 
 ---
 
 ## 🎯 Project Goals
 
-> To be added.
+- Push the boundaries of AI development in Australia
+- Build impactful AI systems and research outputs
+- Contribute to sovereign AI capabilities
+- Publish academic and applied research papers
 
 ---
 
 ## Notebook Progress
 
 Place MatthewAltenburg's Jupyter notebook files in this folder.
-
-Add new notebooks here each week after downloading them from Jupyter.
+Add new notebooks weekly after downloading them from Jupyter.
