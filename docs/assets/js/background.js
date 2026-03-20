@@ -31,7 +31,15 @@ void main() {
     vec2 coord = gl_PointCoord-0.5;
     vec3 blue = vec3(0.15, 0.25, 0.45);
     vec3 gray = vec3(0.1, 0.2, 0.3);
-    vec3 color = mix(blue, gray, v_colorType);
+    vec3 lightBlue = vec3(0.2, 0.4, 0.8);
+    vec3 color;
+    if (v_colorType < 0.5) {
+        color = blue;
+    } else if (v_colorType < 1.5) {
+        color = gray;
+    } else {
+        color = lightBlue;
+    }
     f = vec4(color * v_brightness, 1);
 }`;
 
@@ -52,7 +60,15 @@ function generatePoints() {
     rows = Math.ceil(innerHeight / length) + 1;
     d = [];
     for(let y=0;y<rows;y++) for(let x=0;x<cols;x++) {
-        let colorType = Math.random() < 0.6 ? 1.0 : 0.0; // 60% probability of gray
+        let rand = Math.random();
+        let colorType;
+        if (rand < 0.3) {
+            colorType = 0.0; // 30% blue
+        } else if (rand < 0.98) {
+            colorType = 1.0; // 68% gray
+        } else {
+            colorType = 2.0; // 2% light blue
+        }
         d.push(x*length,y*length,1.0,x,y,colorType);
     }
 }
@@ -114,7 +130,6 @@ function fbmNoise(x, y, t) {
     let num = 4;
     for(let i=0;i<num;i++) {
         n += amp * noise.perlin3(x * freq, y * freq, t * freq);
-        n += amp * 0.3 * curlNoise(x * freq, y * freq, t * freq);
         amp *= 0.15;
         freq *= 15;
     }
@@ -134,7 +149,6 @@ function render(t) {
         let gridX = d[i*6+3];
         let gridY = d[i*6+4];
         let n = fbmNoise(gridX/freq, gridY/freq, t * speed);
-        let prob = sigmoid(n * 10);
         let brightness = 0;
         let breakPoint = fbmNoise(gridX, gridY, t);
         if (Math.abs(n - breakPoint) > 0.14) {
