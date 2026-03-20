@@ -1,4 +1,4 @@
-# Weekly TODO ✅
+# Weekly TODOs ✅
 
 This folder stores weekly TODO lists for the team.
 

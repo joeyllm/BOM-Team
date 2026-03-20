@@ -12,7 +12,9 @@ A curated list of links relevant to the project.
 - [`../Project/Semester1DataInfrastructure.md`](../Project/Semester1DataInfrastructure.md) — semester 1 data and infrastructure focus
 - [`../Project/Semester2ModelTraining.md`](../Project/Semester2ModelTraining.md) — semester 2 model training focus
 - [`../Project/GithubProjectBoard.md`](../Project/GithubProjectBoard.md) — board workflow and maintenance expectations
-- [`../Weekly/README.md`](../Weekly/README.md) — reporting schedule and weekly report index
+- [`../Progress/Weekly/README.md`](../Progress/Weekly/README.md) — reporting schedule and weekly report index
+- [`../Progress/WeeklyTODOs/README.md`](../Progress/WeeklyTODOs/README.md) — weekly task list templates and planning notes
+- [`../Progress/JupyterNotebooks/README.md`](../Progress/JupyterNotebooks/README.md) — student notebook uploads and progress tracking
 - [`../Team/README.md`](../Team/README.md) — team roster and contact links
 
 ## External References

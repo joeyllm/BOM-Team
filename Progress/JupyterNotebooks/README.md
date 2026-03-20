@@ -1,4 +1,4 @@
-# Jupyter Notebook 📓
+# Jupyter Notebooks 📓
 
 This directory stores each student's Jupyter notebooks for the project. 🗂️
 

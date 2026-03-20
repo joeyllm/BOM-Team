@@ -11,4 +11,4 @@
 
 ## 📓 Jupyter Notebooks
 
-Weekly notebook uploads should be placed in each student's folder under [`../JupyterNotebook/`](../JupyterNotebook/README.md).
+Weekly notebook uploads should be placed in each student's folder under [`../Progress/JupyterNotebooks/`](../Progress/JupyterNotebooks/README.md).

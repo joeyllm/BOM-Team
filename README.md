@@ -25,6 +25,19 @@ The goal is to build reliable nowcasting workflows while understanding how data 
 
 ---
 
+## 🚦 Start Here
+
+Use these links first:
+
+1. `Project/ProjectGoal.md`
+2. `ComputeInfrastructure/Wireguard.md`
+3. `Team/Introductions.md`
+4. `Progress/Weekly/README.md`
+5. `Progress/JupyterNotebooks/README.md` 📓
+6. `Progress/WeeklyTODOs/README.md` ✅
+
+---
+
 ## 🚀 Where to Start
 
 If you are a new team member, please read these documents first to get oriented:
@@ -32,8 +45,9 @@ If you are a new team member, please read these documents first to get oriented:
 1. `Project/ProjectGoal.md`
 2. `ComputeInfrastructure/Wireguard.md`
 3. `Team/Introductions.md`
-4. `Weekly/README.md`
-5. `JupyterNotebook/README.md` 📓
+4. `Progress/Weekly/README.md`
+5. `Progress/JupyterNotebooks/README.md` 📓
+6. `Progress/WeeklyTODOs/README.md` ✅
 
 ---
 
@@ -46,12 +60,11 @@ This repository is strictly for documentation and project management (no code!).
 | **`ComputeInfrastructure/`** | Access setup, VPN instructions, and GPU/system documentation. |
 | **`Data/`** | Data sources, dataset rules, and cleaning/preprocessing documentation. |
 | **`LearningResources/`** | Shared notes, references, and useful links for the team. |
-| **`JupyterNotebook/`** 📓 | Student folders for weekly downloaded Jupyter notebook files. |
 | **`Models/`** | Documentation regarding our model architectures and training plans. |
+| **`Progress/`** 🚦 | Weekly reports, weekly TODOs, and student Jupyter notebooks. |
 | **`Project/`** | Project goals, planning docs, and semester overviews. |
-| **`Team/`** | Team member info, roles, and contact details. |
-| **`Weekly/`** | Meeting notes, weekly reports, and reporting templates. |
 | **`Repos/`** | Rules and links for our code repositories, platforms, and related setups. |
+| **`Team/`** | Team member info, roles, and contact details. |
 
 ---
 
