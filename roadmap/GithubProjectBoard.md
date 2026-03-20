@@ -28,5 +28,5 @@ The team uses the **`BOM Nowcasting Team`** GitHub Project board as the main tas
 
 - Review the board before each weekly meeting.
 - Close or archive stale items once they are no longer relevant.
-- Keep board status aligned with the weekly update documents in [`../Weekly/`](../Weekly/).
+- Keep board status aligned with the weekly update documents in [`../management/weekly-reports/`](../management/weekly-reports/).
 🙂

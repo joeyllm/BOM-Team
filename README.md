@@ -29,12 +29,12 @@ The goal is to build reliable nowcasting workflows while understanding how data 
 
 Use these links first:
 
-1. `planning/ProjectGoal.md`
+1. `roadmap/ProjectGoal.md`
 2. `knowledge-base/compute-infrastructure/Wireguard.md`
 3. `team-members/README.md`
-4. `Progress/Weekly/README.md`
+4. `management/weekly-reports/README.md`
 5. `team-members/README.md` 📓
-6. `Progress/WeeklyTODOs/README.md` ✅
+6. `management/weekly-todos/README.md` ✅
 
 ---
 
@@ -42,12 +42,12 @@ Use these links first:
 
 If you are a new team member, please read these documents first to get oriented:
 
-1. `planning/ProjectGoal.md`
+1. `roadmap/ProjectGoal.md`
 2. `knowledge-base/compute-infrastructure/Wireguard.md`
 3. `team-members/README.md`
-4. `Progress/Weekly/README.md`
+4. `management/weekly-reports/README.md`
 5. `team-members/README.md` 📓
-6. `Progress/WeeklyTODOs/README.md` ✅
+6. `management/weekly-todos/README.md` ✅
 
 ---
 
@@ -58,8 +58,8 @@ This repository is strictly for documentation and project management (no code!).
 | Folder | Purpose |
 | :--- | :--- |
 | **`knowledge-base/`** | Combined compute infrastructure, data, models, learning resources, Q&A, papers, and repository/platform references. |
-| **`Progress/`** 🚦 | Weekly reports and weekly TODOs. |
-| **`planning/`** | Project goals, planning docs, and semester overviews. |
+| **`management/`** 🚦 | Weekly reports, weekly TODOs, and team coordination docs. |
+| **`roadmap/`** | Project goals, planning docs, and semester overviews. |
 | **`team-members/`** | Combined member profiles and notebook progress tracking. |
 
 ---
