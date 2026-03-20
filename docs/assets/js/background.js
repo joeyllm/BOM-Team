@@ -4,13 +4,13 @@ gl.canvas.height = innerHeight;
 gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
 
 // perlin noise settings
-const freq = 20;
+const freq = 32;
 const threshB = 0.3;
 const threshT = 1;
-const speed = 3;
+const speed = 2;
 
 const size = 4.0; // change size here
-const spacing = 12; // change spacing here
+const spacing = 16; // change spacing here
 
 noise.seed(Math.random());
 
@@ -127,13 +127,15 @@ function fbmNoise(x, y, t) {
     let n = 0;
     let amp = 1;
     let freq = 1;
-    let num = 4;
+    let num = 10;
+    let weight = 0
     for(let i=0;i<num;i++) {
         n += amp * noise.perlin3(x * freq, y * freq, t * freq);
+        weight += amp;
         amp *= 0.15;
         freq *= 15;
     }
-    return n / num;
+    return n / weight;
 }
 
 // Render loop
@@ -151,8 +153,8 @@ function render(t) {
         let n = fbmNoise(gridX/freq, gridY/freq, t * speed);
         let brightness = 0;
         let breakPoint = fbmNoise(gridX, gridY, t);
-        if (Math.abs(n - breakPoint) > 0.14) {
-            brightness = 1;
+        if (Math.abs(n - breakPoint) > 0.2) {
+            brightness = sigmoid(n * 5);
         } else {
             brightness = 0;
         }
