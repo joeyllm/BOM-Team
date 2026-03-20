@@ -4,14 +4,15 @@ gl.canvas.height = innerHeight;
 gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
 
 // perlin noise settings
-const freq = 64;
-const thresh = 0.6;
+const freq = 20;
+const threshB = 0.3;
+const threshT = 1;
 const speed = 3;
 
-const size = 8.0; // change size here
-const spacing = 2; // change spacing here
+const size = 4.0; // change size here
+const spacing = 12; // change spacing here
 
-noise.seed(8715);
+noise.seed(Math.random());
 
 // render function
 const vs = `#version 300 es
@@ -27,7 +28,8 @@ const fs = `#version 300 es
 precision mediump float; in float v_brightness; out vec4 f;
 void main() { 
     vec2 coord = gl_PointCoord-0.5;
-    f = vec4(0.15 * v_brightness, 0.25 * v_brightness, 0.45 * v_brightness, 1);
+    f = vec4(0.15, 0.25, 0.45, 1);
+    f.rgb *= v_brightness;
 }`;
 
 // Compile shaders
@@ -96,6 +98,21 @@ function curlNoise(x, y, time, eps = 0.0001) {
     return Math.sqrt(dy * dy + dx * dx) / (2 * Math.sqrt(2));
 }
 
+// FBM -1 to 1
+function fbmNoise(x, y, t) {
+    let n = 0;
+    let amp = 1;
+    let freq = 1;
+    let num = 4;
+    for(let i=0;i<num;i++) {
+        n += amp * noise.perlin3(x * freq, y * freq, t * freq);
+        n += amp * 0.3 * curlNoise(x * freq, y * freq, t * freq);
+        amp *= 0.15;
+        freq *= 15;
+    }
+    return n / num;
+}
+
 // Render loop
 function render(t) {
     t*=0.0001;
@@ -108,11 +125,15 @@ function render(t) {
     for(let i=0;i<cols*rows;i++) {
         let gridX = d[i*5+3];
         let gridY = d[i*5+4];
-        let n = scalarPotential(gridX/freq, gridY/freq, t * speed);
-        let n2 = curlNoise(gridX/freq, gridY/freq, t * 0.7);
-        let scaledN = (n + 0.2 * n2) * 4;
-        let prob = sigmoid(scaledN);
-        let brightness = prob;
+        let n = fbmNoise(gridX/freq, gridY/freq, t * speed);
+        let prob = sigmoid(n * 10);
+        let brightness = 0;
+        let breakPoint = fbmNoise(gridX, gridY, t);
+        if (Math.abs(n - breakPoint) > 0.14) {
+            brightness = 1;
+        } else {
+            brightness = 0;
+        }
         d[i*5+2] = brightness;
     }
     updateBuffer();
