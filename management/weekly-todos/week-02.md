@@ -50,7 +50,9 @@ Write initial notes on:
 ### Communication
 
 - Increase team communication
+- Join the team Discord: https://discord.gg/YqCZZTVY
 - Share progress and findings regularly
+- Arrange a time this week for all team members to meet with Matthew Altenburg
 
 ## Notes
 
