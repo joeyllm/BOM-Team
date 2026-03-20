@@ -30,7 +30,7 @@ The goal is to build reliable nowcasting workflows while understanding how data 
 Use these links first:
 
 1. `Project/ProjectGoal.md`
-2. `ComputeInfrastructure/Wireguard.md`
+2. `compute-infrastructure/Wireguard.md`
 3. `Team/Introductions.md`
 4. `Progress/Weekly/README.md`
 5. `Progress/JupyterNotebooks/README.md` 📓
@@ -43,7 +43,7 @@ Use these links first:
 If you are a new team member, please read these documents first to get oriented:
 
 1. `Project/ProjectGoal.md`
-2. `ComputeInfrastructure/Wireguard.md`
+2. `compute-infrastructure/Wireguard.md`
 3. `Team/Introductions.md`
 4. `Progress/Weekly/README.md`
 5. `Progress/JupyterNotebooks/README.md` 📓
@@ -57,13 +57,12 @@ This repository is strictly for documentation and project management (no code!).
 
 | Folder | Purpose |
 | :--- | :--- |
-| **`ComputeInfrastructure/`** | Access setup, VPN instructions, and GPU/system documentation. |
+| **`compute-infrastructure/`** | Access setup, VPN instructions, and GPU/system documentation. |
 | **`Data/`** | Data sources, dataset rules, and cleaning/preprocessing documentation. |
-| **`LearningResources/`** | Shared notes, references, and useful links for the team. |
+| **`knowledge-base/`** | Combined learning resources, Q&A, papers, and repository/platform references. |
 | **`Models/`** | Documentation regarding our model architectures and training plans. |
 | **`Progress/`** 🚦 | Weekly reports, weekly TODOs, and student Jupyter notebooks. |
 | **`Project/`** | Project goals, planning docs, and semester overviews. |
-| **`Repos/`** | Rules and links for our code repositories, platforms, and related setups. |
 | **`Team/`** | Team member info, roles, and contact details. |
 
 ---
