@@ -2,7 +2,7 @@
 
 **Role:** 📌 Stakeholder
 **Student ID:** 1138167
-**Email:** `matthew.altenburg`
+**Email:** [matthew.altenburg@anu.edu.au](mailto:matthew.altenburg@anu.edu.au)
 
 ---
 
