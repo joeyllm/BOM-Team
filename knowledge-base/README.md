@@ -1,4 +1,4 @@
-# Knowledge Base
+# Knowledge Base 📚
 
 This directory groups the shared reference material for the BOM Nowcasting team.
 

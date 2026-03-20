@@ -1,4 +1,4 @@
-# BOM Nowcasting
+# BOM Nowcasting 🌦️
 
 Welcome. This repository is the central hub for the BOM Nowcasting team. We use this space to organize the project, manage documentation, and track progress.
 

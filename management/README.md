@@ -1,4 +1,4 @@
-# Progress 🚦
+# Management 📋
 
 This folder keeps the team's recurring progress-tracking material in one place.
 

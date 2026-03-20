@@ -1,4 +1,4 @@
-# Team Members
+# Team Members 👥
 
 This directory combines team member profiles and individual notebook progress tracking.
 
