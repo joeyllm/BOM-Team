@@ -12,6 +12,7 @@ This directory combines team member profiles and individual notebook progress tr
 | Kecheng Zhang | 🎓 Student | u7244282 | [Kecheng.Zhang@anu.edu.au](mailto:Kecheng.Zhang@anu.edu.au) | `kechengzhang28` | _Optional_ | [README](kecheng-zhang/README.md) |
 | Olivia Maftukhaturrizqoh | 🎓 Student | u7947359 | [Olivia.Maftukhaturrizqoh@anu.edu.au](mailto:Olivia.Maftukhaturrizqoh@anu.edu.au) | `olivia-m96` | _Optional_ | [README](olivia-maftukhaturrizqoh/README.md) |
 | Lifan Zhao | 🏫 Tutor | — | [Lifan.Zhao@anu.edu.au](mailto:Lifan.Zhao@anu.edu.au) | _Username_ | _Optional_ | [README](lifan-zhao/README.md) |
+| Matthew Altenburg | 📌 Stakeholder | 1138167 | `matthew.altenburg` | `matthewaltenburg` | 0430 378 887 | [README](matthew-altenburg/README.md) |
 
 ## Notebook Uploads
 
