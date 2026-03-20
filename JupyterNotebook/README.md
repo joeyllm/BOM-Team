@@ -4,6 +4,8 @@ This directory stores each student's Jupyter notebooks for the project. 🗂️
 
 Each week, students should download their notebook files from Jupyter and place them in their own folder here. 📥
 
+Please upload all of your weekly notebooks here, not just one final notebook. This includes the weeks where you were experimenting, playing around, testing ideas, or trying things that did not fully work out. 🧪
+
 Suggested naming: 🏷️
 - `week-01.ipynb`
 - `week-02.ipynb`
