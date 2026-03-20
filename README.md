@@ -33,6 +33,7 @@ If you are a new team member, please read these documents first to get oriented:
 2. `ComputeInfrastructure/Wireguard.md`
 3. `Team/Introductions.md`
 4. `Weekly/README.md`
+5. `JupyterNotebook/README.md` 📓
 
 ---
 
@@ -45,6 +46,7 @@ This repository is strictly for documentation and project management (no code!).
 | **`ComputeInfrastructure/`** | Access setup, VPN instructions, and GPU/system documentation. |
 | **`Data/`** | Data sources, dataset rules, and cleaning/preprocessing documentation. |
 | **`LearningResources/`** | Shared notes, references, and useful links for the team. |
+| **`JupyterNotebook/`** 📓 | Student folders for weekly downloaded Jupyter notebook files. |
 | **`Models/`** | Documentation regarding our model architectures and training plans. |
 | **`Project/`** | Project goals, planning docs, and semester overviews. |
 | **`Team/`** | Team member info, roles, and contact details. |

@@ -8,3 +8,7 @@
 | [Olivia Maftukhaturrizqoh](MemberProfiles/OliviaMaftukhaturrizqoh.md) | 🎓 Student | u7947359 | [Olivia.Maftukhaturrizqoh@anu.edu.au](mailto:Olivia.Maftukhaturrizqoh@anu.edu.au) | `olivia-m96` | _Optional_ | ✅ Yes |
 | [Kecheng Zhang](MemberProfiles/KechengZhang.md) | 🎓 Student | u7244282 | [Kecheng.Zhang@anu.edu.au](mailto:Kecheng.Zhang@anu.edu.au) | `kechengzhang28` | _Optional_ | ✅ Yes |
 | [Lifan Zhao](MemberProfiles/LifanZhao.md) | 🏫 Tutor | — | [Lifan.Zhao@anu.edu.au](mailto:Lifan.Zhao@anu.edu.au) | _Username_ | _Optional_ | — |
+
+## 📓 Jupyter Notebooks
+
+Weekly notebook uploads should be placed in each student's folder under [`../JupyterNotebook/`](../JupyterNotebook/README.md).
