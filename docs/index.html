@@ -21,73 +21,160 @@ layout: plain
 <div class="background index-shadow-top">
     <div class="container py-6">
         <!-- Project Overview -->
-        <div class="title mt-6">Project Overview</div>
-
-        <div class="fixed-grid has-3-cols">
-            <div class="grid has-text-text">
-                <!-- Data -->
-                <div class="cell box-effect">
-                    <div class="title is-6">Data</div>
-                    <p class="mt-2">Ingesting and cleaning forecasting data from weather and observational datasets. Exploring, validating, and preparing high-quality datasets for machine learning.</p>
-                </div>
-                <!-- Model -->
-                <div class="cell box-effect">
-                    <div class="title is-6">Model</div>
-                    <p class="mt-2">Building baseline nowcasting models and refining forecast modelling workflows. Experimenting with regional forecasting and severe-weather nowcasting systems.</p>
-                </div>
-                <!-- Evaluation -->
-                <div class="cell box-effect">
-                    <div class="title is-6">Evaluation</div>
-                    <p class="mt-2">Developing evaluation and validation pipelines. Producing forecast outputs and performance reports with hands-on operational forecasting experience.</p>
-                </div>
-            </div>
+        <div class="section-header">
+            <span class="section-tag">What We Do</span>
+            <h2 class="section-title">Project Overview</h2>
+            <p class="section-desc">Building next-generation weather forecasting systems through data-driven machine learning</p>
         </div>
 
-        <div class="title mt-6">Project Roadmap</div>
-        <!-- Semester 1 -->
-        <div class="timeline-stage my-3">
-            <div class="title is-5 mb-1">Semester 1</div>
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="timeline has-text-text">
-            <div class="timeline-item">
-                <div class="title is-6">Infrastructure Setup</div>
-                <div class="box">Set up GPU compute infrastructure, Jupyter Notebook environments, and data engineering workflows on remote servers.</div>
+        <div class="overview-grid">
+            <!-- Data -->
+            <div class="overview-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-icon data-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3 class="card-title">Data</h3>
+                    <p class="card-text">Ingesting and cleaning forecasting data from weather and observational datasets. Exploring, validating, and preparing high-quality datasets for machine learning.</p>
+                    <div class="card-stats">
+                        <span class="stat-item"><i class="fa-solid fa-layer-group"></i> Multi-source</span>
+                    </div>
+                </div>
             </div>
-            <div class="timeline-item">
-                <div class="title is-6">Data Preparation</div>
-                <div class="box">Explore weather and observational datasets, validate source quality, clean and normalize records to produce high-quality validated datasets for machine learning.</div>
+            <!-- Model -->
+            <div class="overview-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-icon model-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="card-title">Model</h3>
+                    <p class="card-text">Building baseline nowcasting models and refining forecast modelling workflows. Experimenting with regional forecasting and severe-weather nowcasting systems.</p>
+                    <div class="card-stats">
+                        <span class="stat-item"><i class="fa-solid fa-microchip"></i> GPU-Powered</span>
+                    </div>
+                </div>
             </div>
-            <div class="timeline-item">
-                <div class="title is-6">Baseline Analysis</div>
-                <div class="box">Build baseline analytical and predictive models to analyze spatial coverage, temporal patterns, and metadata to organize large datasets.</div>
+            <!-- Evaluation -->
+            <div class="overview-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-icon eval-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="card-title">Evaluation</h3>
+                    <p class="card-text">Developing evaluation and validation pipelines. Producing forecast outputs and performance reports with hands-on operational forecasting experience.</p>
+                    <div class="card-stats">
+                        <span class="stat-item"><i class="fa-solid fa-check-double"></i> Validated</span>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- Semester 2 -->
-        <div class="timeline-stage my-3">
-            <i class="fa-solid fa-caret-up"></i>
-            <div class="title is-5 mb-1">Semester 2</div>
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="timeline has-text-text">
-            <div class="timeline-item hide" style="display: none;"></div>
-            <div class="timeline-item">
-                <div class="title is-6">Forecast Modelling</div>
-                <div class="box">Build and refine nowcasting models using prepared datasets. Experiment with regional forecasting and rainfall or severe-weather nowcasting workflows.</div>
-            </div>
-            <div class="timeline-item">
-                <div class="title is-6">Model Evaluation</div>
-                <div class="box">Develop domain-specific forecast evaluation pipelines and understand how datasets shape forecast behavior.</div>
-            </div>
-            <div class="timeline-item">
-                <div class="title is-6">Performance Reports</div>
-                <div class="box">Produce forecast outputs and performance reports. Execute large training jobs on dedicated GPU servers and A100 clusters.</div>
-            </div>
-        </div>
-        <div class="timeline-stage my-3">
-            <i class="fa-solid fa-caret-up"></i>
-            <div class="title is-5 mt-0">Project End</div>
         </div>
 
+        <!-- Project Roadmap -->
+        <div class="section-header roadmap-header">
+            <span class="section-tag">Our Journey</span>
+            <h2 class="section-title">Project Roadmap</h2>
+            <p class="section-desc">A structured approach to building the future of weather forecasting</p>
+        </div>
+
+        <div class="roadmap-container">
+            <!-- Semester 1 -->
+            <div class="semester-block">
+                <div class="semester-header">
+                    <div class="semester-badge">S1</div>
+                    <div class="semester-info">
+                        <h3 class="semester-title">Semester 1</h3>
+                        <span class="semester-subtitle">Foundation & Data</span>
+                    </div>
+                    <div class="semester-line"></div>
+                </div>
+                <div class="milestone-list">
+                    <div class="milestone-item">
+                        <div class="milestone-marker">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <div class="milestone-content">
+                            <h4>Infrastructure Setup</h4>
+                            <p>Set up GPU compute infrastructure, Jupyter Notebook environments, and data engineering workflows on remote servers.</p>
+                        </div>
+                    </div>
+                    <div class="milestone-item">
+                        <div class="milestone-marker">
+                            <i class="fa-solid fa-broom"></i>
+                        </div>
+                        <div class="milestone-content">
+                            <h4>Data Preparation</h4>
+                            <p>Explore weather and observational datasets, validate source quality, clean and normalize records to produce high-quality validated datasets for machine learning.</p>
+                        </div>
+                    </div>
+                    <div class="milestone-item">
+                        <div class="milestone-marker">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </div>
+                        <div class="milestone-content">
+                            <h4>Baseline Analysis</h4>
+                            <p>Build baseline analytical and predictive models to analyze spatial coverage, temporal patterns, and metadata to organize large datasets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Connection Arrow -->
+            <div class="semester-connector">
+                <div class="connector-line"></div>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <!-- Semester 2 -->
+            <div class="semester-block">
+                <div class="semester-header">
+                    <div class="semester-badge s2">S2</div>
+                    <div class="semester-info">
+                        <h3 class="semester-title">Semester 2</h3>
+                        <span class="semester-subtitle">Modeling & Evaluation</span>
+                    </div>
+                    <div class="semester-line s2-line"></div>
+                </div>
+                <div class="milestone-list">
+                    <div class="milestone-item">
+                        <div class="milestone-marker s2">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+                        <div class="milestone-content">
+                            <h4>Forecast Modelling</h4>
+                            <p>Build and refine nowcasting models using prepared datasets. Experiment with regional forecasting and rainfall or severe-weather nowcasting workflows.</p>
+                        </div>
+                    </div>
+                    <div class="milestone-item">
+                        <div class="milestone-marker s2">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </div>
+                        <div class="milestone-content">
+                            <h4>Model Evaluation</h4>
+                            <p>Develop domain-specific forecast evaluation pipelines and understand how datasets shape forecast behavior.</p>
+                        </div>
+                    </div>
+                    <div class="milestone-item">
+                        <div class="milestone-marker s2">
+                            <i class="fa-solid fa-file-contract"></i>
+                        </div>
+                        <div class="milestone-content">
+                            <h4>Performance Reports</h4>
+                            <p>Produce forecast outputs and performance reports. Execute large training jobs on dedicated GPU servers and A100 clusters.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project End -->
+            <div class="project-end">
+                <div class="end-badge">
+                    <i class="fa-solid fa-flag-checkered"></i>
+                </div>
+                <span class="end-text">Project Complete</span>
+            </div>
+        </div>
     </div>
 </div>
