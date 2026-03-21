@@ -10,14 +10,14 @@
 
 | | |
 |---|---|
-| 📱 Phone | null |
-| 🌏 From | null |
-| 💼 LinkedIn | null |
+| 📱 Phone | +61 0420797453 |
+| 🌏 From | Hangzhou, Zhejiang, China |
+| 💼 LinkedIn | https://www.linkedin.com/in/kecheng-zhang-38482827a/ |
 | 🐙 GitHub | https://github.com/kechengzhang28 |
-| 🤗 Hugging Face | null |
-| 🎮 Discord | null |
-| 💬 WeChat | null |
-| 📘 Facebook | null |
+| 🤗 Hugging Face | https://huggingface.co/kechengzhang28 |
+| 🎮 Discord | kechengzhang28 |
+| 💬 WeChat | 13750676177 |
+| 📘 Facebook | Kecheng Zhang |
 
 ---
 
@@ -26,24 +26,24 @@
 | | |
 |---|---|
 | 🏫 University | Australian National University |
-| 📚 Degree | null |
-| 📅 Year | null |
-| 🗓️ Expected Graduation | null |
+| 📚 Degree | Master of Computing |
+| 📅 Year | 2 |
+| 🗓️ Expected Graduation | Dec. 2026 |
 | 🌐 Exchange / International | null |
 
 ---
 
 ## 🏗️ Background
 
-> To be added.
+Focused on AI/ML, also interested in HCI.
 
 ---
 
 ## 🧠 Interests / Skills
 
-- To be added
-- To be added
-- To be added
+- Programming: Python, Java, JavaScript
+- AI/ML: Deep Learning, Pysics informed AI/ML.
+- Design: UI/UX, Web Design
 
 ---
 
@@ -63,7 +63,7 @@
 
 ## 🙋 About Me
 
-> To be added.
+Hi!
 
 ---
 
