@@ -10,14 +10,14 @@
 
 | | |
 |---|---|
-| 📱 Phone | null |
-| 🌏 From | null |
-| 💼 LinkedIn | null |
-| 🐙 GitHub | https://github.com/Codfish36 |
-| 🤗 Hugging Face | null |
-| 🎮 Discord | null |
-| 💬 WeChat | null |
-| 📘 Facebook | null |
+| 📱 Phone | 0475796296 |
+| 🌏 From | China |
+| 💼 LinkedIn | Junling Yu |
+| 🐙 GitHub | Codfish36 |
+| 🤗 Hugging Face | VV1X36 |
+| 🎮 Discord | junlingyu |
+| 💬 WeChat | Codfish-_- |
+| 📘 Facebook | Junling Yu |
 
 ---
 
@@ -26,50 +26,61 @@
 | | |
 |---|---|
 | 🏫 University | Australian National University |
-| 📚 Degree | null |
-| 📅 Year | null |
-| 🗓️ Expected Graduation | null |
+| 📚 Degree | Master of Computing |
+| 📅 Year | 2 |
+| 🗓️ Expected Graduation | Nov 2026 |
 | 🌐 Exchange / International | null |
+
+| | |
+|---|---|
+| 🏫 University | East China Normal University |
+| 📚 Degree | Bachelor of Science in Geographic Sciences |
+| 📅 Year | 4 |
+| 🗓️ Graduation | Jul 2023 |
 
 ---
 
 ## 🏗️ Background
 
-> To be added.
+> Computing student with GIS background. Currently focusing on ML/CV model training (including RL approaches like GRPO) and data pipelines, with experience in GIS, remote sensing (ENVI, ArcGIS, ArcSDE) and data processing(SQL).
 
 ---
 
 ## 🧠 Interests / Skills
 
-- To be added
-- To be added
-- To be added
+- Frontier AI technology
+- Image generation
+- Ballet
+- Musical
 
 ---
 
 ## 🛠️ Technical Background
 
-- To be added
-- To be added
-- To be added
+- Experience training AI and computer vision models, with exposure to recent model architectures.
+- Familiar with analysing spatio-temporal data, particularly remote sensing imagery.
+- Solid understanding of GIS techniques, including coordinate systems and geospatial data handling.
+- Proficient in databases and data analysis.
 
 ---
 
 ## 📁 Previous Projects
 
-> To be added.
-
+> Reasoning-Guided Referring Expression Comprehension with Reinforcement Learning.
+> Spatiotemporal Analysis of Global Temperature Variations (1851–2014)
 ---
 
 ## 🙋 About Me
 
-> To be added.
+> Detail-oriented and collaborative. I enjoy exploring problems deeply and refining ideas through iteration.
 
 ---
 
 ## 🎯 Project Goals
 
-> To be added.
+> Develop a strong understanding of large model architectures.
+> Get to know current research landscape by studying existing work in the field.
+> Contribute to the development of a model with improved robustness and stronger resistance to noise and interference.
 
 ---
 
