@@ -5,18 +5,16 @@
 .roadmap-timeline {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 var(--space-md);
 }
 
-/* Timeline Phase
-   -------------------------------------------------------------------------- */
 .timeline-phase {
     display: flex;
-    gap: 1.5rem;
+    gap: var(--space-lg);
     margin-bottom: 2.5rem;
 }
 
-/* Phase Header - Left side with badge and line */
+/* Phase Header */
 .phase-header {
     display: flex;
     flex-direction: column;
@@ -30,14 +28,14 @@
     height: 56px;
     border-radius: 50%;
     background: var(--gradient-primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-weight: 700;
     font-size: 1.1rem;
     color: var(--text-primary);
     box-shadow: 0 4px 15px var(--shadow-primary-strong);
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .phase-badge.s2 {
@@ -58,21 +56,19 @@
     background: var(--gradient-phase-line-secondary);
 }
 
-/* Phase Content - Right side */
+/* Phase Content */
 .phase-content {
     flex: 1;
-    padding-top: 0.5rem;
+    padding-top: var(--space-sm);
 }
 
-.phase-title-block {
-    margin-bottom: 1.25rem;
-}
+.phase-title-block { margin-bottom: 1.25rem; }
 
 .phase-title {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--text-primary);
-    margin-bottom: 0.25rem;
+    margin-bottom: var(--space-xs);
 }
 
 .phase-subtitle {
@@ -80,8 +76,7 @@
     color: var(--text-muted);
 }
 
-/* Milestones List
-   -------------------------------------------------------------------------- */
+/* Milestones */
 .milestones-list {
     display: flex;
     flex-direction: column;
@@ -91,8 +86,8 @@
 .milestone-card {
     display: flex;
     align-items: flex-start;
-    gap: 1rem;
-    padding: 1rem 1.25rem;
+    gap: var(--space-md);
+    padding: var(--space-md) 1.25rem;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--border-primary);
     border-radius: 12px;
@@ -105,10 +100,7 @@
     transform: translateX(4px);
 }
 
-.milestone-card.s2 {
-    border-color: var(--border-secondary);
-}
-
+.milestone-card.s2 { border-color: var(--border-secondary); }
 .milestone-card.s2:hover {
     background: rgba(99, 102, 241, 0.06);
     border-color: var(--border-secondary-medium);
@@ -119,12 +111,12 @@
     height: 40px;
     border-radius: 10px;
     background: rgba(0, 123, 255, 0.12);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: var(--primary);
     font-size: 1rem;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .milestone-card.s2 .milestone-icon-wrap {
@@ -132,9 +124,7 @@
     color: var(--secondary);
 }
 
-.milestone-body {
-    flex: 1;
-}
+.milestone-body { flex: 1; }
 
 .milestone-heading {
     font-size: 1rem;
@@ -149,14 +139,13 @@
     line-height: 1.5;
 }
 
-/* Timeline Completion
-   -------------------------------------------------------------------------- */
+/* Timeline Completion */
 .timeline-completion {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-    padding-left: 0.5rem;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+    padding-left: var(--space-sm);
 }
 
 .completion-badge {
@@ -164,13 +153,13 @@
     height: 48px;
     border-radius: 50%;
     background: var(--gradient-success);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: var(--text-primary);
     font-size: 1.1rem;
     box-shadow: 0 4px 15px var(--shadow-success);
-    animation: pulse-green 2s infinite;
+    animation: pulse-success 2s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .completion-text {
@@ -181,25 +170,13 @@
 
 /* Responsive */
 @media (max-width: 640px) {
-    .timeline-phase {
-        gap: 1rem;
-    }
-
-    .phase-header {
-        width: 48px;
-    }
-
+    .timeline-phase { gap: var(--space-md); }
+    .phase-header { width: 48px; }
     .phase-badge {
         width: 48px;
         height: 48px;
         font-size: 1rem;
     }
-
-    .phase-title {
-        font-size: 1.25rem;
-    }
-
-    .milestone-card {
-        padding: 0.875rem 1rem;
-    }
+    .phase-title { font-size: 1.25rem; }
+    .milestone-card { padding: 0.875rem var(--space-md); }
 }

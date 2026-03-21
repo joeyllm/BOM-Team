@@ -4,7 +4,7 @@
 
 .section-header {
     text-align: center;
-    margin: 4rem 0 3rem 0;
+    margin: 4rem 0 var(--space-2xl) 0;
 }
 
 .section-tag {
@@ -15,10 +15,10 @@
     letter-spacing: 0.15em;
     color: var(--primary);
     background: linear-gradient(135deg, rgba(0, 123, 255, 0.15), rgba(99, 102, 241, 0.1));
-    padding: 0.5rem 1rem;
+    padding: var(--space-sm) var(--space-md);
     border-radius: 2rem;
     border: 1px solid var(--border-primary-medium);
-    margin-bottom: 1rem;
+    margin-bottom: var(--space-md);
 }
 
 .section-title {

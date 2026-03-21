@@ -2,21 +2,26 @@
    About Page Styles
    ========================================================================== */
 
-/* Goals Grid
-   -------------------------------------------------------------------------- */
-.goals-grid {
+/* Common Card Pattern */
+.goals-grid,
+.members-grid,
+.partners-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: var(--space-lg);
     margin-bottom: 4rem;
 }
 
+.goals-grid { grid-template-columns: repeat(2, 1fr); }
+.members-grid { grid-template-columns: repeat(3, 1fr); }
+.partners-section { grid-template-columns: repeat(2, 1fr); }
+
+/* Goal Card */
 .goal-card {
     display: flex;
     align-items: flex-start;
-    gap: 1.25rem;
-    padding: 1.5rem;
-    background: linear-gradient(145deg, rgba(22, 22, 22, 0.6), rgba(17, 17, 17, 0.8));
+    gap: var(--space-lg);
+    padding: var(--space-lg);
+    background: var(--card-bg);
     border-radius: var(--default-radius);
     border: 1px solid var(--border-primary);
     transition: all 0.3s ease;
@@ -34,11 +39,11 @@
     border-radius: 12px;
     background: linear-gradient(135deg, rgba(0, 123, 255, 0.2), rgba(0, 123, 255, 0.05));
     border: 1px solid var(--border-primary-medium);
+    color: var(--primary);
+    font-size: 1.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary);
-    font-size: 1.25rem;
     flex-shrink: 0;
 }
 
@@ -46,7 +51,7 @@
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--text-primary);
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--space-sm);
 }
 
 .goal-content p {
@@ -55,21 +60,13 @@
     line-height: 1.5;
 }
 
-/* Members Grid
-   -------------------------------------------------------------------------- */
-.members-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-bottom: 4rem;
-}
-
+/* Member Card */
 .member-card {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: var(--space-md);
     padding: 1.25rem;
-    background: linear-gradient(145deg, rgba(22, 22, 22, 0.6), rgba(17, 17, 17, 0.8));
+    background: var(--card-bg);
     border-radius: var(--default-radius);
     border: 1px solid var(--border-primary);
     transition: all 0.3s ease;
@@ -85,16 +82,16 @@
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-shrink: 0;
 }
 
-/* Avatar Color Variants - Unified */
+/* Avatar Colors */
 .member-avatar.primary { background: var(--gradient-primary); }
 .member-avatar.blue { background: linear-gradient(135deg, var(--primary), #3b82f6); }
 .member-avatar.purple { background: var(--gradient-secondary); }
@@ -112,7 +109,7 @@
     font-size: 1rem;
     font-weight: 600;
     color: var(--text-primary);
-    margin-bottom: 0.25rem;
+    margin-bottom: var(--space-xs);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -126,63 +123,41 @@
     letter-spacing: 0.05em;
     color: var(--primary);
     background: rgba(0, 123, 255, 0.1);
-    padding: 0.25rem 0.5rem;
+    padding: var(--space-xs) var(--space-sm);
     border-radius: 4px;
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--space-sm);
 }
 
 .member-details {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: var(--space-xs);
 }
 
-.member-id {
-    font-size: 0.8rem;
-    color: var(--text-dim);
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-}
-
-.member-id i {
-    color: var(--text-muted);
-    font-size: 0.75rem;
-}
-
+.member-id,
 .member-github {
     font-size: 0.8rem;
     color: var(--text-dim);
-    text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 0.4rem;
+    gap: var(--space-xs);
+}
+
+.member-github {
+    text-decoration: none;
     transition: color 0.2s ease;
 }
 
-.member-github:hover {
-    color: var(--primary);
-}
+.member-github:hover { color: var(--primary); }
+.member-id i { color: var(--text-muted); font-size: 0.75rem; }
 
-.member-github i {
-    font-size: 0.9rem;
-}
-
-/* Partners Section
-   -------------------------------------------------------------------------- */
-.partners-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-}
-
+/* Partner Card */
 .partner-card {
     display: flex;
     align-items: center;
-    gap: 1.25rem;
-    padding: 1.5rem;
-    background: linear-gradient(145deg, rgba(22, 22, 22, 0.6), rgba(17, 17, 17, 0.8));
+    gap: var(--space-lg);
+    padding: var(--space-lg);
+    background: var(--card-bg);
     border-radius: var(--default-radius);
     border: 1px solid var(--border-primary);
     transition: all 0.3s ease;
@@ -198,12 +173,12 @@
     height: 64px;
     border-radius: 16px;
     background: linear-gradient(135deg, rgba(0, 123, 255, 0.15), rgba(99, 102, 241, 0.1));
-    border: 1px solid var(--border-blue-light);
+    border: 1px solid var(--border-primary-light);
+    color: var(--primary);
+    font-size: 1.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary);
-    font-size: 1.75rem;
     flex-shrink: 0;
 }
 
@@ -211,7 +186,7 @@
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--text-primary);
-    margin-bottom: 0.25rem;
+    margin-bottom: var(--space-xs);
 }
 
 .partner-info p {
@@ -221,17 +196,13 @@
 
 /* Responsive */
 @media (max-width: 1024px) {
-    .members-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    .members-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
     .goals-grid,
     .members-grid,
-    .partners-section {
-        grid-template-columns: 1fr;
-    }
+    .partners-section { grid-template-columns: 1fr; }
 
     .goal-card,
     .member-card,
@@ -240,7 +211,5 @@
         text-align: center;
     }
 
-    .member-details {
-        align-items: center;
-    }
+    .member-details { align-items: center; }
 }

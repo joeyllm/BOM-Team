@@ -66,9 +66,9 @@
     50% { top: 18px; opacity: 0.3; }
 }
 
-@keyframes pulse-green {
-    0%, 100% { box-shadow: 0 4px 15px var(--shadow-green); }
-    50% { box-shadow: 0 4px 25px rgba(46, 204, 113, 0.6); }
+@keyframes pulse-success {
+    0%, 100% { box-shadow: 0 4px 15px var(--shadow-success); }
+    50% { box-shadow: 0 4px 25px rgba(34, 197, 94, 0.6); }
 }
 
 @keyframes windBlow {
@@ -80,7 +80,7 @@
    -------------------------------------------------------------------------- */
 .box-effect {
     border-radius: var(--default-radius);
-    border: 1px solid var(--primary-blue);
+    border: 1px solid var(--primary);
     background-color: var(--background-color-light);
     text-align: left;
     box-shadow: 0 0 0.5rem var(--shadow-primary);
