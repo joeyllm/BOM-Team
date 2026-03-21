@@ -1,0 +1,276 @@
+/* ==========================================================================
+   Post Article Page Styles
+   ========================================================================== */
+
+.post-page {
+    background: linear-gradient(180deg, var(--background-color) 0%, var(--background-dark) 100%);
+    min-height: 100vh;
+    padding-top: 60px;
+}
+
+.post-article {
+    background: linear-gradient(145deg, rgba(22, 22, 22, 0.8), rgba(17, 17, 17, 0.9));
+    border-radius: var(--default-radius);
+    border: 1px solid var(--border-blue);
+    padding: 3rem;
+    margin-top: 2rem;
+}
+
+.post-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(0, 123, 255, 0.1);
+}
+
+.post-meta-header {
+    margin-bottom: 1rem;
+}
+
+.post-date-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    background: rgba(0, 123, 255, 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(0, 123, 255, 0.1);
+}
+
+.post-date-full i {
+    color: var(--primary-blue);
+}
+
+.post-title-full {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.3;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Post Content Typography
+   -------------------------------------------------------------------------- */
+.post-content-full {
+    font-size: 1.125rem;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.82);
+    letter-spacing: 0.01em;
+}
+
+.post-content-full p {
+    margin-bottom: 1.75rem;
+}
+
+/* Headings */
+.post-content-full h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin: 3rem 0 1.25rem 0;
+    letter-spacing: -0.02em;
+}
+
+.post-content-full h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 2.25rem 0 1rem 0;
+    letter-spacing: -0.01em;
+}
+
+.post-content-full h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 1.75rem 0 0.75rem 0;
+}
+
+/* Lists */
+.post-content-full ul,
+.post-content-full ol {
+    margin: 1.25rem 0 1.75rem 0;
+    padding-left: 1.75rem;
+}
+
+.post-content-full li {
+    margin-bottom: 0.625rem;
+}
+
+.post-content-full ul ul,
+.post-content-full ol ol,
+.post-content-full ul ol,
+.post-content-full ol ul {
+    margin: 0.625rem 0;
+}
+
+/* Tables */
+.post-content-full table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 1rem;
+}
+
+.post-content-full thead {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.post-content-full th {
+    padding: 0.875rem 1rem;
+    text-align: left;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.post-content-full td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.post-content-full tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Code */
+.post-content-full code {
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+    font-size: 0.875em;
+}
+
+.post-content-full pre {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    padding: 1.25rem 1.5rem;
+    margin: 2rem 0;
+    overflow-x: auto;
+}
+
+.post-content-full pre code {
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+/* Blockquotes */
+.post-content-full blockquote {
+    margin: 2rem 0;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+    font-style: normal;
+}
+
+.post-content-full blockquote p {
+    margin: 0;
+}
+
+/* Horizontal Rule */
+.post-content-full hr {
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 3rem 0;
+}
+
+/* Text Formatting */
+.post-content-full strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.post-content-full em {
+    color: rgba(255, 255, 255, 0.9);
+    font-style: italic;
+}
+
+/* Links */
+.post-content-full a {
+    color: var(--text-primary);
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.3);
+    text-underline-offset: 0.2em;
+    transition: text-decoration-color 0.2s ease;
+}
+
+.post-content-full a:hover {
+    text-decoration-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Images */
+.post-content-full img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 2rem 0;
+}
+
+/* Task Lists */
+.post-content-full input[type="checkbox"] {
+    accent-color: rgba(255, 255, 255, 0.6);
+    margin-right: 0.5rem;
+}
+
+/* Post Footer
+   -------------------------------------------------------------------------- */
+.post-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0, 123, 255, 0.1);
+}
+
+.back-to-blog {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.875rem 1.5rem;
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.1), rgba(79, 63, 255, 0.05));
+    border: 1px solid var(--border-blue-light);
+    border-radius: var(--default-radius);
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.back-to-blog:hover {
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.2), rgba(79, 63, 255, 0.1));
+    border-color: var(--border-blue-medium);
+    transform: translateX(-4px);
+}
+
+.back-to-blog i {
+    transition: transform 0.3s ease;
+}
+
+.back-to-blog:hover i {
+    transform: translateX(-4px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .post-article {
+        padding: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .post-title-full {
+        font-size: 1.75rem;
+    }
+
+    .post-content-full {
+        font-size: 1rem;
+    }
+}

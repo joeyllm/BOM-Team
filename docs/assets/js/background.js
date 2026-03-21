@@ -1,177 +1,313 @@
-const gl = document.getElementById('index-background').getContext('webgl2');
-gl.canvas.width = innerWidth;
-gl.canvas.height = innerHeight;
-gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
+/**
+ * Wind Nowcasting - WebGL2 Animated Background
+ * ============================================================================
+ * Creates an animated particle field using WebGL2 and curl noise for
+ * a flowing, wind-like visual effect.
+ */
 
-// perlin noise settings
-const freq = 32;
-const threshB = 0.3;
-const threshT = 1;
-const speed = 2;
+// Configuration
+const CONFIG = {
+    noise: {
+        frequency: 32,
+        thresholdBottom: 0.3,
+        thresholdTop: 1,
+        speed: 2
+    },
+    particle: {
+        size: 4.0,
+        spacing: 16
+    },
+    fbm: {
+        octaves: 10,
+        amplitudeDecay: 0.15,
+        frequencyGrowth: 15
+    }
+};
 
-const size = 4.0; // change size here
-const spacing = 16; // change spacing here
+// DOM Elements
+const canvas = document.getElementById('index-background');
+if (!canvas) {
+    console.warn('Background canvas not found');
+}
 
+// WebGL2 Context
+const gl = canvas.getContext('webgl2');
+if (!gl) {
+    console.warn('WebGL2 not supported, skipping background animation');
+    canvas.style.display = 'none';
+}
+
+// Initialize noise
+if (typeof noise === 'undefined') {
+    console.warn('Perlin noise library not loaded');
+}
 noise.seed(Math.random());
 
-// render function
-const vs = `#version 300 es
-in vec2 p; in float brightness; in float colorType; uniform float t; uniform float w; uniform float h; out float v_brightness; out float v_colorType;
-void main() {
-    vec2 pos = p*2.0/vec2(w,h)-1.0;
-    gl_Position = vec4(pos,0,1);
-    gl_PointSize = ${size.toFixed(1)};
-    v_brightness = brightness;
-    v_colorType = colorType;
-}`;
-
-const fs = `#version 300 es
-precision mediump float; in float v_brightness; in float v_colorType; out vec4 f;
-void main() { 
-    vec2 coord = gl_PointCoord-0.5;
-    vec3 blue = vec3(0.15, 0.25, 0.45);
-    vec3 gray = vec3(0.1, 0.2, 0.3);
-    vec3 lightBlue = vec3(0.2, 0.4, 0.8);
-    vec3 color;
-    if (v_colorType < 0.5) {
-        color = blue;
-    } else if (v_colorType < 1.5) {
-        color = gray;
-    } else {
-        color = lightBlue;
-    }
-    f = vec4(color * v_brightness, 1);
-}`;
-
-// Compile shaders
-const p = gl.createProgram();
-[vs,fs].forEach((src,i)=>{
-    const s = gl.createShader(i?gl.FRAGMENT_SHADER:gl.VERTEX_SHADER);
-    gl.shaderSource(s,src); gl.compileShader(s); gl.attachShader(p,s);
-});
-gl.linkProgram(p); gl.useProgram(p);
-
-// Generate point data (fixed spacing)
-let d = [], cols = 0, rows = 0;
-
-function generatePoints() {
-    var length = size + spacing;
-    cols = Math.ceil(innerWidth / length) + 1;
-    rows = Math.ceil(innerHeight / length) + 1;
-    d = [];
-    for(let y=0;y<rows;y++) for(let x=0;x<cols;x++) {
-        let rand = Math.random();
-        let colorType;
-        if (rand < 0.3) {
-            colorType = 0.0; // 30% blue
-        } else if (rand < 0.98) {
-            colorType = 1.0; // 68% gray
-        } else {
-            colorType = 2.0; // 2% light blue
-        }
-        d.push(x*length,y*length,1.0,x,y,colorType);
-    }
-}
-
-generatePoints();
-
-// Setup buffer
-const b = gl.createBuffer();
-gl.bindBuffer(gl.ARRAY_BUFFER,b);
-gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(d),gl.STATIC_DRAW);
-const a = gl.getAttribLocation(p,'p');
-gl.enableVertexAttribArray(a);
-gl.vertexAttribPointer(a,2,gl.FLOAT,false,24,0);
-
-const brightnessLoc = gl.getAttribLocation(p, 'brightness');
-gl.enableVertexAttribArray(brightnessLoc);
-gl.vertexAttribPointer(brightnessLoc, 1, gl.FLOAT, false, 24, 8);
-
-const colorTypeLoc = gl.getAttribLocation(p, 'colorType');
-gl.enableVertexAttribArray(colorTypeLoc);
-gl.vertexAttribPointer(colorTypeLoc, 1, gl.FLOAT, false, 24, 20);
-
-function updateBuffer() {
-    gl.bindBuffer(gl.ARRAY_BUFFER,b);
-    gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(d),gl.STATIC_DRAW);
-}
-
-// Sigmoid function
-function sigmoid(x) {
-    return 1 / (1 + Math.exp(-x));
-}
-
-// Scalar potential
-function scalarPotential(x, y, t) {
-    let p1 = noise.perlin3(x, y, t);
-    let p2 = noise.perlin3(x * 1.7 + 5.123, y * 1.7 + 8.456, t * 0.3);
-    return (p1 + p2) * 0.5;
-}
-
-// curlNoise
-function curlNoise(x, y, time, eps = 0.0001) {
-
-    let x1 = scalarPotential(x - eps, y, time);
-    let x2 = scalarPotential(x + eps, y, time);
-    let dy = (x2 - x1) / (2 * eps);
-
-    let y1 = scalarPotential(x, y - eps, time);
-    let y2 = scalarPotential(x, y + eps, time);
-    let dx = (y2 - y1) / (2 * eps);
-
-    return Math.sqrt(dy * dy + dx * dx) / (2 * Math.sqrt(2));
-}
-
-// FBM -1 to 1
-function fbmNoise(x, y, t) {
-    let n = 0;
-    let amp = 1;
-    let freq = 1;
-    let num = 10;
-    let weight = 0
-    for(let i=0;i<num;i++) {
-        n += amp * noise.perlin3(x * freq, y * freq, t * freq);
-        weight += amp;
-        amp *= 0.15;
-        freq *= 15;
-    }
-    return n / weight;
-}
-
-// Render loop
-function render(t) {
-    t*=0.0001;
-    gl.clearColor(0,0,0,1);
-    gl.clear(gl.COLOR_BUFFER_BIT);
-    gl.uniform1f(gl.getUniformLocation(p,'t'),t);
-    gl.uniform1f(gl.getUniformLocation(p,'w'),innerWidth);
-    gl.uniform1f(gl.getUniformLocation(p,'h'),innerHeight);
+// Shader Sources
+const SHADERS = {
+    vertex: `#version 300 es
+        in vec2 p;
+        in float brightness;
+        in float colorType;
+        uniform float t;
+        uniform float w;
+        uniform float h;
+        out float v_brightness;
+        out float v_colorType;
+        void main() {
+            vec2 pos = p * 2.0 / vec2(w, h) - 1.0;
+            gl_Position = vec4(pos, 0, 1);
+            gl_PointSize = ${CONFIG.particle.size.toFixed(1)};
+            v_brightness = brightness;
+            v_colorType = colorType;
+        }`,
     
-    for(let i=0;i<cols*rows;i++) {
-        let gridX = d[i*6+3];
-        let gridY = d[i*6+4];
-        let n = fbmNoise(gridX/freq, gridY/freq, t * speed);
-        let brightness = 0;
-        let breakPoint = fbmNoise(gridX, gridY, t);
-        if (Math.abs(n - breakPoint) > 0.2) {
-            brightness = sigmoid(n * 5);
-        } else {
-            brightness = 0;
-        }
-        d[i*6+2] = brightness;
-    }
-    updateBuffer();
+    fragment: `#version 300 es
+        precision mediump float;
+        in float v_brightness;
+        in float v_colorType;
+        out vec4 f;
+        void main() { 
+            vec3 blue = vec3(0.15, 0.25, 0.45);
+            vec3 gray = vec3(0.1, 0.2, 0.3);
+            vec3 lightBlue = vec3(0.2, 0.4, 0.8);
+            vec3 color;
+            if (v_colorType < 0.5) {
+                color = blue;
+            } else if (v_colorType < 1.5) {
+                color = gray;
+            } else {
+                color = lightBlue;
+            }
+            f = vec4(color * v_brightness, 1);
+        }`
+};
+
+// Compile shaders and create program
+function createShaderProgram(gl, vertexSource, fragmentSource) {
+    const program = gl.createProgram();
     
-    gl.drawArrays(gl.POINTS,0,cols*rows);
+    [vertexSource, fragmentSource].forEach((source, index) => {
+        const type = index === 0 ? gl.VERTEX_SHADER : gl.FRAGMENT_SHADER;
+        const shader = gl.createShader(type);
+        gl.shaderSource(shader, source);
+        gl.compileShader(shader);
+        
+        if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+            console.error('Shader compilation error:', gl.getShaderInfoLog(shader));
+            return null;
+        }
+        
+        gl.attachShader(program, shader);
+    });
+    
+    gl.linkProgram(program);
+    
+    if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+        console.error('Program linking error:', gl.getProgramInfoLog(program));
+        return null;
+    }
+    
+    return program;
+}
+
+// Mathematical functions
+const MathUtils = {
+    sigmoid: (x) => 1 / (1 + Math.exp(-x)),
+    
+    scalarPotential: (x, y, t) => {
+        const p1 = noise.perlin3(x, y, t);
+        const p2 = noise.perlin3(x * 1.7 + 5.123, y * 1.7 + 8.456, t * 0.3);
+        return (p1 + p2) * 0.5;
+    },
+    
+    curlNoise: (x, y, time, eps = 0.0001) => {
+        const x1 = MathUtils.scalarPotential(x - eps, y, time);
+        const x2 = MathUtils.scalarPotential(x + eps, y, time);
+        const dy = (x2 - x1) / (2 * eps);
+        
+        const y1 = MathUtils.scalarPotential(x, y - eps, time);
+        const y2 = MathUtils.scalarPotential(x, y + eps, time);
+        const dx = (y2 - y1) / (2 * eps);
+        
+        return Math.sqrt(dy * dy + dx * dx) / (2 * Math.SQRT2);
+    },
+    
+    fbmNoise: (x, y, t) => {
+        let n = 0;
+        let amp = 1;
+        let freq = 1;
+        let weight = 0;
+        const { octaves, amplitudeDecay, frequencyGrowth } = CONFIG.fbm;
+        
+        for (let i = 0; i < octaves; i++) {
+            n += amp * noise.perlin3(x * freq, y * freq, t * freq);
+            weight += amp;
+            amp *= amplitudeDecay;
+            freq *= frequencyGrowth;
+        }
+        
+        return n / weight;
+    }
+};
+
+// Initialize WebGL program
+const program = createShaderProgram(gl, SHADERS.vertex, SHADERS.fragment);
+if (!program) {
+    throw new Error('Failed to create shader program');
+}
+gl.useProgram(program);
+
+// Particle data management
+class ParticleSystem {
+    constructor() {
+        this.data = [];
+        this.cols = 0;
+        this.rows = 0;
+        this.buffer = gl.createBuffer();
+        this.generatePoints();
+        this.setupAttributes();
+    }
+    
+    generatePoints() {
+        const { size, spacing } = CONFIG.particle;
+        const length = size + spacing;
+        
+        this.cols = Math.ceil(innerWidth / length) + 1;
+        this.rows = Math.ceil(innerHeight / length) + 1;
+        this.data = [];
+        
+        for (let y = 0; y < this.rows; y++) {
+            for (let x = 0; x < this.cols; x++) {
+                const rand = Math.random();
+                let colorType;
+                
+                if (rand < 0.3) {
+                    colorType = 0.0; // 30% blue
+                } else if (rand < 0.98) {
+                    colorType = 1.0; // 68% gray
+                } else {
+                    colorType = 2.0; // 2% light blue
+                }
+                
+                // [x, y, brightness, gridX, gridY, colorType]
+                this.data.push(x * length, y * length, 1.0, x, y, colorType);
+            }
+        }
+    }
+    
+    setupAttributes() {
+        const stride = 24; // 6 floats * 4 bytes
+        
+        gl.bindBuffer(gl.ARRAY_BUFFER, this.buffer);
+        gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(this.data), gl.DYNAMIC_DRAW);
+        
+        // Position attribute
+        const positionLoc = gl.getAttribLocation(program, 'p');
+        gl.enableVertexAttribArray(positionLoc);
+        gl.vertexAttribPointer(positionLoc, 2, gl.FLOAT, false, stride, 0);
+        
+        // Brightness attribute
+        const brightnessLoc = gl.getAttribLocation(program, 'brightness');
+        gl.enableVertexAttribArray(brightnessLoc);
+        gl.vertexAttribPointer(brightnessLoc, 1, gl.FLOAT, false, stride, 8);
+        
+        // Color type attribute
+        const colorTypeLoc = gl.getAttribLocation(program, 'colorType');
+        gl.enableVertexAttribArray(colorTypeLoc);
+        gl.vertexAttribPointer(colorTypeLoc, 1, gl.FLOAT, false, stride, 20);
+    }
+    
+    updateBuffer() {
+        gl.bindBuffer(gl.ARRAY_BUFFER, this.buffer);
+        gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(this.data), gl.DYNAMIC_DRAW);
+    }
+    
+    update(t) {
+        const { frequency, speed } = CONFIG.noise;
+        const time = t * 0.0001;
+        
+        for (let i = 0; i < this.cols * this.rows; i++) {
+            const baseIndex = i * 6;
+            const gridX = this.data[baseIndex + 3];
+            const gridY = this.data[baseIndex + 4];
+            
+            const n = MathUtils.fbmNoise(gridX / frequency, gridY / frequency, time * speed);
+            const breakPoint = MathUtils.fbmNoise(gridX, gridY, time);
+            
+            let brightness = 0;
+            if (Math.abs(n - breakPoint) > 0.2) {
+                brightness = MathUtils.sigmoid(n * 5);
+            }
+            
+            this.data[baseIndex + 2] = brightness;
+        }
+        
+        this.updateBuffer();
+    }
+    
+    draw() {
+        gl.drawArrays(gl.POINTS, 0, this.cols * this.rows);
+    }
+    
+    handleResize() {
+        this.generatePoints();
+        this.updateBuffer();
+    }
+}
+
+// Resize handling
+function resizeCanvas() {
+    const dpr = Math.min(window.devicePixelRatio, 2);
+    canvas.width = innerWidth * dpr;
+    canvas.height = innerHeight * dpr;
+    canvas.style.width = `${innerWidth}px`;
+    canvas.style.height = `${innerHeight}px`;
+    gl.viewport(0, 0, canvas.width, canvas.height);
+}
+
+// Animation loop
+function startAnimation() {
+    const particleSystem = new ParticleSystem();
+    
+    resizeCanvas();
+    
+    const uniforms = {
+        t: gl.getUniformLocation(program, 't'),
+        w: gl.getUniformLocation(program, 'w'),
+        h: gl.getUniformLocation(program, 'h')
+    };
+    
+    function render(timestamp) {
+        gl.clearColor(0, 0, 0, 1);
+        gl.clear(gl.COLOR_BUFFER_BIT);
+        
+        gl.uniform1f(uniforms.t, timestamp * 0.0001);
+        gl.uniform1f(uniforms.w, canvas.width);
+        gl.uniform1f(uniforms.h, canvas.height);
+        
+        particleSystem.update(timestamp);
+        particleSystem.draw();
+        
+        requestAnimationFrame(render);
+    }
+    
     requestAnimationFrame(render);
+    
+    // Handle resize
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            resizeCanvas();
+            particleSystem.handleResize();
+        }, 100);
+    }, { passive: true });
 }
-requestAnimationFrame(render);
 
-// Window resize
-addEventListener('resize',()=>{
-    gl.canvas.width=innerWidth;
-    gl.canvas.height=innerHeight;
-    gl.viewport(0,0,innerWidth,innerHeight);
-    generatePoints();
-    updateBuffer();
-});
+// Start animation when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', startAnimation);
+} else {
+    startAnimation();
+}

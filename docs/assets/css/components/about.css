@@ -1,0 +1,246 @@
+/* ==========================================================================
+   About Page Styles
+   ========================================================================== */
+
+/* Goals Grid
+   -------------------------------------------------------------------------- */
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.goal-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    background: linear-gradient(145deg, rgba(22, 22, 22, 0.6), rgba(17, 17, 17, 0.8));
+    border-radius: var(--default-radius);
+    border: 1px solid var(--border-blue);
+    transition: all 0.3s ease;
+}
+
+.goal-card:hover {
+    border-color: var(--border-blue-medium);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px var(--shadow-blue-soft);
+}
+
+.goal-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.2), rgba(0, 123, 255, 0.05));
+    border: 1px solid var(--border-blue-medium);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-blue);
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.goal-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.goal-content p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* Members Grid
+   -------------------------------------------------------------------------- */
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.member-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: linear-gradient(145deg, rgba(22, 22, 22, 0.6), rgba(17, 17, 17, 0.8));
+    border-radius: var(--default-radius);
+    border: 1px solid var(--border-blue);
+    transition: all 0.3s ease;
+}
+
+.member-card:hover {
+    border-color: var(--border-blue-medium);
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px var(--shadow-blue-soft);
+}
+
+.member-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    flex-shrink: 0;
+}
+
+/* Avatar Color Variants */
+.member-avatar.primary { background: var(--gradient-primary); }
+.member-avatar.blue { background: linear-gradient(135deg, var(--accent-cyan), #00f2fe); }
+.member-avatar.purple { background: var(--gradient-purple); }
+.member-avatar.green { background: var(--gradient-green); }
+.member-avatar.orange { background: linear-gradient(135deg, var(--accent-orange), #e67e22); }
+.member-avatar.pink { background: linear-gradient(135deg, var(--accent-pink), #e84393); }
+.member-avatar.teal { background: linear-gradient(135deg, var(--accent-teal), #16a085); }
+
+.member-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.member-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.member-role {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary-blue);
+    background: rgba(0, 123, 255, 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.member-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.member-id {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.member-id i {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+}
+
+.member-github {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: color 0.2s ease;
+}
+
+.member-github:hover {
+    color: var(--primary-blue);
+}
+
+.member-github i {
+    font-size: 0.9rem;
+}
+
+/* Partners Section
+   -------------------------------------------------------------------------- */
+.partners-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.partner-card {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    background: linear-gradient(145deg, rgba(22, 22, 22, 0.6), rgba(17, 17, 17, 0.8));
+    border-radius: var(--default-radius);
+    border: 1px solid var(--border-blue);
+    transition: all 0.3s ease;
+}
+
+.partner-card:hover {
+    border-color: var(--border-blue-medium);
+    transform: translateY(-4px);
+}
+
+.partner-logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.15), rgba(79, 63, 255, 0.1));
+    border: 1px solid var(--border-blue-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-blue);
+    font-size: 1.75rem;
+    flex-shrink: 0;
+}
+
+.partner-info h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.partner-info p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .goals-grid,
+    .members-grid,
+    .partners-section {
+        grid-template-columns: 1fr;
+    }
+
+    .goal-card,
+    .member-card,
+    .partner-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .member-details {
+        align-items: center;
+    }
+}

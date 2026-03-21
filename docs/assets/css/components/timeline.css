@@ -1,0 +1,205 @@
+/* ==========================================================================
+   Roadmap Timeline
+   ========================================================================== */
+
+.roadmap-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Timeline Phase
+   -------------------------------------------------------------------------- */
+.timeline-phase {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Phase Header - Left side with badge and line */
+.phase-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    width: 60px;
+}
+
+.phase-badge {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    box-shadow: 0 4px 15px var(--shadow-blue-strong);
+    flex-shrink: 0;
+}
+
+.phase-badge.s2 {
+    background: var(--gradient-purple);
+    box-shadow: 0 4px 15px var(--shadow-purple);
+}
+
+.phase-line {
+    flex: 1;
+    width: 3px;
+    min-height: 40px;
+    background: var(--gradient-phase-line);
+    margin-top: 0.75rem;
+    border-radius: 2px;
+}
+
+.phase-line.s2-line {
+    background: var(--gradient-phase-line-purple);
+}
+
+/* Phase Content - Right side */
+.phase-content {
+    flex: 1;
+    padding-top: 0.5rem;
+}
+
+.phase-title-block {
+    margin-bottom: 1.25rem;
+}
+
+.phase-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.phase-subtitle {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+/* Milestones List
+   -------------------------------------------------------------------------- */
+.milestones-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.milestone-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-blue);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.milestone-card:hover {
+    background: rgba(0, 123, 255, 0.06);
+    border-color: var(--border-blue-medium);
+    transform: translateX(4px);
+}
+
+.milestone-card.s2 {
+    border-color: var(--border-purple);
+}
+
+.milestone-card.s2:hover {
+    background: rgba(155, 89, 182, 0.06);
+    border-color: var(--border-purple-medium);
+}
+
+.milestone-icon-wrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(0, 123, 255, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-blue);
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.milestone-card.s2 .milestone-icon-wrap {
+    background: rgba(155, 89, 182, 0.12);
+    color: var(--accent-purple);
+}
+
+.milestone-body {
+    flex: 1;
+}
+
+.milestone-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.35rem;
+}
+
+.milestone-text {
+    font-size: 0.875rem;
+    color: #777;
+    line-height: 1.5;
+}
+
+/* Timeline Completion
+   -------------------------------------------------------------------------- */
+.timeline-completion {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+}
+
+.completion-badge {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--gradient-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px var(--shadow-green);
+    animation: pulse-green 2s infinite;
+}
+
+.completion-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--accent-green);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .timeline-phase {
+        gap: 1rem;
+    }
+
+    .phase-header {
+        width: 48px;
+    }
+
+    .phase-badge {
+        width: 48px;
+        height: 48px;
+        font-size: 1rem;
+    }
+
+    .phase-title {
+        font-size: 1.25rem;
+    }
+
+    .milestone-card {
+        padding: 0.875rem 1rem;
+    }
+}

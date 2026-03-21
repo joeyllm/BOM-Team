@@ -1,7 +1,7 @@
 <div class="index-shadow-bottom">
     <div class="container my-0">
-        <div class="hero is-fullheight-with-navbar my-0">
-            <div class="hero-body p-0">
+        <div class="hero {% if include.fullheight != false %}is-fullheight-with-navbar{% else %}is-medium{% endif %} my-0">
+            <div class="hero-body {% if include.fullheight != false %}p-0{% else %}py-6{% endif %}">
                 <div class="container has-text-left">
                     
                     <!-- Title -->
@@ -20,6 +20,7 @@
                         <span class="subtitle-text">{{ include.description | default: "AI-Powered Weather Forecasting for the Future" }}</span>
                     </div>
                     
+                    {% if include.cta != false %}
                     <!-- CTA -->
                     <div class="hero-cta">
                         <a href="#overview" class="cta-button primary">
@@ -39,6 +40,7 @@
                         </div>
                         <span class="scroll-text">Scroll to explore</span>
                     </div>
+                    {% endif %}
                 </div>
             </div>
         </div>

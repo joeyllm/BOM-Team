@@ -1,0 +1,70 @@
+/* ==========================================================================
+   CSS Variables
+   ========================================================================== */
+:root {
+    /* Typography
+       ---------------------------------------------------------------------- */
+    --title-size: 5rem;
+    --default-radius: 0.75rem;
+
+    /* Primary Colors
+       ---------------------------------------------------------------------- */
+    --primary-blue: #007bff;
+    --secondary-purple: #4f3fff;
+    --accent-purple: #9b59b6;
+    --accent-green: #2ecc71;
+    --accent-teal: #1abc9c;
+    --accent-orange: #f39c12;
+    --accent-pink: #fd79a8;
+    --accent-cyan: #4facfe;
+
+    /* Background Colors
+       ---------------------------------------------------------------------- */
+    --background-color: #111;
+    --background-color-light: #161616;
+    --background-dark: #0a0a0a;
+    --background-darker: #050505;
+
+    /* Text Colors
+       ---------------------------------------------------------------------- */
+    --text-primary: #fff;
+    --text-secondary: #a0a0a0;
+    --text-muted: #888;
+    --text-dim: #666;
+    --text-subtle: rgba(255, 255, 255, 0.5);
+    --text-subtler: rgba(255, 255, 255, 0.6);
+
+    /* Border & Line Colors
+       ---------------------------------------------------------------------- */
+    --line-color: #222;
+    --border-blue: rgba(0, 123, 255, 0.15);
+    --border-blue-light: rgba(0, 123, 255, 0.2);
+    --border-blue-medium: rgba(0, 123, 255, 0.3);
+    --border-blue-strong: rgba(0, 123, 255, 0.4);
+    --border-purple: rgba(155, 89, 182, 0.15);
+    --border-purple-medium: rgba(155, 89, 182, 0.3);
+    --border-white: rgba(255, 255, 255, 0.08);
+    --border-white-light: rgba(255, 255, 255, 0.15);
+
+    /* Shadow Colors
+       ---------------------------------------------------------------------- */
+    --shadow-blue: rgba(79, 63, 255, 0.5);
+    --shadow-blue-soft: rgba(0, 123, 255, 0.15);
+    --shadow-blue-medium: rgba(0, 123, 255, 0.3);
+    --shadow-blue-strong: rgba(0, 123, 255, 0.35);
+    --shadow-purple: rgba(155, 89, 182, 0.35);
+    --shadow-green: rgba(46, 204, 113, 0.4);
+
+    /* Gradient Definitions
+       ---------------------------------------------------------------------- */
+    --gradient-primary: linear-gradient(135deg, var(--primary-blue), var(--secondary-purple));
+    --gradient-purple: linear-gradient(135deg, var(--accent-purple), #8e44ad);
+    --gradient-green: linear-gradient(135deg, var(--accent-green), #27ae60);
+    --gradient-text: linear-gradient(135deg, #fff 0%, var(--text-secondary) 100%);
+    --gradient-text-highlight: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-purple) 50%, var(--accent-purple) 100%);
+    --gradient-line: linear-gradient(90deg, transparent, var(--primary-blue), transparent);
+    --gradient-footer-glow: linear-gradient(90deg, transparent, rgba(0, 123, 255, 0.4), rgba(79, 63, 255, 0.4), rgba(155, 89, 182, 0.4), transparent);
+    --gradient-border-blue: linear-gradient(90deg, transparent, var(--primary-blue), transparent);
+    --gradient-phase-line: linear-gradient(180deg, var(--primary-blue), rgba(0, 123, 255, 0.2));
+    --gradient-phase-line-purple: linear-gradient(180deg, var(--accent-purple), rgba(155, 89, 182, 0.2));
+}
