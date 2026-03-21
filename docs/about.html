@@ -7,7 +7,7 @@ layout: base
 {% include hero.html title="About" subtitle="Our Team" description="Meet the people behind Wind Nowcasting" %}
 
 <div id="about-content" class="background index-shadow-top">
-    <div class="container py-6">
+    <div class="container py-6 is-max-tablet">
         <!-- Project Mission -->
         {% include section-header.html tag="Our Mission" title="Project Goals" description="Building next-generation weather forecasting systems through collaborative research and innovation" extra_class="about-header" %}
 
@@ -32,7 +32,7 @@ layout: base
         <div class="columns is-multiline is-centered mb-6">
             {% for member in site.data.members %}
                 {% assign delay = forloop.index0 | times: 100 %}
-                <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                <div class="column is-6">
                     {% include member-card.html
                         name=member.name
                         role=member.role
@@ -67,7 +67,7 @@ layout: base
                         <i class="fa-solid fa-cloud-sun"></i>
                     </div>
                     <div class="partner-info">
-                        <h4>Bureau of Meteorology</h4>
+                        <h4>The Bureau of Meteorology</h4>
                         <p>Industry partner and data provider</p>
                     </div>
                 </div>
