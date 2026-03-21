@@ -1,25 +1,21 @@
-<nav class="navbar is-fixed-top is-blur" style="background-color: #11111100; backdrop-filter: blur(10px);" role="navigation" aria-label="main navigation">
+<header class="site-header">
+    <div class="header-border"></div>
     <div class="container">
-        <div class="navbar-brand">
-            <div class="navbar-item has-text-weight-bold">
-                <a class="has-text-text" href="{{ site.baseurl }}/">{{ site.title }}</a>
-            </div>
-            <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="nav-menu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
+        <a href="{{ site.baseurl }}/" class="header-logo">
+            <span class="logo-type">{{ site.title }}</span>
+        </a>
+        
+        <nav class="header-nav">
+            {% for item in site.data.nav %}
+                <a href="{{ item.url }}" class="nav-link{% if page.url contains item.url %} active{% endif %}">
+                    {{ item.title }}
+                </a>
+            {% endfor %}
+        </nav>
 
-        <div id="nav-menu" class="navbar-menu">
-            <div class="navbar-end">
-                {% for item in site.data.nav %}
-                    <a class="navbar-item is-tab" href="{{ item.url }}">
-                        {{ item.title }}
-                    </a>
-                {% endfor %}
-            </div>
-        </div>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+        </button>
     </div>
-</nav>
+</header>

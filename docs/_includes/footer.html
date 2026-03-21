@@ -1,7 +1,34 @@
-<footer class="footer">
-    <div class="content has-text-centered">
-        <p>
-            &copy; {{ site.time | date: "%Y" }} All rights reserved.
-        </p>
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <span class="footer-title">{{ site.title }}</span>
+                <p class="footer-desc">Weather forecasting through machine learning research.</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Pages</h4>
+                    <ul>
+                        {% for item in site.data.nav %}
+                            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                <div class="link-group">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/joeyllm/BOM-Team" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.anu.edu.au" target="_blank">ANU</a></li>
+                        <li><a href="http://www.bom.gov.au" target="_blank">Bureau of Meteorology</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+        </div>
     </div>
 </footer>
