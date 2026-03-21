@@ -9,6 +9,7 @@
     --background-color-light: #161616;
     --line-color: #222;
     --primary-blue: #007bff;
+    --shadow-blue: rgba(79, 63, 255, 0.5);
 }
 
 /* Index ============================================================= */
@@ -147,5 +148,14 @@
     box-shadow: none;
     background-color: var(--background-color-light);
     text-align: left;
-    box-shadow: 0 0 0.5rem rgba(79, 63, 255, 0.5);
+    box-shadow: 0 0 0.5rem var(--shadow-blue);
    }
+
+.box-effect {
+    border-radius: var(--default-radius);
+    border: 1px solid var(--primary-blue);
+    background-color: var(--background-color-light);
+    text-align: left;
+    box-shadow: 0 0 0.5rem var(--shadow-blue);
+    padding: 1.25rem;
+}
