@@ -1,34 +1,93 @@
 <footer class="site-footer">
     <div class="container">
         <div class="footer-main">
+            <!-- Brand Section -->
             <div class="footer-brand">
-                <span class="footer-title">{{ site.title }}</span>
-                <p class="footer-desc">Weather forecasting through machine learning research.</p>
+                <div class="footer-logo">
+                    <span class="logo-icon">
+                        <i class="fa-solid fa-wind"></i>
+                    </span>
+                    <span class="footer-title">{{ site.title }}</span>
+                </div>
+                <p class="footer-desc">Weather forecasting through machine learning research. Advancing meteorological prediction with AI-powered nowcasting technology.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/joeyllm/BOM-Team" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.anu.edu.au" target="_blank" class="social-link" aria-label="ANU">
+                        <i class="fa-solid fa-university"></i>
+                    </a>
+                    <a href="http://www.bom.gov.au" target="_blank" class="social-link" aria-label="Bureau of Meteorology">
+                        <i class="fa-solid fa-cloud-sun"></i>
+                    </a>
+                </div>
             </div>
             
+            <!-- Pages Links -->
             <div class="footer-links">
                 <div class="link-group">
-                    <h4>Pages</h4>
+                    <h4>
+                        <i class="fa-solid fa-compass"></i>
+                        Pages
+                    </h4>
                     <ul>
                         {% for item in site.data.nav %}
-                            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                            <li>
+                                <a href="{{ item.url }}">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    {{ item.title }}
+                                </a>
+                            </li>
                         {% endfor %}
                     </ul>
                 </div>
-                
+            </div>
+            
+            <!-- Resources Links -->
+            <div class="footer-links">
                 <div class="link-group">
-                    <h4>Resources</h4>
+                    <h4>
+                        <i class="fa-solid fa-link"></i>
+                        Resources
+                    </h4>
                     <ul>
-                        <li><a href="https://github.com/joeyllm/BOM-Team" target="_blank">GitHub</a></li>
-                        <li><a href="https://www.anu.edu.au" target="_blank">ANU</a></li>
-                        <li><a href="http://www.bom.gov.au" target="_blank">Bureau of Meteorology</a></li>
+                        <li>
+                            <a href="https://github.com/joeyllm/BOM-Team" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                                GitHub Repository
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.anu.edu.au" target="_blank">
+                                <i class="fa-solid fa-university"></i>
+                                ANU
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.bom.gov.au" target="_blank">
+                                <i class="fa-solid fa-cloud-sun"></i>
+                                Bureau of Meteorology
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
         
+        <!-- Footer Bottom -->
         <div class="footer-bottom">
-            <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+            <div class="footer-bottom-content">
+                <div class="footer-legal">
+                    <span class="copyright">&copy; {{ site.time | date: "%Y" }} {{ site.title }}</span>
+                    <span class="separator">|</span>
+                    <span class="tagline">AI-Powered Weather Forecasting</span>
+                </div>
+                <div class="footer-decoration">
+                    <div class="decoration-line"></div>
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="decoration-line"></div>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
