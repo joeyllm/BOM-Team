@@ -855,7 +855,7 @@
 
 .goal-card:hover {
     border-color: rgba(0, 123, 255, 0.3);
-    transform: translateX(8px);
+    transform: translateY(-8px);
     box-shadow: 0 10px 30px rgba(0, 123, 255, 0.1);
 }
 
