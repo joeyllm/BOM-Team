@@ -31,41 +31,47 @@ layout: plain
         <!-- Project Roadmap -->
         {% include section-header.html title="Project Roadmap" description="A structured approach to building the future of weather forecasting" extra_class="roadmap-header" %}
 
-        <div class="roadmap-container">
+        <div class="roadmap-timeline">
             {% for semester in site.data.roadmap.semesters %}
-                {% capture milestones_content %}
-                    {% for milestone in semester.milestones %}
-                        {% include milestone-item.html
-                            marker_class=milestone.marker_class
-                            icon=milestone.icon
-                            title=milestone.title
-                            description=milestone.description
-                        %}
-                    {% endfor %}
-                {% endcapture %}
-                {% include semester-block.html
-                    badge=semester.badge
-                    badge_class=semester.badge_class
-                    title=semester.title
-                    subtitle=semester.subtitle
-                    line_class=semester.line_class
-                    content=milestones_content
-                %}
-                {% unless forloop.last %}
-                    <!-- Connection Arrow -->
-                    <div class="semester-connector">
-                        <div class="connector-line"></div>
-                        <i class="fa-solid fa-chevron-down"></i>
+            <div class="timeline-phase">
+                <!-- Phase Header with Line -->
+                <div class="phase-header">
+                    <div class="phase-badge {% if semester.badge_class %}{{ semester.badge_class }}{% endif %}">
+                        <span>{{ semester.badge }}</span>
                     </div>
-                {% endunless %}
+                    <div class="phase-line {% if semester.line_class %}{{ semester.line_class }}{% endif %}"></div>
+                </div>
+                
+                <!-- Phase Content -->
+                <div class="phase-content">
+                    <div class="phase-title-block">
+                        <h3 class="phase-title">{{ semester.title }}</h3>
+                        <p class="phase-subtitle">{{ semester.subtitle }}</p>
+                    </div>
+                    
+                    <div class="milestones-list">
+                        {% for milestone in semester.milestones %}
+                        <div class="milestone-card {% if milestone.marker_class %}{{ milestone.marker_class }}{% endif %}">
+                            <div class="milestone-icon-wrap">
+                                <i class="fa-solid {{ milestone.icon }}"></i>
+                            </div>
+                            <div class="milestone-body">
+                                <h4 class="milestone-heading">{{ milestone.title }}</h4>
+                                <p class="milestone-text">{{ milestone.description }}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
             {% endfor %}
-
-            <!-- Project End -->
-            <div class="project-end">
-                <div class="end-badge">
+            
+            <!-- Timeline Completion -->
+            <div class="timeline-completion">
+                <div class="completion-badge">
                     <i class="fa-solid fa-flag-checkered"></i>
                 </div>
-                <span class="end-text">Project Complete</span>
+                <span class="completion-text">Project Complete</span>
             </div>
         </div>
     </div>
