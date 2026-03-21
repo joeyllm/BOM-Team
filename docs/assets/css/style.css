@@ -3,7 +3,8 @@
 :root {
     --title-size: 5rem;
 
-    --background-color: #070707;
+    --background-color: #111;
+    --primary-blue: #007bff;
 }
 
 /* Index ============================================================= */
@@ -51,81 +52,86 @@
 
 /* Timeline ============================================================= */
 .timeline {
-  position: relative;
-  padding: 2rem 0;
+    position: relative;
+    padding: 2rem 0;
 }
 
 /* Central axis line */
 .timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  background-color: #ccc;
-  transform: translateX(-50%);
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background-color: var(--primary-blue);
+    transform: translateX(-50%);
+}
+
+/* Timeline stage */
+.timeline-stage {
+    text-align: center;
 }
 
 .timeline-item {
-  position: relative;
-  margin-bottom: 2rem;
-  width: 50%;
-  padding: 0 2rem;
-  box-sizing: border-box;
+    position: relative;
+    margin-bottom: 2rem;
+    width: 50%;
+    box-sizing: border-box;
 }
 
 /* Odd items on the left */
 .timeline-item:nth-child(odd) {
-  left: 0;
-  text-align: right;
+    left: 0;
+    text-align: right;
+    padding-right: 4rem;
 }
 
 /* Even items on the right */
 .timeline-item:nth-child(even) {
-  left: 50%;
-  text-align: left;
+    left: 50%;
+    text-align: left;
+    padding-left: 4rem;
 }
 
 /* Timeline node marker (dot) */
 .timeline-item::after {
-  content: '';
-  position: absolute;
-  top: 0.5rem;
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  border: 2px solid #ccc;
-  border-radius: 50%;
-  z-index: 2;
+    content: '';
+    position: absolute;
+    top: 0.5rem;
+    width: 3rem;
+    height: 0rem;
+    border: 1.5px dashed var(--primary-blue);
+    z-index: 2;
+    margin: 0 0.4rem;
 }
 
 /* Odd items: dot on the right */
 .timeline-item:nth-child(odd)::after {
-  right: -6px;
+    right: -6px;
 }
 
 /* Even items: dot on the left */
 .timeline-item:nth-child(even)::after {
-  left: -6px;
+    left: -6px;
 }
 
 /* Responsive: single column layout on small screens */
 @media (max-width: 768px) {
-  .timeline::before {
-    left: 20px;
-  }
+    .timeline::before {
+        left: 20px;
+    }
 
-  .timeline-item {
-    width: 100%;
-    left: 0 !important;
-    padding-left: 50px;
-    padding-right: 0;
-    text-align: left !important;
-  }
+    .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        padding-left: 50px;
+        padding-right: 0;
+        text-align: left !important;
+    }
 
-  .timeline-item::after {
-    left: 14px !important;
-    right: auto !important;
-  }
+    .timeline-item::after {
+        left: 14px !important;
+        right: auto !important;
+    }
 }
