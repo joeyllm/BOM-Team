@@ -1775,7 +1775,8 @@
 /* Post Article Page ================================================ */
 .post-page {
     background: linear-gradient(180deg, var(--background-color) 0%, #0a0a0a 100%);
-    min-height: calc(100vh - 60px);
+    min-height: 100vh;
+    padding-top: 60px;
 }
 
 .post-article {
