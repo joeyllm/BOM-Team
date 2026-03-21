@@ -3,7 +3,11 @@
 :root {
     --title-size: 5rem;
 
+    --default-radius: 0.75rem;
+
     --background-color: #111;
+    --background-color-light: #161616;
+    --line-color: #222;
     --primary-blue: #007bff;
 }
 
@@ -135,3 +139,13 @@
         right: auto !important;
     }
 }
+
+/* Override default Bulma styles ====================================== */
+.box {
+    border-radius: var(--default-radius);
+    border: 1px solid var(--primary-blue);
+    box-shadow: none;
+    background-color: var(--background-color-light);
+    text-align: left;
+    box-shadow: 0 0 0.5rem rgba(79, 63, 255, 0.5);
+   }
