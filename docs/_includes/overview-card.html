@@ -1,11 +1,11 @@
 <div class="overview-card" data-aos="fade-up" data-aos-delay="{{ include.delay | default: 0 }}">
     <div class="card-glow"></div>
-    <div class="card-content">
-        <div class="card-icon {{ include.icon_class }}">
+    <div class="card-content p-5">
+        <div class="card-icon {{ include.icon_class }} mb-4">
             <i class="fa-solid {{ include.icon }}"></i>
         </div>
-        <h3 class="card-title">{{ include.title }}</h3>
-        <p class="card-text">{{ include.description }}</p>
+        <h3 class="card-title mb-3">{{ include.title }}</h3>
+        <p class="card-text mb-4">{{ include.description }}</p>
         <div class="card-stats">
             <span class="stat-item"><i class="fa-solid {{ include.stat_icon }}"></i> {{ include.stat_text }}</span>
         </div>

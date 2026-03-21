@@ -11,18 +11,20 @@ layout: plain
         <!-- Project Overview -->
         {% include section-header.html tag="What We Do" title="Project Overview" description="Building next-generation weather forecasting systems through data-driven machine learning" %}
 
-        <div class="overview-grid">
+        <div class="columns is-multiline mb-6">
             {% for card in site.data.overview.cards %}
                 {% assign delay = forloop.index0 | times: 100 %}
-                {% include overview-card.html
-                    delay=delay
-                    icon_class=card.icon_class
-                    icon=card.icon
-                    title=card.title
-                    description=card.description
-                    stat_icon=card.stat_icon
-                    stat_text=card.stat_text
-                %}
+                <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                    {% include overview-card.html
+                        delay=delay
+                        icon_class=card.icon_class
+                        icon=card.icon
+                        title=card.title
+                        description=card.description
+                        stat_icon=card.stat_icon
+                        stat_text=card.stat_text
+                    %}
+                </div>
             {% endfor %}
         </div>
 
