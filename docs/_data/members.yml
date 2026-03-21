@@ -1,0 +1,56 @@
+- name: Matthew Altenburg
+  role: Stakeholder
+  id: "1138167"
+  email: matthew.altenburg@anu.edu.au
+  github: matthewaltenburg
+  phone: "0430 378 887"
+  avatar: M
+  color: primary
+
+- name: Adam Ahammed Basheer
+  role: Student
+  id: u7628910
+  email: u7628910@anu.edu.au
+  github: adambashbash
+  avatar: A
+  color: blue
+
+- name: Dylan Han
+  role: Student
+  id: u8002343
+  email: Zhaokun.Han@anu.edu.au
+  github: dylanlovescode
+  avatar: D
+  color: purple
+
+- name: Junling Yu
+  role: Student
+  id: u8013765
+  email: Junling.Yu@anu.edu.au
+  github: Codfish36
+  avatar: J
+  color: green
+
+- name: Kecheng Zhang
+  role: Student
+  id: u7244282
+  email: Kecheng.Zhang@anu.edu.au
+  github: kechengzhang28
+  avatar: K
+  color: orange
+
+- name: Olivia Maftukhaturrizqoh
+  role: Student
+  id: u7947359
+  email: Olivia.Maftukhaturrizqoh@anu.edu.au
+  github: olivia-m96
+  avatar: O
+  color: pink
+
+- name: Lifan Zhao
+  role: Tutor
+  id: —
+  email: Lifan.Zhao@anu.edu.au
+  github: ""
+  avatar: L
+  color: teal

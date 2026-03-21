@@ -12,36 +12,51 @@ layout: plain
         {% include section-header.html tag="What We Do" title="Project Overview" description="Building next-generation weather forecasting systems through data-driven machine learning" %}
 
         <div class="overview-grid">
-            {% include overview-card.html delay=0 icon_class="data-icon" icon="fa-database" title="Data" description="Ingesting and cleaning forecasting data from weather and observational datasets. Exploring, validating, and preparing high-quality datasets for machine learning." stat_icon="fa-layer-group" stat_text="Multi-source" %}
-            {% include overview-card.html delay=100 icon_class="model-icon" icon="fa-brain" title="Model" description="Building baseline nowcasting models and refining forecast modelling workflows. Experimenting with regional forecasting and severe-weather nowcasting systems." stat_icon="fa-microchip" stat_text="GPU-Powered" %}
-            {% include overview-card.html delay=200 icon_class="eval-icon" icon="fa-chart-line" title="Evaluation" description="Developing evaluation and validation pipelines. Producing forecast outputs and performance reports with hands-on operational forecasting experience." stat_icon="fa-check-double" stat_text="Validated" %}
+            {% for card in site.data.overview.cards %}
+                {% assign delay = forloop.index0 | times: 100 %}
+                {% include overview-card.html
+                    delay=delay
+                    icon_class=card.icon_class
+                    icon=card.icon
+                    title=card.title
+                    description=card.description
+                    stat_icon=card.stat_icon
+                    stat_text=card.stat_text
+                %}
+            {% endfor %}
         </div>
 
         <!-- Project Roadmap -->
         {% include section-header.html tag="Our Journey" title="Project Roadmap" description="A structured approach to building the future of weather forecasting" extra_class="roadmap-header" %}
 
         <div class="roadmap-container">
-            <!-- Semester 1 -->
-            {% capture s1_milestones %}
-                {% include milestone-item.html icon="fa-server" title="Infrastructure Setup" description="Set up GPU compute infrastructure, Jupyter Notebook environments, and data engineering workflows on remote servers." %}
-                {% include milestone-item.html icon="fa-broom" title="Data Preparation" description="Explore weather and observational datasets, validate source quality, clean and normalize records to produce high-quality validated datasets for machine learning." %}
-                {% include milestone-item.html icon="fa-magnifying-glass-chart" title="Baseline Analysis" description="Build baseline analytical and predictive models to analyze spatial coverage, temporal patterns, and metadata to organize large datasets." %}
-            {% endcapture %}
-            {% include semester-block.html badge="S1" title="Semester 1" subtitle="Foundation & Data" content=s1_milestones %}
-
-            <!-- Connection Arrow -->
-            <div class="semester-connector">
-                <div class="connector-line"></div>
-                <i class="fa-solid fa-chevron-down"></i>
-            </div>
-
-            <!-- Semester 2 -->
-            {% capture s2_milestones %}
-                {% include milestone-item.html marker_class="s2" icon="fa-wind" title="Forecast Modelling" description="Build and refine nowcasting models using prepared datasets. Experiment with regional forecasting and rainfall or severe-weather nowcasting workflows." %}
-                {% include milestone-item.html marker_class="s2" icon="fa-scale-balanced" title="Model Evaluation" description="Develop domain-specific forecast evaluation pipelines and understand how datasets shape forecast behavior." %}
-                {% include milestone-item.html marker_class="s2" icon="fa-file-contract" title="Performance Reports" description="Produce forecast outputs and performance reports. Execute large training jobs on dedicated GPU servers and A100 clusters." %}
-            {% endcapture %}
-            {% include semester-block.html badge="S2" badge_class="s2" title="Semester 2" subtitle="Modeling & Evaluation" line_class="s2-line" content=s2_milestones %}
+            {% for semester in site.data.roadmap.semesters %}
+                {% capture milestones_content %}
+                    {% for milestone in semester.milestones %}
+                        {% include milestone-item.html
+                            marker_class=milestone.marker_class
+                            icon=milestone.icon
+                            title=milestone.title
+                            description=milestone.description
+                        %}
+                    {% endfor %}
+                {% endcapture %}
+                {% include semester-block.html
+                    badge=semester.badge
+                    badge_class=semester.badge_class
+                    title=semester.title
+                    subtitle=semester.subtitle
+                    line_class=semester.line_class
+                    content=milestones_content
+                %}
+                {% unless forloop.last %}
+                    <!-- Connection Arrow -->
+                    <div class="semester-connector">
+                        <div class="connector-line"></div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                {% endunless %}
+            {% endfor %}
 
             <!-- Project End -->
             <div class="project-end">

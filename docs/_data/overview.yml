@@ -1,0 +1,21 @@
+cards:
+  - icon_class: "data-icon"
+    icon: "fa-database"
+    title: "Data"
+    description: "Ingesting and cleaning forecasting data from weather and observational datasets. Exploring, validating, and preparing high-quality datasets for machine learning."
+    stat_icon: "fa-layer-group"
+    stat_text: "Multi-source"
+
+  - icon_class: "model-icon"
+    icon: "fa-brain"
+    title: "Model"
+    description: "Building baseline nowcasting models and refining forecast modelling workflows. Experimenting with regional forecasting and severe-weather nowcasting systems."
+    stat_icon: "fa-microchip"
+    stat_text: "GPU-Powered"
+
+  - icon_class: "eval-icon"
+    icon: "fa-chart-line"
+    title: "Evaluation"
+    description: "Developing evaluation and validation pipelines. Producing forecast outputs and performance reports with hands-on operational forecasting experience."
+    stat_icon: "fa-check-double"
+    stat_text: "Validated"

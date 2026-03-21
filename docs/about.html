@@ -1,3 +1,63 @@
 ---
 layout: base
 ---
+
+<canvas id="index-background" style="position: fixed;"></canvas>
+
+{% include hero.html title="About" subtitle="Our Team" description="Meet the people behind Wind Nowcasting" %}
+
+<div id="about-content" class="background index-shadow-top">
+    <div class="container py-6">
+        <!-- Project Mission -->
+        {% include section-header.html tag="Our Mission" title="Project Goals" description="Building next-generation weather forecasting systems through collaborative research and innovation" extra_class="about-header" %}
+
+        <div class="goals-grid">
+            {% include goal-card.html delay=0 icon="fa-database" title="Data Workflows" description="Build workflows for ingesting and cleaning forecasting data from multiple weather and observational datasets" %}
+            {% include goal-card.html delay=100 icon="fa-brain" title="Nowcasting Models" description="Create baseline nowcasting models for regional forecasting and severe-weather prediction" %}
+            {% include goal-card.html delay=200 icon="fa-chart-bar" title="Evaluation Pipelines" description="Develop evaluation and validation pipelines to assess forecast accuracy and performance" %}
+            {% include goal-card.html delay=300 icon="fa-file-alt" title="Performance Reports" description="Produce forecast outputs and performance reports with hands-on operational forecasting experience" %}
+        </div>
+
+        <!-- Team Members -->
+        {% include section-header.html tag="The Team" title="Meet Our Members" description="A dedicated group of researchers and students working together" extra_class="team-header" %}
+
+        <div class="members-grid">
+            {% for member in site.data.members %}
+                {% assign delay = forloop.index0 | times: 100 %}
+                {% include member-card.html
+                    name=member.name
+                    role=member.role
+                    id=member.id
+                    github=member.github
+                    avatar=member.avatar
+                    color=member.color
+                    delay=delay
+                %}
+            {% endfor %}
+        </div>
+
+        <!-- Project Info -->
+        {% include section-header.html tag="Collaboration" title="Academic Partners" description="This project is conducted in collaboration with" extra_class="partners-header" %}
+
+        <div class="partners-section">
+            <div class="partner-card" data-aos="fade-up">
+                <div class="partner-logo">
+                    <i class="fa-solid fa-university"></i>
+                </div>
+                <div class="partner-info">
+                    <h4>Australian National University</h4>
+                    <p>Research and academic supervision</p>
+                </div>
+            </div>
+            <div class="partner-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="partner-logo">
+                    <i class="fa-solid fa-cloud-sun"></i>
+                </div>
+                <div class="partner-info">
+                    <h4>Bureau of Meteorology</h4>
+                    <p>Industry partner and data provider</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

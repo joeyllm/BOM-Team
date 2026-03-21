@@ -1,0 +1,17 @@
+<div class="member-card" data-aos="fade-up" data-aos-delay="{{ include.delay | default: 0 }}">
+    <div class="member-avatar {{ include.color }}">
+        <span>{{ include.avatar }}</span>
+    </div>
+    <div class="member-info">
+        <h3 class="member-name">{{ include.name }}</h3>
+        <span class="member-role">{{ include.role }}</span>
+        <div class="member-details">
+            <span class="member-id"><i class="fa-solid fa-id-card"></i> {{ include.id }}</span>
+            {% if include.github != "" %}
+            <a href="https://github.com/{{ include.github }}" class="member-github" target="_blank">
+                <i class="fa-brands fa-github"></i> {{ include.github }}
+            </a>
+            {% endif %}
+        </div>
+    </div>
+</div>
