@@ -7,7 +7,7 @@
         
         <nav class="header-nav">
             {% for item in site.data.nav %}
-                <a href="{{ item.url }}" class="nav-link{% if page.url contains item.url %} active{% endif %}">
+                <a href="{{ item.url | relative_url }}" class="nav-link{% if page.url contains item.url %} active{% endif %}">
                     {{ item.title }}
                 </a>
             {% endfor %}
