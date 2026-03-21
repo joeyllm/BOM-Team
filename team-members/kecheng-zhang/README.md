@@ -42,7 +42,7 @@ Focused on AI/ML, also interested in HCI.
 ## 🧠 Interests / Skills
 
 - Programming: Python, Java, JavaScript
-- AI/ML: Deep Learning, Pysics informed AI/ML.
+- AI/ML: Deep Learning, Physics informed AI/ML.
 - Design: UI/UX, Web Design
 
 ---
