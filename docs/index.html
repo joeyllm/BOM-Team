@@ -9,7 +9,7 @@ layout: plain
 <div id="overview" class="background index-shadow-top">
     <div class="container py-6">
         <!-- Project Overview -->
-        {% include section-header.html tag="What We Do" title="Project Overview" description="Building next-generation weather forecasting systems through data-driven machine learning" %}
+        {% include section-header.html title="Project Overview" description="Building next-generation weather forecasting systems through data-driven machine learning" %}
 
         <div class="columns is-multiline mb-6">
             {% for card in site.data.overview.cards %}
@@ -29,7 +29,7 @@ layout: plain
         </div>
 
         <!-- Project Roadmap -->
-        {% include section-header.html tag="Our Journey" title="Project Roadmap" description="A structured approach to building the future of weather forecasting" extra_class="roadmap-header" %}
+        {% include section-header.html title="Project Roadmap" description="A structured approach to building the future of weather forecasting" extra_class="roadmap-header" %}
 
         <div class="roadmap-container">
             {% for semester in site.data.roadmap.semesters %}
