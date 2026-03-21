@@ -19,7 +19,7 @@ layout: plain
 
 
 <div class="background index-shadow-top">
-    <div class="container is-max-tablet py-6">
+    <div class="container py-6">
         <!-- Project Overview -->
         <div class="title mt-6">Project Overview</div>
 
@@ -44,10 +44,16 @@ layout: plain
         </div>
 
         <div class="title mt-6">Project Roadmap</div>
+        <!-- Semester 1 -->
         <div class="timeline-stage my-3">
-            <div class="title is-5">Semester 1</div>
+            <div class="title is-5 mb-1">Semester 1</div>
+            <i class="fa-solid fa-caret-down"></i>
         </div>
         <div class="timeline has-text-text">
+            <div class="timeline-item">
+                <div class="title is-6">Infrastructure Setup</div>
+                <div class="box">Set up GPU compute infrastructure, Jupyter Notebook environments, and data engineering workflows on remote servers.</div>
+            </div>
             <div class="timeline-item">
                 <div class="title is-6">Data Preparation</div>
                 <div class="box">Explore weather and observational datasets, validate source quality, clean and normalize records to produce high-quality validated datasets for machine learning.</div>
@@ -56,13 +62,12 @@ layout: plain
                 <div class="title is-6">Baseline Analysis</div>
                 <div class="box">Build baseline analytical and predictive models to analyze spatial coverage, temporal patterns, and metadata to organize large datasets.</div>
             </div>
-            <div class="timeline-item">
-                <div class="title is-6">Infrastructure Setup</div>
-                <div class="box">Set up GPU compute infrastructure, Jupyter Notebook environments, and data engineering workflows on remote servers.</div>
-            </div>
         </div>
+        <!-- Semester 2 -->
         <div class="timeline-stage my-3">
-            <div class="title is-5">Semester 2</div>
+            <i class="fa-solid fa-caret-up"></i>
+            <div class="title is-5 mb-1">Semester 2</div>
+            <i class="fa-solid fa-caret-down"></i>
         </div>
         <div class="timeline has-text-text">
             <div class="timeline-item hide" style="display: none;"></div>
@@ -80,7 +85,8 @@ layout: plain
             </div>
         </div>
         <div class="timeline-stage my-3">
-            <div class="title is-5">Project End</div>
+            <i class="fa-solid fa-caret-up"></i>
+            <div class="title is-5 mt-0">Project End</div>
         </div>
 
     </div>

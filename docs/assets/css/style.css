@@ -121,6 +121,11 @@
     left: -6px;
 }
 
+/* stage icons */
+.timeline-stage i {
+    color: var(--primary-blue);
+}
+
 /* Responsive: single column layout on small screens */
 @media (max-width: 768px) {
     .timeline::before {
