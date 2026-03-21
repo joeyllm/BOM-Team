@@ -283,8 +283,8 @@ function startAnimation() {
         gl.clear(gl.COLOR_BUFFER_BIT);
         
         gl.uniform1f(uniforms.t, timestamp * 0.0001);
-        gl.uniform1f(uniforms.w, canvas.width);
-        gl.uniform1f(uniforms.h, canvas.height);
+        gl.uniform1f(uniforms.w, canvas.clientWidth);
+        gl.uniform1f(uniforms.h, canvas.clientHeight);
         
         particleSystem.update(timestamp);
         particleSystem.draw();
