@@ -1,0 +1,13 @@
+<div class="semester-block">
+    <div class="semester-header">
+        <div class="semester-badge{% if include.badge_class %} {{ include.badge_class }}{% endif %}">{{ include.badge }}</div>
+        <div class="semester-info">
+            <h3 class="semester-title">{{ include.title }}</h3>
+            <span class="semester-subtitle">{{ include.subtitle }}</span>
+        </div>
+        <div class="semester-line{% if include.line_class %} {{ include.line_class }}{% endif %}"></div>
+    </div>
+    <div class="milestone-list">
+        {{ include.content }}
+    </div>
+</div>
