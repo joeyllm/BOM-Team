@@ -3,8 +3,48 @@
         <div class="hero is-fullheight-with-navbar my-0">
             <div class="hero-body p-0">
                 <div class="container has-text-left">
-                    <div class="title index-title">{{ include.title | default: "Wind Nowcasting" }}</div>
-                    <div class="subtitle index-subtitle">{{ include.subtitle | default: "Tech Launcher Project" }}</div>
+                    
+                    <!-- Tag -->
+                    <div class="hero-tag">
+                        <span class="tag-icon"><i class="fa-solid fa-wind"></i></span>
+                        <span class="tag-text">Tech Launcher 2026</span>
+                    </div>
+                    
+                    <!-- Title -->
+                    <div class="hero-title-wrapper">
+                        <h1 class="title index-title">
+                            <span class="title-line">{{ include.title | default: "Wind" }}</span>
+                            <span class="title-line highlight">{{ include.subtitle | default: "Nowcasting" }}</span>
+                        </h1>
+                        <div class="title-underline">
+                            <div class="underline-glow"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Subtitle -->
+                    <div class="subtitle index-subtitle">
+                        <span class="subtitle-text">{{ include.description | default: "AI-Powered Weather Forecasting for the Future" }}</span>
+                    </div>
+                    
+                    <!-- CTA -->
+                    <div class="hero-cta">
+                        <a href="#overview" class="cta-button primary">
+                            <span>Explore Project</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="https://github.com/joeyllm/BOM-Team/tree/main" class="cta-button secondary" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            <span>View on GitHub</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Scroll Indicator -->
+                    <div class="scroll-indicator">
+                        <div class="scroll-mouse">
+                            <div class="scroll-wheel"></div>
+                        </div>
+                        <span class="scroll-text">Scroll to explore</span>
+                    </div>
                 </div>
             </div>
         </div>
