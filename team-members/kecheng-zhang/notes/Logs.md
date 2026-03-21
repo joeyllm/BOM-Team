@@ -14,4 +14,4 @@ Libraries include Three.js, Two.js, and Anime.js have been tested in the past fe
 
 The animation uses Perlin Noise + FBM to generate the effect of a wind field. The idea is to combine the activated neurons (blue dots) of the neural network with the wind field to create a dynamic effect that fits the theme of the project.
 
-In addition, I've been working on the architecture of the whole application. I think Electron + React + Pytorch + FastAPI should be nice.
+In addition, I've been doing research on the architecture of the whole application. I think Electron + React + Pytorch + FastAPI should be nice.
