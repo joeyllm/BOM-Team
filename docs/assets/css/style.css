@@ -1825,13 +1825,171 @@
 }
 
 .post-content-full {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.125rem;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.82);
+    letter-spacing: 0.01em;
 }
 
 .post-content-full p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
+}
+
+/* Headings - Minimal */
+.post-content-full h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    margin: 3rem 0 1.25rem 0;
+    letter-spacing: -0.02em;
+}
+
+.post-content-full h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 2.25rem 0 1rem 0;
+    letter-spacing: -0.01em;
+}
+
+.post-content-full h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 1.75rem 0 0.75rem 0;
+}
+
+/* Lists - Clean */
+.post-content-full ul,
+.post-content-full ol {
+    margin: 1.25rem 0 1.75rem 0;
+    padding-left: 1.75rem;
+}
+
+.post-content-full li {
+    margin-bottom: 0.625rem;
+}
+
+.post-content-full ul ul,
+.post-content-full ol ol,
+.post-content-full ul ol,
+.post-content-full ol ul {
+    margin: 0.625rem 0;
+}
+
+/* Tables - Minimal */
+.post-content-full table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 1rem;
+}
+
+.post-content-full thead {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.post-content-full th {
+    padding: 0.875rem 1rem;
+    text-align: left;
+    font-weight: 500;
+    color: #fff;
+}
+
+.post-content-full td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.post-content-full tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Code - Subtle */
+.post-content-full code {
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+    font-size: 0.875em;
+}
+
+.post-content-full pre {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    padding: 1.25rem 1.5rem;
+    margin: 2rem 0;
+    overflow-x: auto;
+}
+
+.post-content-full pre code {
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+/* Blockquotes - Simple */
+.post-content-full blockquote {
+    margin: 2rem 0;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+    font-style: normal;
+}
+
+.post-content-full blockquote p {
+    margin: 0;
+}
+
+/* Horizontal Rule - Minimal */
+.post-content-full hr {
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 3rem 0;
+}
+
+/* Text Formatting */
+.post-content-full strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+.post-content-full em {
+    color: rgba(255, 255, 255, 0.9);
+    font-style: italic;
+}
+
+/* Links - Underline style */
+.post-content-full a {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.3);
+    text-underline-offset: 0.2em;
+    transition: text-decoration-color 0.2s ease;
+}
+
+.post-content-full a:hover {
+    text-decoration-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Images - Clean */
+.post-content-full img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 2rem 0;
+}
+
+/* Task Lists */
+.post-content-full input[type="checkbox"] {
+    accent-color: rgba(255, 255, 255, 0.6);
+    margin-right: 0.5rem;
 }
 
 .post-footer {
