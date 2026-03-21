@@ -74,5 +74,23 @@ layout: plain
                 <span class="completion-text">Project Complete</span>
             </div>
         </div>
+
+        <!-- Project Goals -->
+        {% include section-header.html title="Project Goals" description="Building next-generation weather forecasting systems through collaborative research and innovation" extra_class="about-header" %}
+
+        <div class="columns is-multiline is-centered mb-6">
+            <div class="column is-5-desktop is-12-mobile">
+                {% include goal-card.html delay=0 icon="fa-database" title="Data Workflows" description="Build workflows for ingesting and cleaning forecasting data from multiple weather and observational datasets" %}
+            </div>
+            <div class="column is-5-desktop is-12-mobile">
+                {% include goal-card.html delay=100 icon="fa-brain" title="Nowcasting Models" description="Create baseline nowcasting models for regional forecasting and severe-weather prediction" %}
+            </div>
+            <div class="column is-5-desktop is-12-mobile">
+                {% include goal-card.html delay=200 icon="fa-chart-bar" title="Evaluation Pipelines" description="Develop evaluation and validation pipelines to assess forecast accuracy and performance" %}
+            </div>
+            <div class="column is-5-desktop is-12-mobile">
+                {% include goal-card.html delay=300 icon="fa-file-alt" title="Performance Reports" description="Produce forecast outputs and performance reports with hands-on operational forecasting experience" %}
+            </div>
+        </div>
     </div>
 </div>
