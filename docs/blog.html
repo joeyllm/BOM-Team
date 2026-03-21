@@ -1,0 +1,40 @@
+---
+layout: base
+---
+
+<canvas id="index-background" style="position: fixed;"></canvas>
+
+{% include hero2.html title="Blog" subtitle="Updates" description="Latest news and progress from our team" %}
+
+<div id="blog-content" class="background index-shadow-top">
+    <div class="container py-6 is-max-tablet">
+        {% include section-header.html tag="Posts" title="All Posts" description="Browse through our research updates" %}
+
+        <div class="posts-list">
+            {% for post in site.posts %}
+                <div class="post-item" data-aos="fade-up" data-aos-delay="{{ forloop.index0 | times: 100 }}">
+                    <div class="post-date">
+                        <span class="post-date-day">{{ post.date | date: "%d" }}</span>
+                        <span class="post-date-month">{{ post.date | date: "%b %Y" }}</span>
+                    </div>
+                    <div class="post-body">
+                        <h3 class="post-title">
+                            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                        </h3>
+                        <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 150 }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        {% if site.posts.size == 0 %}
+        <div class="empty-posts has-text-centered py-6" data-aos="fade-up">
+            <div class="empty-icon mb-4">
+                <i class="fa-solid fa-pen-nib"></i>
+            </div>
+            <h3 class="empty-title">No Posts Yet</h3>
+            <p class="empty-desc">Stay tuned for upcoming updates!</p>
+        </div>
+        {% endif %}
+    </div>
+</div>
