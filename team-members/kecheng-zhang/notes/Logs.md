@@ -1,0 +1,15 @@
+# Daily Logs
+
+This log belongs to Kecheng Zhang.
+
+## Week 1
+
+Not much of the ML part of the project is done this week. I basically spent most of the time on the website. 
+
+### 2026-03-21
+
+The website is built based on GitHub Pages and Jekyll.
+
+Libraries include Three.js, Two.js, and Anime.js have been tested in the past few days to make a good background animation. It has been a headache, so finally I used just basic WebGL with the help of AI.
+
+The animation uses Perlin Noise + FBM to generate the effect of a wind field. The idea is to combine the activated neurons (blue dots) of the neural network with the wind field to create a dynamic effect that fits the theme of the project.
