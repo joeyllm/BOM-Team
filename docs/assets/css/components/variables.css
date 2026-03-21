@@ -7,17 +7,17 @@
     --title-size: 5rem;
     --default-radius: 0.75rem;
 
-    /* Primary Colors - Unified Palette
+    /* Primary Colors - Refined Palette
        ---------------------------------------------------------------------- */
-    --primary: #007bff;
+    --primary: #3b82f6;
     --secondary: #6366f1;
-    --accent: #8b5cf6;
+    --accent: #a855f7;
     --success: #22c55e;
 
-    /* Background Colors
+    /* Background Colors - Warmer Dark
        ---------------------------------------------------------------------- */
-    --background-color: #111;
-    --background-color-light: #161616;
+    --background-color: #0f0f0f;
+    --background-color-light: #181818;
     --background-dark: #0a0a0a;
     --background-darker: #050505;
 
@@ -30,44 +30,44 @@
     --text-subtle: rgba(255, 255, 255, 0.5);
     --text-subtler: rgba(255, 255, 255, 0.6);
 
-    /* Border & Line Colors
+    /* Border & Line Colors - Softer Glow
        ---------------------------------------------------------------------- */
-    --line-color: #222;
-    --border-primary: rgba(0, 123, 255, 0.15);
-    --border-primary-light: rgba(0, 123, 255, 0.2);
-    --border-primary-medium: rgba(0, 123, 255, 0.3);
-    --border-primary-strong: rgba(0, 123, 255, 0.4);
-    --border-secondary: rgba(99, 102, 241, 0.15);
-    --border-secondary-medium: rgba(99, 102, 241, 0.3);
-    --border-white: rgba(255, 255, 255, 0.08);
-    --border-white-light: rgba(255, 255, 255, 0.15);
+    --line-color: #252525;
+    --border-primary: rgba(59, 130, 246, 0.12);
+    --border-primary-light: rgba(59, 130, 246, 0.18);
+    --border-primary-medium: rgba(59, 130, 246, 0.28);
+    --border-primary-strong: rgba(59, 130, 246, 0.4);
+    --border-secondary: rgba(99, 102, 241, 0.12);
+    --border-secondary-medium: rgba(99, 102, 241, 0.28);
+    --border-white: rgba(255, 255, 255, 0.06);
+    --border-white-light: rgba(255, 255, 255, 0.12);
 
-    /* Shadow Colors
+    /* Shadow Colors - Softer & Deeper
        ---------------------------------------------------------------------- */
-    --shadow-primary: rgba(0, 123, 255, 0.5);
-    --shadow-primary-soft: rgba(0, 123, 255, 0.15);
-    --shadow-primary-medium: rgba(0, 123, 255, 0.3);
-    --shadow-primary-strong: rgba(0, 123, 255, 0.35);
-    --shadow-secondary: rgba(99, 102, 241, 0.35);
-    --shadow-success: rgba(34, 197, 94, 0.4);
+    --shadow-primary: rgba(59, 130, 246, 0.4);
+    --shadow-primary-soft: rgba(59, 130, 246, 0.12);
+    --shadow-primary-medium: rgba(59, 130, 246, 0.22);
+    --shadow-primary-strong: rgba(59, 130, 246, 0.32);
+    --shadow-secondary: rgba(99, 102, 241, 0.32);
+    --shadow-success: rgba(34, 197, 94, 0.35);
 
-    /* Gradient Definitions
+    /* Gradient Definitions - Smoother Transitions
        ---------------------------------------------------------------------- */
-    --gradient-primary: linear-gradient(135deg, var(--primary), var(--secondary));
-    --gradient-secondary: linear-gradient(135deg, var(--secondary), var(--accent));
-    --gradient-success: linear-gradient(135deg, var(--success), #16a34a);
-    --gradient-text: linear-gradient(135deg, #fff 0%, var(--text-secondary) 100%);
-    --gradient-text-highlight: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
-    --gradient-line: linear-gradient(90deg, transparent, var(--primary), transparent);
-    --gradient-footer-glow: linear-gradient(90deg, transparent, rgba(0, 123, 255, 0.4), rgba(99, 102, 241, 0.4), rgba(139, 92, 246, 0.4), transparent);
-    --gradient-border-primary: linear-gradient(90deg, transparent, var(--primary), transparent);
-    --gradient-phase-line: linear-gradient(180deg, var(--primary), rgba(0, 123, 255, 0.2));
-    --gradient-phase-line-secondary: linear-gradient(180deg, var(--secondary), rgba(99, 102, 241, 0.2));
+    --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+    --gradient-secondary: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    --gradient-success: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    --gradient-text: linear-gradient(180deg, #ffffff 0%, #d4d4d4 100%);
+    --gradient-text-highlight: linear-gradient(135deg, #60a5fa 0%, #818cf8 50%, #c084fc 100%);
+    --gradient-line: linear-gradient(90deg, transparent 0%, var(--primary) 50%, transparent 100%);
+    --gradient-footer-glow: linear-gradient(90deg, transparent 0%, rgba(59, 130, 246, 0.3) 25%, rgba(99, 102, 241, 0.3) 50%, rgba(168, 85, 247, 0.3) 75%, transparent 100%);
+    --gradient-border-primary: linear-gradient(90deg, transparent 0%, rgba(59, 130, 246, 0.6) 50%, transparent 100%);
+    --gradient-phase-line: linear-gradient(180deg, var(--primary) 0%, rgba(59, 130, 246, 0.15) 100%);
+    --gradient-phase-line-secondary: linear-gradient(180deg, var(--secondary) 0%, rgba(99, 102, 241, 0.15) 100%);
 
-    /* Common Backgrounds
+    /* Common Backgrounds - Richer Depth
        ---------------------------------------------------------------------- */
-    --card-bg: linear-gradient(145deg, rgba(22, 22, 22, 0.6), rgba(17, 17, 17, 0.8));
-    --card-bg-solid: rgba(22, 22, 22, 0.6);
+    --card-bg: linear-gradient(180deg, rgba(28, 28, 28, 0.7) 0%, rgba(18, 18, 18, 0.9) 100%);
+    --card-bg-solid: rgba(26, 26, 26, 0.7);
     
     /* Common Values
        ---------------------------------------------------------------------- */

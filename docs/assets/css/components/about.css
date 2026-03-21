@@ -25,39 +25,42 @@
     border-radius: var(--default-radius);
     border: 1px solid var(--border-primary);
     transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
 }
 
 .goal-card:hover {
     border-color: var(--border-primary-medium);
-    transform: translateY(-8px);
-    box-shadow: 0 10px 30px var(--shadow-primary-soft);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px -5px var(--shadow-primary-soft);
 }
 
 .goal-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, rgba(0, 123, 255, 0.2), rgba(0, 123, 255, 0.05));
-    border: 1px solid var(--border-primary-medium);
-    color: var(--primary);
-    font-size: 1.25rem;
+    width: 46px;
+    height: 46px;
+    border-radius: 11px;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(59, 130, 246, 0.04));
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    color: #60a5fa;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
 }
 
 .goal-content h4 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: var(--space-sm);
+    letter-spacing: -0.01em;
 }
 
 .goal-content p {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: var(--text-muted);
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 /* Member Card */
@@ -70,6 +73,7 @@
     border-radius: var(--default-radius);
     border: 1px solid var(--border-primary);
     transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
 }
 
 .member-card:hover {
@@ -106,13 +110,14 @@
 }
 
 .member-name {
-    font-size: 1rem;
+    font-size: 0.98rem;
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: var(--space-xs);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    letter-spacing: -0.01em;
 }
 
 .member-role {
@@ -161,6 +166,7 @@
     border-radius: var(--default-radius);
     border: 1px solid var(--border-primary);
     transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
 }
 
 .partner-card:hover {
@@ -169,24 +175,26 @@
 }
 
 .partner-logo {
-    width: 64px;
-    height: 64px;
-    border-radius: 16px;
-    background: linear-gradient(135deg, rgba(0, 123, 255, 0.15), rgba(99, 102, 241, 0.1));
-    border: 1px solid var(--border-primary-light);
-    color: var(--primary);
-    font-size: 1.75rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(99, 102, 241, 0.08));
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    color: #60a5fa;
+    font-size: 1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
 }
 
 .partner-info h4 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: var(--space-xs);
+    letter-spacing: -0.01em;
 }
 
 .partner-info p {

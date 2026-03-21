@@ -9,10 +9,11 @@
 }
 
 .index-title {
-    font-size: clamp(3rem, 8vw, 6rem);
+    font-size: clamp(3.2rem, 8vw, 6.5rem);
     font-weight: 800;
-    line-height: 1.1;
+    line-height: 1.05;
     margin: 0;
+    letter-spacing: -0.02em;
 }
 
 .title-line {
@@ -21,6 +22,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    filter: drop-shadow(0 2px 20px rgba(0, 0, 0, 0.3));
 }
 
 .title-line.highlight {
@@ -28,16 +30,18 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    filter: drop-shadow(0 0 30px rgba(59, 130, 246, 0.2));
 }
 
 .title-underline {
     position: relative;
-    height: 4px;
-    width: 120px;
-    margin-top: var(--space-md);
+    height: 3px;
+    width: 100px;
+    margin-top: var(--space-lg);
     background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
     border-radius: 2px;
     overflow: hidden;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
 }
 
 .underline-glow {
@@ -51,12 +55,14 @@
 }
 
 .index-subtitle {
-    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
     color: var(--text-subtle);
     font-weight: 400;
     margin-bottom: 2.5rem;
-    max-width: 600px;
+    max-width: 560px;
     animation: fadeInUp 0.8s ease-out 0.4s both;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
 }
 
 .subtitle-text { position: relative; }
@@ -87,27 +93,29 @@
     background: var(--gradient-primary);
     color: var(--text-primary);
     border: none;
-    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.25);
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
 }
 
 .cta-button.primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(0, 123, 255, 0.35);
+    box-shadow: 0 8px 30px rgba(59, 130, 246, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.15) inset;
 }
 
 .cta-button.primary i { transition: transform 0.3s ease; }
 .cta-button.primary:hover i { transform: translateX(4px); }
 
 .cta-button.secondary {
-    background: rgba(255, 255, 255, 0.05);
-    color: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.04);
+    color: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
 }
 
 .cta-button.secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
+    color: rgba(255, 255, 255, 0.95);
 }
 
 /* Scroll Indicator */
@@ -120,20 +128,25 @@
 }
 
 .scroll-mouse {
-    width: 26px;
-    height: 40px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 13px;
+    width: 24px;
+    height: 38px;
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
     position: relative;
+    transition: border-color 0.3s ease;
+}
+
+.scroll-indicator:hover .scroll-mouse {
+    border-color: rgba(59, 130, 246, 0.5);
 }
 
 .scroll-wheel {
     position: absolute;
-    top: 8px;
+    top: 7px;
     left: 50%;
     transform: translateX(-50%);
-    width: 4px;
-    height: 6px;
+    width: 3px;
+    height: 5px;
     background: var(--primary);
     border-radius: 2px;
     animation: scrollWheel 2s ease-in-out infinite;
