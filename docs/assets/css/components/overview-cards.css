@@ -13,7 +13,7 @@
     position: relative;
     background: linear-gradient(145deg, rgba(22, 22, 22, 0.9), rgba(17, 17, 17, 0.95));
     border-radius: var(--default-radius);
-    border: 1px solid var(--border-blue-light);
+    border: 1px solid var(--border-primary-light);
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -25,15 +25,15 @@
     left: 0;
     right: 0;
     height: 2px;
-    background: var(--gradient-border-blue);
+    background: var(--gradient-border-primary);
     opacity: 0;
     transition: opacity 0.4s ease;
 }
 
 .overview-card:hover {
     transform: translateY(-8px);
-    border-color: var(--border-blue-medium);
-    box-shadow: 0 20px 40px var(--shadow-blue-soft), 0 0 0 1px var(--border-blue-medium);
+    border-color: var(--border-primary-medium);
+    box-shadow: 0 20px 40px var(--shadow-primary-soft), 0 0 0 1px var(--border-primary-medium);
 }
 
 .overview-card:hover::before {
@@ -46,7 +46,7 @@
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(0, 123, 255, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(0, 123, 255, 0.08) 0%, transparent 70%);
     opacity: 0;
     transition: opacity 0.4s ease;
     pointer-events: none;
@@ -78,23 +78,23 @@
     transform: scale(1.1);
 }
 
-/* Card Icon Variants */
+/* Card Icon Variants - Unified */
 .data-icon {
     background: linear-gradient(135deg, rgba(0, 123, 255, 0.2), rgba(0, 123, 255, 0.05));
-    color: var(--accent-cyan);
-    border: 1px solid rgba(79, 172, 254, 0.3);
+    color: var(--primary);
+    border: 1px solid rgba(0, 123, 255, 0.3);
 }
 
 .model-icon {
-    background: linear-gradient(135deg, rgba(155, 89, 182, 0.2), rgba(155, 89, 182, 0.05));
-    color: var(--accent-purple);
-    border: 1px solid rgba(155, 89, 182, 0.3);
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(99, 102, 241, 0.05));
+    color: var(--secondary);
+    border: 1px solid rgba(99, 102, 241, 0.3);
 }
 
 .eval-icon {
-    background: linear-gradient(135deg, rgba(46, 204, 113, 0.2), rgba(46, 204, 113, 0.05));
-    color: var(--accent-green);
-    border: 1px solid rgba(46, 204, 113, 0.3);
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(139, 92, 246, 0.05));
+    color: var(--accent);
+    border: 1px solid rgba(139, 92, 246, 0.3);
 }
 
 .card-title {
@@ -106,7 +106,7 @@
 
 .card-text {
     font-size: 0.95rem;
-    color: #999;
+    color: var(--text-muted);
     line-height: 1.6;
     margin-bottom: 1.25rem;
 }
@@ -125,7 +125,7 @@
 }
 
 .stat-item i {
-    color: var(--primary-blue);
+    color: var(--primary);
     font-size: 0.75rem;
 }
 

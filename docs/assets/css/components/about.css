@@ -18,14 +18,14 @@
     padding: 1.5rem;
     background: linear-gradient(145deg, rgba(22, 22, 22, 0.6), rgba(17, 17, 17, 0.8));
     border-radius: var(--default-radius);
-    border: 1px solid var(--border-blue);
+    border: 1px solid var(--border-primary);
     transition: all 0.3s ease;
 }
 
 .goal-card:hover {
-    border-color: var(--border-blue-medium);
+    border-color: var(--border-primary-medium);
     transform: translateY(-8px);
-    box-shadow: 0 10px 30px var(--shadow-blue-soft);
+    box-shadow: 0 10px 30px var(--shadow-primary-soft);
 }
 
 .goal-icon {
@@ -33,11 +33,11 @@
     height: 48px;
     border-radius: 12px;
     background: linear-gradient(135deg, rgba(0, 123, 255, 0.2), rgba(0, 123, 255, 0.05));
-    border: 1px solid var(--border-blue-medium);
+    border: 1px solid var(--border-primary-medium);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-blue);
+    color: var(--primary);
     font-size: 1.25rem;
     flex-shrink: 0;
 }
@@ -71,14 +71,14 @@
     padding: 1.25rem;
     background: linear-gradient(145deg, rgba(22, 22, 22, 0.6), rgba(17, 17, 17, 0.8));
     border-radius: var(--default-radius);
-    border: 1px solid var(--border-blue);
+    border: 1px solid var(--border-primary);
     transition: all 0.3s ease;
 }
 
 .member-card:hover {
-    border-color: var(--border-blue-medium);
+    border-color: var(--border-primary-medium);
     transform: translateY(-4px);
-    box-shadow: 0 15px 30px var(--shadow-blue-soft);
+    box-shadow: 0 15px 30px var(--shadow-primary-soft);
 }
 
 .member-avatar {
@@ -94,14 +94,14 @@
     flex-shrink: 0;
 }
 
-/* Avatar Color Variants */
+/* Avatar Color Variants - Unified */
 .member-avatar.primary { background: var(--gradient-primary); }
-.member-avatar.blue { background: linear-gradient(135deg, var(--accent-cyan), #00f2fe); }
-.member-avatar.purple { background: var(--gradient-purple); }
-.member-avatar.green { background: var(--gradient-green); }
-.member-avatar.orange { background: linear-gradient(135deg, var(--accent-orange), #e67e22); }
-.member-avatar.pink { background: linear-gradient(135deg, var(--accent-pink), #e84393); }
-.member-avatar.teal { background: linear-gradient(135deg, var(--accent-teal), #16a085); }
+.member-avatar.blue { background: linear-gradient(135deg, var(--primary), #3b82f6); }
+.member-avatar.purple { background: var(--gradient-secondary); }
+.member-avatar.green { background: var(--gradient-success); }
+.member-avatar.orange { background: linear-gradient(135deg, #f59e0b, #d97706); }
+.member-avatar.pink { background: linear-gradient(135deg, #ec4899, #db2777); }
+.member-avatar.teal { background: linear-gradient(135deg, #14b8a6, #0d9488); }
 
 .member-info {
     flex: 1;
@@ -124,7 +124,7 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: var(--primary-blue);
+    color: var(--primary);
     background: rgba(0, 123, 255, 0.1);
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
@@ -161,7 +161,7 @@
 }
 
 .member-github:hover {
-    color: var(--primary-blue);
+    color: var(--primary);
 }
 
 .member-github i {
@@ -184,12 +184,12 @@
     padding: 1.5rem;
     background: linear-gradient(145deg, rgba(22, 22, 22, 0.6), rgba(17, 17, 17, 0.8));
     border-radius: var(--default-radius);
-    border: 1px solid var(--border-blue);
+    border: 1px solid var(--border-primary);
     transition: all 0.3s ease;
 }
 
 .partner-card:hover {
-    border-color: var(--border-blue-medium);
+    border-color: var(--border-primary-medium);
     transform: translateY(-4px);
 }
 
@@ -197,12 +197,12 @@
     width: 64px;
     height: 64px;
     border-radius: 16px;
-    background: linear-gradient(135deg, rgba(0, 123, 255, 0.15), rgba(79, 63, 255, 0.1));
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.15), rgba(99, 102, 241, 0.1));
     border: 1px solid var(--border-blue-light);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-blue);
+    color: var(--primary);
     font-size: 1.75rem;
     flex-shrink: 0;
 }

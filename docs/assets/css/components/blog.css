@@ -16,7 +16,7 @@
     align-items: stretch;
     background: linear-gradient(145deg, rgba(22, 22, 22, 0.6), rgba(17, 17, 17, 0.8));
     border-radius: var(--default-radius);
-    border: 1px solid var(--border-blue);
+    border: 1px solid var(--border-primary);
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
@@ -35,9 +35,9 @@
 }
 
 .post-item:hover {
-    border-color: var(--border-blue-strong);
+    border-color: var(--border-primary-strong);
     transform: translateX(8px);
-    box-shadow: 0 10px 40px var(--shadow-blue-soft);
+    box-shadow: 0 10px 40px var(--shadow-primary-soft);
 }
 
 .post-item:hover::before {
@@ -51,14 +51,14 @@
     justify-content: center;
     min-width: 90px;
     padding: 1.5rem 1rem;
-    background: linear-gradient(135deg, rgba(0, 123, 255, 0.1), rgba(79, 63, 255, 0.05));
-    border-right: 1px solid rgba(0, 123, 255, 0.1);
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.1), rgba(99, 102, 241, 0.05));
+    border-right: 1px solid var(--border-primary);
 }
 
 .post-date-day {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--primary-blue);
+    color: var(--primary);
     line-height: 1;
 }
 
@@ -67,7 +67,7 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--text-subtle);
     margin-top: 0.25rem;
 }
 
@@ -98,9 +98,9 @@
 }
 
 .post-title a:hover {
-    color: var(--primary-blue);
+    color: var(--primary);
     background-size: 100% 2px;
-    background-image: linear-gradient(90deg, var(--primary-blue), var(--secondary-purple));
+    background-image: linear-gradient(90deg, var(--primary), var(--secondary));
 }
 
 .post-excerpt {
@@ -116,20 +116,20 @@
     padding: 4rem 2rem;
     background: linear-gradient(145deg, rgba(22, 22, 22, 0.4), rgba(17, 17, 17, 0.6));
     border-radius: var(--default-radius);
-    border: 1px dashed var(--border-blue-light);
+    border: 1px dashed var(--border-primary-light);
 }
 
 .empty-icon {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(0, 123, 255, 0.1), rgba(79, 63, 255, 0.05));
-    border: 1px solid var(--border-blue-light);
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.1), rgba(99, 102, 241, 0.05));
+    border: 1px solid var(--border-primary-light);
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    color: var(--primary-blue);
+    color: var(--primary);
     font-size: 2rem;
 }
 
@@ -160,7 +160,7 @@
         gap: 0.5rem;
         padding: 1rem;
         border-right: none;
-        border-bottom: 1px solid rgba(0, 123, 255, 0.1);
+        border-bottom: 1px solid var(--border-primary);
     }
 
     .post-date-day {

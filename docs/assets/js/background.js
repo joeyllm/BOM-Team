@@ -68,16 +68,16 @@ const SHADERS = {
         in float v_colorType;
         out vec4 f;
         void main() { 
-            vec3 blue = vec3(0.15, 0.25, 0.45);
-            vec3 gray = vec3(0.1, 0.2, 0.3);
-            vec3 lightBlue = vec3(0.2, 0.4, 0.8);
+            vec3 primary = vec3(0.0, 0.48, 1.0);      // #007bff
+            vec3 secondary = vec3(0.39, 0.4, 0.94);   // #6366f1
+            vec3 subtle = vec3(0.15, 0.25, 0.4);      // muted blue-gray
             vec3 color;
             if (v_colorType < 0.5) {
-                color = blue;
+                color = primary;
             } else if (v_colorType < 1.5) {
-                color = gray;
+                color = subtle;
             } else {
-                color = lightBlue;
+                color = secondary;
             }
             f = vec4(color * v_brightness, 1);
         }`

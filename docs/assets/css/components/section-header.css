@@ -13,11 +13,11 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    color: var(--primary-blue);
-    background: linear-gradient(135deg, rgba(0, 123, 255, 0.15), rgba(79, 63, 255, 0.1));
+    color: var(--primary);
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.15), rgba(99, 102, 241, 0.1));
     padding: 0.5rem 1rem;
     border-radius: 2rem;
-    border: 1px solid var(--border-blue-medium);
+    border: 1px solid var(--border-primary-medium);
     margin-bottom: 1rem;
 }
 

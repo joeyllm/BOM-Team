@@ -36,13 +36,13 @@
     font-weight: 700;
     font-size: 1.1rem;
     color: var(--text-primary);
-    box-shadow: 0 4px 15px var(--shadow-blue-strong);
+    box-shadow: 0 4px 15px var(--shadow-primary-strong);
     flex-shrink: 0;
 }
 
 .phase-badge.s2 {
-    background: var(--gradient-purple);
-    box-shadow: 0 4px 15px var(--shadow-purple);
+    background: var(--gradient-secondary);
+    box-shadow: 0 4px 15px var(--shadow-secondary);
 }
 
 .phase-line {
@@ -55,7 +55,7 @@
 }
 
 .phase-line.s2-line {
-    background: var(--gradient-phase-line-purple);
+    background: var(--gradient-phase-line-secondary);
 }
 
 /* Phase Content - Right side */
@@ -94,24 +94,24 @@
     gap: 1rem;
     padding: 1rem 1.25rem;
     background: rgba(255, 255, 255, 0.03);
-    border: 1px solid var(--border-blue);
+    border: 1px solid var(--border-primary);
     border-radius: 12px;
     transition: all 0.3s ease;
 }
 
 .milestone-card:hover {
     background: rgba(0, 123, 255, 0.06);
-    border-color: var(--border-blue-medium);
+    border-color: var(--border-primary-medium);
     transform: translateX(4px);
 }
 
 .milestone-card.s2 {
-    border-color: var(--border-purple);
+    border-color: var(--border-secondary);
 }
 
 .milestone-card.s2:hover {
-    background: rgba(155, 89, 182, 0.06);
-    border-color: var(--border-purple-medium);
+    background: rgba(99, 102, 241, 0.06);
+    border-color: var(--border-secondary-medium);
 }
 
 .milestone-icon-wrap {
@@ -122,14 +122,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-blue);
+    color: var(--primary);
     font-size: 1rem;
     flex-shrink: 0;
 }
 
 .milestone-card.s2 .milestone-icon-wrap {
-    background: rgba(155, 89, 182, 0.12);
-    color: var(--accent-purple);
+    background: rgba(99, 102, 241, 0.12);
+    color: var(--secondary);
 }
 
 .milestone-body {
@@ -145,7 +145,7 @@
 
 .milestone-text {
     font-size: 0.875rem;
-    color: #777;
+    color: var(--text-muted);
     line-height: 1.5;
 }
 
@@ -163,20 +163,20 @@
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: var(--gradient-green);
+    background: var(--gradient-success);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--text-primary);
     font-size: 1.1rem;
-    box-shadow: 0 4px 15px var(--shadow-green);
+    box-shadow: 0 4px 15px var(--shadow-success);
     animation: pulse-green 2s infinite;
 }
 
 .completion-text {
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--accent-green);
+    color: var(--success);
 }
 
 /* Responsive */
