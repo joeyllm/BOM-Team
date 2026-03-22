@@ -35,40 +35,65 @@
 
 ## 🏗️ Background
 
-> David Jones - Australia🇦🇺   Logistics Team Leader   Oct 2024 – Now 
-> Wuhan Magnetics Co., Ltd. of China Aerospace Science and Industry Corporation. - China🇨🇳   Capital Operations Supervisor   Jan 2022 – Feb 2024
-> CllC Hubei Economic & Technical Cooperation Co..Ltd. - China🇨🇳    Consultant   Aug 2021 – Dec 2021
+**David Jones (Australia)** 🇦🇺  
+*Logistics Team Leader* · Oct 2024 – Present 
+
+**Wuhan Magnetics Co., Ltd. (China Aerospace Science & Industry Corporation)** 🇨🇳  
+*Capital Operations Supervisor* · Jan 2022 – Feb 2024
+
+**CLLC Hubei Economic & Technical Cooperation Co., Ltd.** 🇨🇳  
+*Consultant* · Aug 2021 – Dec 2021  
 
 ---
 
 ## 🧠 Interests / Skills
 
-- Computer Science, Backend Development, and System Design
-- Web Development & Full-Stack Engineering
-- Problem-solving and software architecture
-- Some interest in AI/ML and data-driven systems
+- Backend Development & System Design  
+- Full-Stack Web Development  
+- Software Architecture & Problem Solving  
+- AI/ML (Basic understanding, learning stage) 
 
 ---
 
 ## 🛠️ Technical Background
 
-- Programming: Java, Python, JavaScript
-- Backend: Django, REST APIs, Database Design
-- Frontend: React, Next.js, HTML/CSS
-- Database: PostgreSQL
-- Tools & DevOps: Docker, Git, GitHub, Linux
+**Languages**  
+`Java` · `Python` · `JavaScript`  
+
+**Backend**  
+`Django` · `REST APIs` · `Database Design`  
+
+**Frontend**  
+`React` · `Next.js` · `HTML` · `CSS`  
+
+**Database**  
+`PostgreSQL`  
+
+**Tools & DevOps**  
+`Docker` · `Git` · `GitHub` · `Linux` 
 
 ---
 
 ## 📁 Previous Projects
 
-> Work Experience (Non-CS, transferable skills)
-	•	Strong experience in communication, coordination, and project execution
-	•	Collaborated with teams and stakeholders to deliver results
-> MediaJira (Full-Stack Project)
-	•	Worked on a full-stack system for advertising workflow management
-	•	Implemented backend features using Django (task workflow, approval system, revision tracking)
-	•	Designed and tested APIs, ensured compatibility with frontend
+### 🔧 MediaJira (Full-Stack Project)
+A full-stack advertising workflow management system.
+
+- Implemented backend systems for:
+  - Task workflow  
+  - Approval system  
+  - Revision tracking  
+- Designed and developed RESTful APIs  
+- Ensured smooth integration with frontend (Next.js)  
+- Worked in a Docker-based local development environment 
+
+### 🤝 Professional Experience (Transferable Skills)
+- Strong experience in communication, coordination, and execution.
+- Worked closely with cross-functional teams and stakeholders
+- Developed solid skills in:
+	- Team collaboration
+	- Problem-solving
+	- Process optimization
 
 ---
 
@@ -83,14 +108,11 @@ Although my earlier experience was not purely technical, I have strong transfera
 
 ## 🎯 Project Goals
 
-> Career Development:
-	•	Gain real-world project experience
-	•	Prepare for software engineering roles in AustraliaCollaboration:
-	•	Work effectively in team environments
-	•	Follow industry workflows (Git, PR, code review, Jira)
-> Collaboration:
-	•	Work effectively in team environments
-	•	Follow industry workflows (Git, PR, code review, Jira)
+- Gain real-world experience in software engineering projects  
+- Develop strong backend and system design capabilities  
+- Build scalable full-stack applications  
+- Work effectively in team environments using industry workflows:
+  - `Git` · `Pull Requests` · `Code Review` · `Jira` 
 
 ---
 
