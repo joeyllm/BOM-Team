@@ -10,12 +10,12 @@
 
 | | |
 |---|---|
-| 📱 Phone | null |
-| 🌏 From | null |
-| 💼 LinkedIn | null |
+| 📱 Phone | +61489155996 |
+| 🌏 From | Indonesia |
+| 💼 LinkedIn | https://www.linkedin.com/in/olivia-maftukhaturrizqoh-860196140/ |
 | 🐙 GitHub | https://github.com/olivia-m96 |
 | 🤗 Hugging Face | null |
-| 🎮 Discord | null |
+| 🎮 Discord | olivia_m2805 |
 | 💬 WeChat | null |
 | 📘 Facebook | null |
 
@@ -26,10 +26,10 @@
 | | |
 |---|---|
 | 🏫 University | Australian National University |
-| 📚 Degree | null |
+| 📚 Degree | Master of Machine Learning and Computer Vision |
 | 📅 Year | null |
 | 🗓️ Expected Graduation | null |
-| 🌐 Exchange / International | null |
+| 🌐 Exchange / International | International |
 
 ---
 
