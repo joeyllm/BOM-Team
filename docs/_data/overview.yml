@@ -9,7 +9,7 @@ cards:
   - icon_class: "model-icon"
     icon: "fa-brain"
     title: "Model"
-    description: "Building baseline nowcasting models and refining forecast modelling workflows. Experimenting with regional forecasting and severe-weather nowcasting systems."
+    description: "Building baseline nowcasting models and refining forecast workflows. Experimenting with regional forecasting and severe-weather nowcasting systems."
     stat_icon: "fa-microchip"
     stat_text: "GPU-Powered"
 

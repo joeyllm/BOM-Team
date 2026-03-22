@@ -11,7 +11,7 @@ layout: base
         <!-- Project Overview -->
         {% include section-header.html title="Project Overview" description="Building next-generation weather forecasting systems through data-driven machine learning" %}
 
-        <div class="columns is-multiline mb-6">
+        <div class="columns is-multiline is-centered mb-6">
             {% for card in site.data.overview.cards %}
                 {% assign delay = forloop.index0 | times: 100 %}
                 <div class="column is-4-desktop is-6-tablet is-12-mobile">
