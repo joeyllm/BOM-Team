@@ -2,7 +2,7 @@
 
 **Role:** 🎓 Student
 **Student ID:** u8002343
-**Email:** [Zhaokun.Han@anu.edu.au](mailto:Zhaokun.Han@anu.edu.au)
+**Email:** [u8002343@anu.edu.au](mailto:Zhaokun.Han@anu.edu.au)
 
 ---
 
@@ -10,13 +10,13 @@
 
 | | |
 |---|---|
-| 📱 Phone | null |
-| 🌏 From | null |
-| 💼 LinkedIn | null |
+| 📱 Phone | 0490304324 |
+| 🌏 From | China |
+| 💼 LinkedIn | www.linkedin.com/in/dylanhan3366 |
 | 🐙 GitHub | https://github.com/dylanlovescode |
 | 🤗 Hugging Face | null |
-| 🎮 Discord | null |
-| 💬 WeChat | null |
+| 🎮 Discord | deaaalun |
+| 💬 WeChat | mylittledylan |
 | 📘 Facebook | null |
 
 ---
@@ -26,10 +26,10 @@
 | | |
 |---|---|
 | 🏫 University | Australian National University |
-| 📚 Degree | null |
-| 📅 Year | null |
-| 🗓️ Expected Graduation | null |
-| 🌐 Exchange / International | null |
+| 📚 Degree | Master of Computing |
+| 📅 Year | 2025 |
+| 🗓️ Expected Graduation | 2027 |
+| 🌐 Exchange / International | International |
 
 ---
 
