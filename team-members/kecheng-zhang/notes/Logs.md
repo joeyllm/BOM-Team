@@ -19,3 +19,7 @@ In addition, I've been doing research on the architecture of the whole applicati
 Added some content to the website. The website still needs some design.
 
 > AHHHHHH! It is so hard to make a good-looking website! I really need help!
+
+### 2026-03-22
+
+Kimi k-2.5 turns out to be really helpful in designing the website when given proper prompts. Now the website is basically complete.
