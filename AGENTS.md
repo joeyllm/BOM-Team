@@ -170,16 +170,28 @@ bundle exec jekyll build
 - BEM-like naming convention used
 - Mobile-first responsive design with breakpoints at 768px and 640px
 
-### Color Scheme (CSS Variables in docs/)
+### CSS Variables (from `variables.css`)
 
-- `--primary-blue: #007bff`
-- `--secondary-purple: #4f3fff`
-- `--accent-purple: #9b59b6`
-- `--accent-green: #2ecc71`
-- `--accent-teal: #1abc9c`
-- `--accent-orange: #f39c12`
-- `--accent-pink: #fd79a8`
-- Background: `#111` (dark theme)
+```css
+:root {
+    /* Primary Colors */
+    --primary: #3b82f6;
+    --secondary: #6366f1;
+    --accent: #a855f7;
+    --success: #22c55e;
+
+    /* Background Colors */
+    --background-color: #0f0f0f;
+    --background-color-light: #181818;
+
+    /* Text Colors */
+    --text-primary: #fff;
+    --text-secondary: #a0a0a0;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+}
+```
 
 ### JavaScript (docs/)
 
@@ -205,6 +217,13 @@ bundle exec jekyll build
 # Verify build completes without errors
 bundle exec jekyll build --strict_front_matter
 ```
+
+### CSS/JS Troubleshooting
+
+- If CSS/JS not loading: Verify `baseurl` is correctly set in `_config.yml`
+- Check file paths include `{{ site.baseurl }}`
+- If WebGL background not showing: Check browser console for WebGL2 support warnings
+- Verify `perlin.js` is loaded before `background.js`
 
 ---
 
@@ -310,7 +329,7 @@ Compute Server
 
 - Each student is allocated a strict **50 GB personal storage quota**
 - This space is for code, small test files, environment configurations, and limited output data
-- The project works with a **60 TB corpus** of weather data
+- The project works with weather datasets stored on shared internal servers
 
 ### Critical Rules
 
@@ -318,11 +337,18 @@ Compute Server
 2. **Always read data directly from shared, read-only folders into memory**
 3. **Commit your code to GitHub regularly** - There is no guarantee that saved data will persist from week to week
 
+### The "Look, Pull, Test" Development Workflow
+
+When working with large datasets:
+
+1. **Look Phase:** Use the shared folder to understand directory hierarchy and schema
+2. **Pull Phase:** Copy a tiny subset (e.g., 5 files) to your personal directory for testing
+3. **Test Phase:** Run your cleaning script against the local subset to verify results
+
 ### Key Data Documentation
 
 | File | Description |
 | :--- | :--- |
-| `knowledge-base/data/Fineweb.md` | Details on the 60 TB Fineweb corpus |
 | `knowledge-base/data/LoadingData.md` | Code examples for loading data (CPU/GPU) |
 | `knowledge-base/data/BestPractices.md` | Memory management and "Subset First" rule |
 | `knowledge-base/data/Publishing.md` | Hugging Face, Kaggle & Data Cards |
@@ -380,7 +406,7 @@ The team uses a GitHub Project Kanban board called **BOM Nowcasting Team** to ma
 
 ### Data Security
 
-- The 60 TB dataset is stored on secure internal servers
+- Weather datasets are stored on secure internal servers
 - Access is controlled via VPN and GitHub authentication
 - Personal storage (50 GB) is isolated per user
 
