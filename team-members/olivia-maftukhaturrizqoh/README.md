@@ -16,8 +16,8 @@
 | 🐙 GitHub | https://github.com/olivia-m96 |
 | 🤗 Hugging Face | null |
 | 🎮 Discord | olivia_m2805 |
-| 💬 WeChat | null |
-| 📘 Facebook | null |
+| 💬 WeChat | olivia m |
+| 📘 Facebook | Olivia Maftukhaturrizqoh |
 
 ---
 
@@ -27,31 +27,37 @@
 |---|---|
 | 🏫 University | Australian National University |
 | 📚 Degree | Master of Machine Learning and Computer Vision |
-| 📅 Year | null |
-| 🗓️ Expected Graduation | null |
+| 📅 Year | 2 |
+| 🗓️ Expected Graduation | Nov 2026 |
 | 🌐 Exchange / International | International |
+| | |
+|---|---|
+| 🏫 University | Sebelas Maret University |
+| 📚 Degree | Bachelor of Science in Physics |
+| 📅 Year | 4 |
+| 🗓️ Graduation | Jul 2018 |
 
 ---
 
 ## 🏗️ Background
 
-> To be added.
+> MLCV student with physics and remote sensing background. Interested on MLCV model research including CNN, LLM and VLM.
 
 ---
 
 ## 🧠 Interests / Skills
 
-- To be added
-- To be added
-- To be added
+- Machine Learning & Deep Learning (Computer Vision)
+- Remote Sensing & Spatiotemporal Data Analysis
+- Vision Language Models (VLMs) and Multimodal Learning
 
 ---
 
 ## 🛠️ Technical Background
 
-- To be added
-- To be added
-- To be added
+- Python, PyTorch, and deep learning model (e.g, U-Net for segmentation)
+- Data preprocessing
+- Experience working with satellite data
 
 ---
 
@@ -63,13 +69,13 @@
 
 ## 🙋 About Me
 
-> To be added.
+> a motivated learner who enjoys breaking down complex problems into simple, understandable components. I value both theoretical understanding and hands-on experimentation.
 
 ---
 
 ## 🎯 Project Goals
 
-> To be added.
+> Deepen my understanding of machine learning application to real world data spatiotemporal or environmental data. I want to improve knowledge on designing, train, and evaluate models effectively, also gaining experience in building robust and scalable ML pipelines.
 
 ---
 
