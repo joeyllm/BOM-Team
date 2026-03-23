@@ -23,3 +23,7 @@ Added some content to the website. The website still needs some design.
 ### 2026-03-22
 
 Kimi k-2.5 turns out to be really helpful in designing the website when given proper prompts. Now the website is basically complete.
+
+### 2026-03-23
+
+*Very Useful* Link:[Skilful nowcasting of extreme precipitation with NowcastNet](https://www.nature.com/articles/s41586-023-06184-4) 
