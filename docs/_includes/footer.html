@@ -33,7 +33,7 @@
                     <ul>
                         {% for item in site.data.nav %}
                             <li>
-                                <a href="{{ item.url }}">
+                                <a href="{{ item.url | relative_url }}">
                                     <i class="fa-solid fa-chevron-right"></i>
                                     {{ item.title }}
                                 </a>
