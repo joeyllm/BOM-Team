@@ -24,6 +24,12 @@ Added some content to the website. The website still needs some design.
 
 Kimi k-2.5 turns out to be really helpful in designing the website when given proper prompts. Now the website is basically complete.
 
+## Week 2
+
 ### 2026-03-23
 
-*Very Useful* Link:[Skilful nowcasting of extreme precipitation with NowcastNet](https://www.nature.com/articles/s41586-023-06184-4) 
+*PyEarthTool* is based on **FourCastNet**, which is very powerful in predicting medium-long term weather.
+
+When searching the relavent informations, I found **NowCastNet**. Seems it is perfect for the project, I will work on it.
+
+*Very Useful* Link:[Skilful nowcasting of extreme precipitation with NowcastNet](https://www.nature.com/articles/s41586-023-06184-4)
