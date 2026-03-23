@@ -1,0 +1,37 @@
+import os
+import xarray as xr
+
+def ingest_weather_data(output_dir="/tmp/outputs", filename="era5_mini.nc"):
+    """Fetches a subset of ERA5 historical weather data from WeatherBench2."""
+    
+    # 1. Ensure the target directory exists
+    os.makedirs(output_dir, exist_ok=True)
+    file_location = os.path.join(output_dir, filename)
+
+    # 2. Check if we already have the data to avoid re-downloading 2.8GB
+    if os.path.exists(file_location):
+        print(f"Data already exists at {file_location}. Skipping download.")
+        return file_location
+
+    print("Connecting to Google Cloud Storage to fetch ERA5 data...")
+    # 3. Open the massive Zarr dataset from Google Cloud Storage
+    era5_lowres = xr.open_zarr('gs://weatherbench2/datasets/era5/1959-2022-6h-64x32_equiangular_conservative.zarr')
+
+    print("Selecting target variables (Wind, Temp, Pressure)...")
+    # 4. Subset only the variables we care about to save space and time
+    subset = era5_lowres[[
+        '10m_u_component_of_wind', 
+        '10m_v_component_of_wind', 
+        '2m_temperature', 
+        'mean_sea_level_pressure'
+    ]]
+
+    print(f"Downloading and saving to {file_location} (This might take a few minutes)...")
+    # 5. Save the subset locally as a NetCDF file
+    subset.to_netcdf(file_location)
+    
+    print("✅ Data ingestion complete!")
+    return file_location
+
+if __name__ == "__main__":
+    ingest_weather_data()
