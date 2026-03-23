@@ -32,4 +32,10 @@ Kimi k-2.5 turns out to be really helpful in designing the website when given pr
 
 When searching the relavent informations, I found **NowCastNet**. Seems it is perfect for the project, I will work on it.
 
-*Very Useful* Link:[Skilful nowcasting of extreme precipitation with NowcastNet](https://www.nature.com/articles/s41586-023-06184-4)
+**Very Useful** Links:
+
+- [Skilful nowcasting of extreme precipitation with NowcastNet](https://www.nature.com/articles/s41586-023-06184-4)
+
+- [NowCastNet CodeOcean Repository](https://codeocean.com/capsule/3935105/tree/v1)
+
+- [Processed Radar Data](https://cloud.tsinghua.edu.cn/d/b9fb38e5ee7a4dabb2a6/)
