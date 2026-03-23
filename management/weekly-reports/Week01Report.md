@@ -8,21 +8,23 @@
 
 ## Agenda
 
-1. _Discussed possible tasks for Sprint 1 and assigned tasks for each team member._
+1. _Discussed possible tasks and goal for Sprint 1 and assigned tasks for each team member._
 2. _Made preliminary estimations of the time required._
 3. _Update team member profile info._
+4. _Meet stakeholder and get his input on the projects._
 
 ## Discussion
 
-> _The team discussed the marking rubric for the course and the project overview, and figured out administrative tasks and t_
+> _The team discussed the marking rubric for the course and the project overview, and figured out administrative tasks. We discussed setting up the enviroment and the milestones.
 
 ## Decisions
 
-- _Placeholder decision_
+- _Made PBI's and assigned them to group members._
+- _Decided on Sprint 1 goal._
 
 ## Action Items
 
-- _Managed in github team priority board._
+- _Managed in github team PBI board._
 
 ## Progress Summary
 
@@ -32,7 +34,8 @@
 ## Completed This Week
 
 - _Team website._
-- _Placeholder task_
+- _Story points poker planning._
+- _Setup VPN and virtualbox access._
 
 ## In Progress
 
@@ -40,7 +43,7 @@
 
 ## Blockers
 
-> _null_
+> _nothing_
 
 ## Plan for Next Week
 
@@ -51,5 +54,3 @@
 
 **Date:** 2026-03-23
 🙂
-
-Test commit
