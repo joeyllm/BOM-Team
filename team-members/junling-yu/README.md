@@ -86,7 +86,7 @@
 
 ## Notebook Progress
 
-Place JunlingYu's Jupyter notebook files in this folder.
+week02:
 
-Add new notebooks here each week after downloading them from Jupyter.
-
+[Data_Pipelines.ipynb](notebooks/Data_Pipelines.ipynb)
+This notebook explored the data pipeline of using ERA5 data. Also explored and visualized wind-related variables in ERA5 data.
