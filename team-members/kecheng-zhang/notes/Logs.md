@@ -39,3 +39,9 @@ When searching the relavent informations, I found **NowCastNet**. Seems it is pe
 - [NowCastNet CodeOcean Repository](https://codeocean.com/capsule/3935105/tree/v1)
 
 - [Processed Radar Data](https://cloud.tsinghua.edu.cn/d/b9fb38e5ee7a4dabb2a6/)
+
+# Week 3
+
+##  2026-03-30
+
+I coundn't adjust the model without the actual wind data. Need to find data first.
