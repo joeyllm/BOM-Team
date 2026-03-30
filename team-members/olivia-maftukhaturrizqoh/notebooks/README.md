@@ -28,3 +28,7 @@ To run most pyearthtools notebooks, ERA5 reanalysis data is required.
 2. Accepted the ERA5 dataset licence
 3. Set up CDS API credentials in `~/.cdsapirc`
 4. Downloaded a small test file (1 day of wind data) using the request:
+
+## Week03
+
+Ran RadarVisualization notebook on googlecolab, crash while loading all 1 day data, adjust a little to only load 10 
