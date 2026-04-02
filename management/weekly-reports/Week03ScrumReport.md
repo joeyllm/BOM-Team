@@ -33,9 +33,9 @@ Here is the translated version in English:
 |--------|-------|-----|
 | Break down large research tasks into multiple sub-tasks | Team | This week |
 | Update README files (everyone) | All members | Today |
-| Complete at least half of the new notebook work | Team Member A | Today |
-| Send email to Matt about Discord channel issues | Team Member A | ASAP |
-| Send email to Matt about Conda environment issues | Coordinator | ASAP |
+| Complete at least half of the new notebook work | All members | Today |
+| Send email to Matt about Discord channel issues | Junling | ASAP |
+| Send email to Matt about Conda environment issues | Junling | ASAP |
 | Write personal reports documenting contributions (alternative to Matt's feedback emails) | All members | Ongoing |
 
 ## Progress Summary
