@@ -47,3 +47,9 @@ When searching the relavent informations, I found **NowCastNet**. Seems it is pe
 I coundn't adjust the model without the actual wind data. Need to find data first. Also need the physics equations of the dynamics of the wind field.
 
 I also need deeper understanding on the details of the model architecture.
+
+# Week 4
+
+## 2026-04-20
+
+Exploring data and trying to build a data cleaner.
