@@ -64,3 +64,4 @@ Had a little practice on data cleaning.
 
 ## 2026-05-04
 
+Proposed a plan on the architecture of the desktop application, see [Architecture](Architecture.md).
