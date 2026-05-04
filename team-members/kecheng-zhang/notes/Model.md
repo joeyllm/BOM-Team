@@ -19,3 +19,15 @@ The features of data:
  - **Temporal Resolution**: 10 min
  - **Input**: 9 steps (90min)
  - **Output**: 20 steps (200min) but takes only first 18 steps (3h)
+
+## Liquid Neural Network
+
+This model architecture is said to be super efficient with time-series related tasks.
+
+> Only 19 neurons are needed for self-driving cars.
+
+- Powerful and efficient
+- Can learn while performing tasks
+- New and hard to train
+
+Deeper research of this LNN is needed to evaluate the feasibility for this project.

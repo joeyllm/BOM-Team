@@ -53,3 +53,14 @@ I also need deeper understanding on the details of the model architecture.
 ## 2026-04-20
 
 Exploring data and trying to build a data cleaner.
+
+# Week 5
+
+## 2026-04-27
+
+Had a little practice on data cleaning.
+
+# Week 6
+
+## 2026-05-04
+
