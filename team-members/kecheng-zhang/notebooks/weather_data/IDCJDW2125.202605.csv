@@ -1,0 +1,17 @@
+"Daily Weather Observations for Sydney Airport, New South Wales for May 2026"
+"Prepared at 00:36 UTC on Monday 11 May 2026   IDCJDW2125.202605"
+"Copyright 2003 Commonwealth Bureau of Meteorology"
+"Observations were drawn from Sydney Airport AMO {station 066037}"
+
+,"Date","Minimum temperature (°C)","Maximum temperature (°C)","Rainfall (mm)","Evaporation (mm)","Sunshine (hours)","Direction of maximum wind gust ","Speed of maximum wind gust (km/h)","Time of maximum wind gust","9am Temperature (°C)","9am relative humidity (%)","9am cloud amount (oktas)","9am wind direction","9am wind speed (km/h)","9am MSL pressure (hPa)","3pm Temperature (°C)","3pm relative humidity (%)","3pm cloud amount (oktas)","3pm wind direction","3pm wind speed (km/h)","3pm MSL pressure (hPa)"
+,2026-05-1,15.6,23.7,0.2,,,ENE,28,22:33,18.5,81,8,WNW,15,1030.2,22.9,54,5,ENE,17,1026.9
+,2026-05-2,17.1,25.4,0,7.2,5.6,NNE,50,13:51,19.2,84,7,W,9,1026.2,23.9,62,7,NNE,28,1022.9
+,2026-05-3,17.2,25.6,0,4.0,7.3,NNE,48,19:46,22.1,66,7,N,20,1022.8,24.7,57,7,NE,33,1018.7
+,2026-05-4,18.1,22.1,0,4.8,1.5,N,35,19:28,20.5,71,7,NW,15,1017.8,21.0,72,7,NNE,22,1014.5
+,2026-05-5,14.4,23.7,5.2,2.8,10.2,W,48,10:32,18.1,53,1,WNW,28,1019.2,22.3,43,1,SE,17,1017.1
+,2026-05-6,12.4,21.7,0.2,4.4,9.1,WNW,24,10:05,17.3,56,1,NW,11,1020.9,21.3,61,3,SE,15,1016.9
+,2026-05-7,12.0,18.7,0,2.8,9.2,W,63,16:07,17.3,47,1,NW,13,1014.2,16.5,28,2,WSW,37,1014.9
+,2026-05-8,9.6,21.0,0,6.8,10.1,W,50,10:12,14.5,48,0,WNW,28,1018.5,20.2,34,1,W,33,1016.0
+,2026-05-9,13.2,20.0,0,5.6,9.9,WNW,33,08:47,16.6,57,1,W,17,1025.1,19.8,51,1,SSE,15,1023.5
+,2026-05-10,11.1,21.6,0,4.0,9.1,S,43,19:02,16.3,64,1,NW,11,1029.3,19.7,71,2,S,26,1028.1
+,2026-05-11,13.5,,0.2,2.0,,,,,17.1,89,6,NNE,11,1033.8,,,,,,
