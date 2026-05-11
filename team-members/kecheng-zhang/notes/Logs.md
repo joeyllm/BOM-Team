@@ -70,4 +70,6 @@ Proposed a plan on the architecture of the desktop application, see [Architectur
 
 ## 2026-05-11
 
+Need to get all the data required and make the parquet file...done.
+
 Found [Hi-Resolution Wind Data Set](https://thredds.nci.org.au/thredds/catalog/fx31/publications/wind_nowcast/catalog.html)
