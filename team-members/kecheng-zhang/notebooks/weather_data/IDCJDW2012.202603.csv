@@ -1,0 +1,39 @@
+"Daily Weather Observations for Bathurst, New South Wales for March 2026"
+"Prepared at 16:00 UTC on Saturday  2 May 2026   IDCJDW2012.202603"
+"Copyright 2003 Commonwealth Bureau of Meteorology"
+"Most observations from Bathurst, but some from Bathurst Airport."
+"Temperature, humidity, cloud, evaporation and rainfall observations are from Bathurst Ag Station Comparison {station 063005}"
+"Wind and pressure observations are from Bathurst Airport AWS {station 063291}"
+
+,"Date","Minimum temperature (°C)","Maximum temperature (°C)","Rainfall (mm)","Evaporation (mm)","Sunshine (hours)","Direction of maximum wind gust ","Speed of maximum wind gust (km/h)","Time of maximum wind gust","9am Temperature (°C)","9am relative humidity (%)","9am cloud amount (oktas)","9am wind direction","9am wind speed (km/h)","9am MSL pressure (hPa)","3pm Temperature (°C)","3pm relative humidity (%)","3pm cloud amount (oktas)","3pm wind direction","3pm wind speed (km/h)","3pm MSL pressure (hPa)"
+,2026-03-1,,,,,,ENE,35,05:29,,,,ENE,17,1015.5,,,,ENE,17,1013.9
+,2026-03-2,,,,,,NNW,35,12:14,,,, ,Calm,1013.1,,,,NNW,19,1009.9
+,2026-03-3,,,,,,N,33,12:45,,,,NNE,13,1011.4,,,,NNE,17,1011.2
+,2026-03-4,,,,,,N,28,11:03,,,, ,Calm,1013.7,,,,NNW,15,1012.1
+,2026-03-5,,,,,,NW,28,12:17,,,, ,Calm,1013.8,,,,W,13,1011.4
+,2026-03-6,,,,,,NE,61,16:29,,,, ,Calm,1014.4,,,,S,6,1011.6
+,2026-03-7,,,,,,NNW,28,11:48,,,,WSW,2,1012.7,,,,SW,19,1011.8
+,2026-03-8,,,,,,ESE,44,22:14,,,,SE,24,1013.3,,,,ESE,22,1011.9
+,2026-03-9,,,,,,ESE,43,03:25,,,,SE,22,1012.4,,,,ESE,17,1010.8
+,2026-03-10,,,,,,ENE,28,20:34,,,,N,7,1013.4,,,,NNE,4,1011.1
+,2026-03-11,,,,,,NW,46,11:53,,,,N,20,1011.4,,,,WSW,24,1008.1
+,2026-03-12,,,,,,SW,31,13:39,,,,W,11,1008.6,,,,WSW,19,1008.3
+,2026-03-13,,,,,,E,39,18:37,,,,SW,9,1016.4,,,,SE,13,1017.3
+,2026-03-14,,,,,,ENE,39,07:47,,,,ENE,26,1026.6,,,,NNW,11,1024.1
+,2026-03-15,,,,,,SW,26,15:00,,,,WSW,6,1024.8,,,,SW,13,1019.7
+,2026-03-16,,,,,,NNW,28,11:17,,,,SSW,6,1020.6,,,,N,9,1016.4
+,2026-03-17,,,,,,WNW,30,11:47,,,, ,Calm,1017.5,,,,WNW,11,1017.4
+,2026-03-18,,,,,,ENE,31,14:29,,,,ENE,22,1020.8,,,,E,19,1017.6
+,2026-03-19,,,,,,NNW,20,14:49,,,, ,Calm,1018.3,,,,N,13,1015.4
+,2026-03-20,,,,,,ENE,26,22:37,,,,N,2,1018.1,,,,ENE,7,1017.2
+,2026-03-21,,,,,,SE,57,16:42,,,,SW,11,1020.0,,,,WSW,6,1018.0
+,2026-03-22,,,,,,ENE,26,08:51,,,,WSW,7,1022.1,,,,SE,11,1019.8
+,2026-03-23,,,,,,E,28,14:48,,,,WSW,9,1021.2,,,,ESE,13,1018.6
+,2026-03-24,,,,,,NNE,22,09:08,,,,W,4,1019.9,,,,SSE,11,1016.1
+,2026-03-25,,,,,,SW,37,13:49,,,, ,Calm,1016.8,,,,WSW,22,1012.7
+,2026-03-26,,,,,,W,72,15:17,,,,NE,4,1012.8,,,,NW,28,1005.5
+,2026-03-27,,,,,,W,54,03:37,,,,NW,20,1004.6,,,,WSW,35,1006.5
+,2026-03-28,,,,,,S,26,10:10,,,,S,11,1015.7,,,,SSW,15,1014.2
+,2026-03-29,,,,,,ENE,28,20:03,,,,S,15,1020.8,,,,S,6,1018.5
+,2026-03-30,,,,,,NNE,28,23:50,,,, ,Calm,1024.2,,,,SW,11,1021.6
+,2026-03-31,,,,,,ENE,19,23:53,,,,SW,6,1024.8,,,,W,9,1021.0

@@ -1,0 +1,18 @@
+"Daily Weather Observations for Wagga Wagga, New South Wales for May 2026"
+"Prepared at 00:36 UTC on Monday 11 May 2026   IDCJDW2139.202605"
+"Copyright 2003 Commonwealth Bureau of Meteorology"
+"Some cloud observations are from automated equipment; these are somewhat different to those made by a human observer and may not appear every day."
+"Observations were drawn from Wagga Wagga AMO {station 072150}"
+
+,"Date","Minimum temperature (°C)","Maximum temperature (°C)","Rainfall (mm)","Evaporation (mm)","Sunshine (hours)","Direction of maximum wind gust ","Speed of maximum wind gust (km/h)","Time of maximum wind gust","9am Temperature (°C)","9am relative humidity (%)","9am cloud amount (oktas)","9am wind direction","9am wind speed (km/h)","9am MSL pressure (hPa)","3pm Temperature (°C)","3pm relative humidity (%)","3pm cloud amount (oktas)","3pm wind direction","3pm wind speed (km/h)","3pm MSL pressure (hPa)"
+,2026-05-1,10.6,26.0,0,,,NNE,28,12:09,17.5,61,,ENE,17,1028.7,24.9,32,1,NNE,11,1024.6
+,2026-05-2,14.6,25.6,0,,,NW,39,22:03,18.2,61,1,E,20,1023.9,24.5,43,8,NE,15,1019.0
+,2026-05-3,16.0,24.5,3.6,,,N,50,11:16,20.0,60,8,NE,15,1018.9,22.8,61,7,NNW,17,1015.3
+,2026-05-4,11.8,19.5,14.4,,,WNW,39,01:50,12.9,91,8,W,4,1016.9,18.4,47,,WNW,17,1014.9
+,2026-05-5,8.8,17.1,0.2,,,W,24,10:48,12.3,83,7,WSW,9,1021.0,16.4,59,8,WNW,15,1020.8
+,2026-05-6,4.5,16.7,0,,,SW,28,16:16,6.4,98,8,ENE,9,1022.7,16.4,59,7,WSW,15,1019.3
+,2026-05-7,6.1,12.2,0.4,,,WSW,54,03:24,7.6,70,1,WSW,30,1020.0,10.5,52,4,WSW,33,1021.3
+,2026-05-8,7.2,16.8,0,,,WSW,43,13:25,10.3,82,8,WSW,28,1022.8,16.2,61,6,WSW,28,1021.4
+,2026-05-9,3.4,18.9,0,,,ESE,15,10:42,10.5,81,,ENE,6,1026.8,17.9,52,,W,9,1024.7
+,2026-05-10,4.5,22.0,0,,,E,19,22:31,10.8,84,,E,9,1029.7,20.8,49,,ESE,4,1027.6
+,2026-05-11,7.1,,0,,,,,,14.6,72,,ESE,13,1033.7,,,,,,

@@ -1,0 +1,20 @@
+"Daily Weather Observations for Richmond, New South Wales for May 2026"
+"Prepared at 00:36 UTC on Monday 11 May 2026   IDCJDW2119.202605"
+"Copyright 2003 Commonwealth Bureau of Meteorology"
+"Most observations from the RAAF base, but evaporation from the Hawkesbury campus of the University of Western Sydney."
+"These evaporation observations will generally be available about month after they are made."
+"Temperature, humidity, wind, pressure, cloud and rainfall observations are from Richmond RAAF {station 067105}"
+"Evaporation observations are from Richmond - UWS Hawkesbury {station 067021}"
+
+,"Date","Minimum temperature (°C)","Maximum temperature (°C)","Rainfall (mm)","Evaporation (mm)","Sunshine (hours)","Direction of maximum wind gust ","Speed of maximum wind gust (km/h)","Time of maximum wind gust","9am Temperature (°C)","9am relative humidity (%)","9am cloud amount (oktas)","9am wind direction","9am wind speed (km/h)","9am MSL pressure (hPa)","3pm Temperature (°C)","3pm relative humidity (%)","3pm cloud amount (oktas)","3pm wind direction","3pm wind speed (km/h)","3pm MSL pressure (hPa)"
+,2026-05-1,10.9,24.7,0,,,NE,17,10:22,15.8,93,8, ,Calm,1030.6,23.6,55,5,E,6,1026.6
+,2026-05-2,12.1,25.4,0.2,,,NE,26,15:12,19.4,78,2,NW,2,1026.4,24.2,59,8,ENE,15,1022.2
+,2026-05-3,12.1,26.9,0,,,NE,30,14:02,17.2,90,, ,Calm,1023.3,25.9,47,,NE,17,1018.0
+,2026-05-4,12.4,20.5,1.4,,,NNE,24,13:41,15.9,94,7,ESE,6,1017.9,19.7,84,7,NE,20,1014.5
+,2026-05-5,9.3,24.0,6.6,,,WSW,28,13:02,17.0,68,,NNW,7,1020.1,23.1,36,,S,7,1017.4
+,2026-05-6,6.7,23.1,0.2,,,ENE,19,14:28,12.7,85,5,NNE,4,1021.3,22.2,52,,NE,9,1016.5
+,2026-05-7,6.8,19.3,0,,,W,57,10:56,16.9,54,,WNW,19,1014.4,16.1,26,,WSW,31,1016.1
+,2026-05-8,3.5,22.0,0,,,WSW,37,13:05,14.5,55,,NE,7,1019.0,20.6,36,,WSW,20,1016.6
+,2026-05-9,3.7,22.0,0,,,SSE,17,11:13,11.0,86,,NNW,7,1025.8,21.3,44,,NNE,7,1022.9
+,2026-05-10,4.9,23.3,0,,,SE,28,16:14,11.5,89,,E,6,1029.6,23.0,49,,ENE,6,1027.5
+,2026-05-11,9.4,,2.8,,,,,,15.7,93,8,WSW,11,1033.8,,,,,,

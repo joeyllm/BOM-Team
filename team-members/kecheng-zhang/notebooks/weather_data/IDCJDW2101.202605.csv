@@ -1,0 +1,18 @@
+"Daily Weather Observations for Nowra, New South Wales for May 2026"
+"Prepared at 00:36 UTC on Monday 11 May 2026   IDCJDW2101.202605"
+"Copyright 2003 Commonwealth Bureau of Meteorology"
+"Some cloud observations are from automated equipment; these are somewhat different to those made by a human observer and may not appear every day."
+"Observations were drawn from Nowra RAN Air Station AWS {station 068072}"
+
+,"Date","Minimum temperature (°C)","Maximum temperature (°C)","Rainfall (mm)","Evaporation (mm)","Sunshine (hours)","Direction of maximum wind gust ","Speed of maximum wind gust (km/h)","Time of maximum wind gust","9am Temperature (°C)","9am relative humidity (%)","9am cloud amount (oktas)","9am wind direction","9am wind speed (km/h)","9am MSL pressure (hPa)","3pm Temperature (°C)","3pm relative humidity (%)","3pm cloud amount (oktas)","3pm wind direction","3pm wind speed (km/h)","3pm MSL pressure (hPa)"
+,2026-05-1,11.2,24.9,0.2,,,E,33,13:19,17.7,79,,NW,9,1029.7,22.1,69,,NE,24,1026.2
+,2026-05-2,11.8,25.5,0.2,,,NNE,33,12:33,20.6,70,,N,2,1025.4,23.1,65,4,NE,19,1021.9
+,2026-05-3,15.7,24.8,0,,,NNE,26,14:11,20.2,61,,NNW,13,1021.4,24.2,50,,NNE,19,1017.6
+,2026-05-4,13.5,24.8,0,,,W,30,18:29,17.5,88,8,NW,11,1015.8,24.6,54,1,NNW,15,1011.9
+,2026-05-5,10.1,23.6,0.8,,,WNW,41,07:26,17.0,56,,WNW,20,1017.8,21.9,44,3,E,11,1016.7
+,2026-05-6,9.9,22.8,0,,,NW,41,22:31,15.2,64,,WNW,13,1020.8,20.9,54,,NE,19,1015.9
+,2026-05-7,12.0,17.1,0,,,W,54,14:22,14.8,46,1,W,20,1013.4,15.2,34,3,W,30,1014.3
+,2026-05-8,9.2,19.3,0,,,W,57,09:45,14.0,53,,W,35,1016.5,18.1,46,,WNW,35,1015.7
+,2026-05-9,9.7,20.1,0,,,E,22,14:51,15.3,63,,WNW,13,1025.3,19.0,50,,SE,15,1023.3
+,2026-05-10,8.4,21.6,0,,,SSE,31,15:27,15.4,68,,WNW,17,1029.2,19.4,63,,SSE,22,1028.6
+,2026-05-11,11.7,,1.6,,,,,,17.6,85,,SSW,2,1034.1,,,,,,
