@@ -1,0 +1,19 @@
+"Daily Weather Observations for Bathurst, New South Wales for May 2026"
+"Prepared at 00:36 UTC on Monday 11 May 2026   IDCJDW2012.202605"
+"Copyright 2003 Commonwealth Bureau of Meteorology"
+"Most observations from Bathurst, but some from Bathurst Airport."
+"Temperature, humidity, cloud, evaporation and rainfall observations are from Bathurst Ag Station Comparison {station 063005}"
+"Wind and pressure observations are from Bathurst Airport AWS {station 063291}"
+
+,"Date","Minimum temperature (°C)","Maximum temperature (°C)","Rainfall (mm)","Evaporation (mm)","Sunshine (hours)","Direction of maximum wind gust ","Speed of maximum wind gust (km/h)","Time of maximum wind gust","9am Temperature (°C)","9am relative humidity (%)","9am cloud amount (oktas)","9am wind direction","9am wind speed (km/h)","9am MSL pressure (hPa)","3pm Temperature (°C)","3pm relative humidity (%)","3pm cloud amount (oktas)","3pm wind direction","3pm wind speed (km/h)","3pm MSL pressure (hPa)"
+,2026-05-1,,,,,,ENE,31,16:35,,,,SSW,6,1030.1,,,,ENE,22,1027.4
+,2026-05-2,,,,,,NE,39,22:56,,,,ENE,15,1026.7,,,,ENE,20,1022.9
+,2026-05-3,,,,,,NNW,35,11:18,,,,SW,2,1024.0,,,,NNW,20,1019.6
+,2026-05-4,,,,,,N,31,18:31,,,,NNE,15,1019.7,,,,N,17,1016.5
+,2026-05-5,,,,,,SW,30,12:16,,,,WSW,7,1021.7,,,,WSW,13,1020.2
+,2026-05-6,,,,,,W,20,13:28,,,, ,Calm,1022.4,,,,W,11,1018.2
+,2026-05-7,,,,,,WSW,57,13:33,,,,WSW,33,1017.4,,,,SW,39,1018.7
+,2026-05-8,,,,,,WSW,39,12:03,,,,WSW,17,1022.7,,,,WSW,22,1021.5
+,2026-05-9,,,,,,W,20,13:07,,,,WSW,4,1026.4,,,,SW,9,1024.2
+,2026-05-10,,,,,,ENE,24,19:38,,,,WNW,2,1030.5,,,,W,6,1028.5
+,2026-05-11,,,,,,,,,,,,WSW,2,1034.4,,,,,,

@@ -1,0 +1,18 @@
+"Daily Weather Observations for Camden, New South Wales for May 2026"
+"Prepared at 00:36 UTC on Monday 11 May 2026   IDCJDW2024.202605"
+"Copyright 2003 Commonwealth Bureau of Meteorology"
+"Some cloud observations are from automated equipment; these are somewhat different to those made by a human observer and may not appear every day."
+"Observations were drawn from Camden Airport AWS {station 068192}"
+
+,"Date","Minimum temperature (°C)","Maximum temperature (°C)","Rainfall (mm)","Evaporation (mm)","Sunshine (hours)","Direction of maximum wind gust ","Speed of maximum wind gust (km/h)","Time of maximum wind gust","9am Temperature (°C)","9am relative humidity (%)","9am cloud amount (oktas)","9am wind direction","9am wind speed (km/h)","9am MSL pressure (hPa)","3pm Temperature (°C)","3pm relative humidity (%)","3pm cloud amount (oktas)","3pm wind direction","3pm wind speed (km/h)","3pm MSL pressure (hPa)"
+,2026-05-1,9.0,25.4,0,,,NNE,30,13:42,16.7,96,1,SSE,6,1030.3,23.6,48,3,NE,15,1026.5
+,2026-05-2,10.9,24.8,0.2,,,NNE,35,11:00,17.4,85,6,SSW,6,1026.3,23.5,59,8,NE,13,1022.4
+,2026-05-3,11.7,25.4,0,,,NNE,28,15:03,16.9,100,, ,Calm,1022.9,24.2,48,,NE,13,1018.0
+,2026-05-4,11.7,17.8,3.8,,,NNE,15,12:25,15.2,100,,ENE,7,1017.9,17.5,95,8,NNW,9,1014.5
+,2026-05-5,7.7,23.0,7.2,,,WSW,41,10:16,16.2,70,,WSW,24,1019.2,22.9,32,,WNW,13,1017.1
+,2026-05-6,5.8,23.4,0.2,,,N,26,14:36,13.8,77,,ESE,2,1021.1,22.4,44,4,N,13,1016.3
+,2026-05-7,6.7,17.1,0,,,WSW,59,10:14,16.5,54,7,WSW,17,1013.7,14.9,30,1,WSW,33,1015.8
+,2026-05-8,8.8,19.8,0,,,SW,48,13:32,15.0,48,,WSW,20,1018.4,18.8,39,,WSW,28,1016.5
+,2026-05-9,5.1,22.5,0,,,NW,20,12:39,13.7,75,, ,Calm,1025.3,21.8,36,,NW,7,1022.7
+,2026-05-10,4.8,24.7,0,,,SE,20,14:39,12.5,91,,SE,6,1029.2,21.4,52,,SE,11,
+,2026-05-11,10.6,,0,,,,,,18.7,74,1,SSW,13,1033.7,,,,,,

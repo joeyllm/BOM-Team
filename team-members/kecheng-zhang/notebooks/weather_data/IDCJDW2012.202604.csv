@@ -1,0 +1,38 @@
+"Daily Weather Observations for Bathurst, New South Wales for April 2026"
+"Prepared at 13:00 UTC on Thursday  7 May 2026   IDCJDW2012.202604"
+"Copyright 2003 Commonwealth Bureau of Meteorology"
+"Most observations from Bathurst, but some from Bathurst Airport."
+"Temperature, humidity, cloud, evaporation and rainfall observations are from Bathurst Ag Station Comparison {station 063005}"
+"Wind and pressure observations are from Bathurst Airport AWS {station 063291}"
+
+,"Date","Minimum temperature (°C)","Maximum temperature (°C)","Rainfall (mm)","Evaporation (mm)","Sunshine (hours)","Direction of maximum wind gust ","Speed of maximum wind gust (km/h)","Time of maximum wind gust","9am Temperature (°C)","9am relative humidity (%)","9am cloud amount (oktas)","9am wind direction","9am wind speed (km/h)","9am MSL pressure (hPa)","3pm Temperature (°C)","3pm relative humidity (%)","3pm cloud amount (oktas)","3pm wind direction","3pm wind speed (km/h)","3pm MSL pressure (hPa)"
+,2026-04-1,,,,,,S,20,13:24,,,,SW,2,1023.9,,,,S,11,1022.6
+,2026-04-2,,,,,,ENE,20,17:40,,,,SW,2,1025.2,,,,SSW,9,1022.2
+,2026-04-3,,,,,,SW,26,16:20,,,,SW,9,1024.2,,,,WSW,9,1021.7
+,2026-04-4,,,,,,E,33,17:45,,,,E,9,1025.2,,,,E,20,1023.0
+,2026-04-5,,,,,,ENE,33,09:55,,,,ENE,19,1025.9,,,,SE,17,1022.1
+,2026-04-6,,,,,,WSW,17,08:44,,,,WSW,7,1021.5,,,,WNW,9,1016.7
+,2026-04-7,,,,,,W,46,12:44,,,,N,2,1015.8,,,,WSW,22,1012.3
+,2026-04-8,,,,,,SW,35,14:40,,,,WNW,6,1018.2,,,,SW,24,1016.3
+,2026-04-9,,,,,,W,33,14:42,,,,WNW,4,1020.1,,,,NNW,20,1016.9
+,2026-04-10,,,,,,N,33,14:52,,,,WSW,6,1016.7,,,,NNW,22,1012.3
+,2026-04-11,,,,,,WSW,46,14:52,,,,WSW,20,1012.6,,,,WSW,31,1009.8
+,2026-04-12,,,,,,W,50,16:20,,,,WSW,30,1012.8,,,,WSW,31,1012.9
+,2026-04-13,,,,,,SW,33,11:02,,,,SW,20,1019.5,,,,WSW,19,1018.6
+,2026-04-14,,,,,,SW,30,14:48,,,,S,15,1022.6,,,,WSW,17,1019.2
+,2026-04-15,,,,,,WSW,26,12:17,,,,S,2,1021.7,,,,WSW,15,1018.6
+,2026-04-16,,,,,,WSW,35,14:19,,,, ,Calm,1020.9,,,,WNW,20,1016.6
+,2026-04-17,,,,,,W,48,14:53,,,, ,Calm,1016.6,,,,W,31,1012.9
+,2026-04-18,,,,,,WSW,28,15:13,,,,SSW,6,1019.8,,,,SW,15,1017.1
+,2026-04-19,,,,,,SW,31,15:24,,,,WNW,7,1022.7,,,,WNW,7,1019.3
+,2026-04-20,,,,,,SE,22,18:07,,,,S,6,1025.2,,,,SSE,11,1022.3
+,2026-04-21,,,,,,SE,31,10:40,,,,WSW,9,1028.1,,,,SE,17,1025.3
+,2026-04-22,,,,,,ENE,31,09:40,,,,E,15,1026.6,,,,E,17,1025.2
+,2026-04-23,,,,,,NE,30,10:09,,,,ENE,17,1028.7,,,,E,20,1028.0
+,2026-04-24,,,,,,ENE,30,17:04,,,,W,7,1032.3,,,,ENE,13,1029.8
+,2026-04-25,,,,,,WSW,22,14:33,,,,SW,7,1032.4,,,,SW,13,1027.2
+,2026-04-26,,,,,,SSW,19,13:48,,,,WSW,6,1027.1,,,,SSE,6,1022.4
+,2026-04-27,,,,,,ENE,30,22:33,,,,SSW,7,1025.4,,,,S,13,1022.8
+,2026-04-28,,,,,,ENE,19,00:36,,,,WSW,6,1028.1,,,,W,9,1024.6
+,2026-04-29,,,,,,ENE,28,21:04,,,,SW,7,1029.7,,,, ,Calm,1026.8
+,2026-04-30,,,,,,E,28,20:15,,,,WSW,6,1031.4,,,,ENE,11,1027.5
