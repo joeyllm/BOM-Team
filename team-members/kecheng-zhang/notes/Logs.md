@@ -65,3 +65,9 @@ Had a little practice on data cleaning.
 ## 2026-05-04
 
 Proposed a plan on the architecture of the desktop application, see [Architecture](Architecture.md).
+
+# Week 7
+
+## 2026-05-11
+
+Found [Hi-Resolution Wind Data Set](https://thredds.nci.org.au/thredds/catalog/fx31/publications/wind_nowcast/catalog.html)
