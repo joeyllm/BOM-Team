@@ -210,3 +210,4 @@ __marimo__/
 .vs/
 
 **/AGENTS.md
+.DS_Store
