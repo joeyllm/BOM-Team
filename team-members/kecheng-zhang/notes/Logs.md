@@ -73,3 +73,9 @@ Proposed a plan on the architecture of the desktop application, see [Architectur
 Need to get all the data required and make the parquet file...done.
 
 Found [Hi-Resolution Wind Data Set](https://thredds.nci.org.au/thredds/catalog/fx31/publications/wind_nowcast/catalog.html)
+
+# Week 8
+
+## 2026-05-18
+
+Checked YSSY code. I found the interpolation part of the code is interesting. It uses cubic spline, which might be useful. Other things are just standard data processing procedures.
