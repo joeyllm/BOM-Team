@@ -79,3 +79,8 @@ Found [Hi-Resolution Wind Data Set](https://thredds.nci.org.au/thredds/catalog/f
 ## 2026-05-18
 
 Checked YSSY code. I found the interpolation part of the code is interesting. It uses cubic spline, which might be useful. Other things are just standard data processing procedures.
+
+# Week 9
+## 2026-05-25
+
+Implemented the process in YSSY code, including data processing, model training, and evaluation. Report is in [YSSY Pipeline Report](YSSY_Pipeline_Report.md).
