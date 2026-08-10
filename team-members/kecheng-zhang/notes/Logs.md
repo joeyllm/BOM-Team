@@ -90,3 +90,6 @@ Implemented the process in YSSY code, including data processing, model training,
 # Week 2
 ## 2026-08-03
 Completed the data interpolation.
+
+## 2026-08-10
+Updated data processing notebook.
