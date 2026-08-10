@@ -84,3 +84,9 @@ Checked YSSY code. I found the interpolation part of the code is interesting. It
 ## 2026-05-25
 
 Implemented the process in YSSY code, including data processing, model training, and evaluation. Report is in [YSSY Pipeline Report](YSSY_Pipeline_Report.md).
+
+---
+
+# Week 2
+## 2026-08-03
+Completed the data interpolation.
