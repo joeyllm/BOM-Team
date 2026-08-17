@@ -47,8 +47,8 @@ Matt confirmed that the complete hourly data should be retained, while the initi
 | Action | Owner | Due |
 |--------|-------|-----|
 | Prepare and verify the five-snapshot ACCESS-SY Parquet dataset | Dylan | End of Week 13 |
-| Finish reviewing the updated CRAFT paper | Dylan, Junling Kecheng, Adam, Olivia | End of Week 13 |
-| Nvidia Atlas model structure understanding | Junling Kecheng, Adam, Olivia| Week 14 |
+| Finish reviewing the updated CRAFT paper | Dylan, Junling, Kecheng, Adam, Olivia | End of Week 13 |
+| Nvidia Atlas model structure understanding | Dylan, Junling Kecheng, Adam, Olivia| Week 14 |
 | Basic implementation of CRAFT | Junling, Kecheng, Olivia | Week 15 |
 | Data processing pipeline implementation | Kecheng | End of Week 13 |
 | Git Issues and Management | Adam, Dylan | End of Week 13 |
