@@ -1,0 +1,58 @@
+# SWIFT vs CRAFT: Tokenization and Spatial Compression
+
+## My understanding : 
+
+In **SWIFT**, each spatial grid cell in the CNN's output becomes its own token (1 grid cell = 1 token). The transformer then attends jointly across space and
+time. This preserves full spatial detail, but produces a very large number of tokens per timestep (`H' × W'`), making full attention expensive.
+
+In **CRAFT**, the CNN's role changes: instead of lightly downsampling and
+handing every remaining cell to the transformer as a token, the CNN
+**compresses** the frame into a smaller structured latent field `Z_t`
+(`H' × W' × D`, with `H' × W'` meaningfully smaller than in SWIFT). The
+transformer then operates on this compressed representation instead of
+near-full-resolution tokens (fewer tokens, cheaper attention, at the cost of
+some spatial detail.)
+
+## SWIFT flow:
+
+Data → 10-min interp → stack channels → CNN (spatial) → CNN output → vector/token → Transformer → next-frame prediction
+
+## CRAFT's flow (§2, using the paper's own notation):
+
+Xt → CNN (Encoder) → Zt (latent) → Transformer → Ẑt+1 (predicted latent) → Decoder → X̂t+1 (physical frame)
+
+changes:
+
+1. The CNN's job changes from "extract features" to "compress." In SWIFT, the CNN reduces spatial resolution somewhat but the philosophy was "preserve spatial layout, don't lose detail (what tokens are for)." In CRAFT, the CNN's explicit stated purpose is compression (squeezing the full-resolution physical grid down into a deliberately smaller structured field), H×W×C→H′×W′×D where H′×W′ is meaningfully smaller than H×W, not just slightly downsampled. That reduced-size output is what they now formally name 
+Zt "the spatial latent representation."
+
+2. There's now a Decoder as an explicit third trained component. SWIFT gestured at a decoder in one figure box but never really defined it. CRAFT makes it central: 
+D(Z^t+1)=X^t+1, a separate learned network whose job is to take the compressed latent prediction and expand it back out to a full-resolution physical weather field. This is genuinely new work you haven't built anything for ye
+
+## Relevant comparison: NVIDIA ATLAS
+
+ATLAS uses the same overall shape (encoder → compressed latent → transformer
+→ decoder) at global scale. Notably, they found a **learned CNN/VAE encoder
+performed worse** than simple fixed bilinear downsampling — a predictable,
+non-learned compression gave a better-behaved latent space than a "smart"
+learned one. This is a direct, testable point of disagreement with CRAFT's
+current plan (which proposes a learned CNN encoder from the start).
+
+## What's new in CRAFT vs. SWIFT
+
+1. **The CNN's job shifts** from "extract spatial features, keep resolution
+   close to original" to "compress meaningfully smaller."
+2. **The Decoder becomes a first-class trained component** (`D`), converting
+   predicted latent states back into physical fields,SWIFT only gestured at
+   this, CRAFT defines it explicitly with its own role in the loss.
+3. **Training is explicitly end-to-end**: forecast error backpropagates
+   through the decoder and transformer into the CNN encoder, so `Z_t` is
+   shaped by what's useful for forecasting, not by an independent
+   reconstruction objective alone.
+
+## Still open
+
+- compression factor (`H × W → H' × W'`)
+  — ATLAS -> states a specific 16× compression target.
+- Whether a learned encoder (CRAFT's plan) or fixed downsampling (ATLAS's
+  finding) works better for this domain. ATLAS explicitly tried a learned CNN/VAE-style encoder first and found it performed worse than simple bilinear downsampling (§2.2, §5), they concluded a "trivial" compression (just shrinking the image, no learning) preserved the latent space's structure better than a learned CNN encoder did, and only made the decoder the sophisticated learned part. CRAFT -> proposing a learned CNN encoder: its testable between the two approaches.
