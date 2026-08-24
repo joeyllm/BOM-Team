@@ -48,7 +48,6 @@
 | Define the input, latent, temporal-evolution, and output tensor interfaces | Junling, Kecheng, Olivia | End of Week 14 |
 | Run a small dataset through the encoder, latent representation, temporal evolution, and decoder | Junling, Kecheng, Olivia | End of Week 14 |
 | Verify one-hour prediction steps over an initial six-hour horizon | Junling, Kecheng, Olivia | End of Week 14 |
-| Review data handling and CRAFT architecture together at the Monday meeting | Matt and project team | 2026-08-24, 10:00 AM |
 
 ## Progress Summary
 
@@ -59,7 +58,6 @@
 - Made the full ACCESS-SY wind dataset available in the Jupyter environment.
 - Confirmed the dataset size, time coverage, spatial dimensions, and wind variables.
 - Provided a sample notebook for reading and inspecting the ACCESS-SY data.
-- Confirmed that the main dataset is read-only.
 - Confirmed the privacy requirements for both source and derived datasets.
 - Made the shared Scratch directory available for temporary project work.
 - Reviewed several temporal-interpolation methods and decided not to add synthetic intermediate states at this stage.
@@ -69,13 +67,13 @@
 
 - Finishing the remaining ACCESS-SY data inspection and validation.
 - Preparing small hourly U/V wind datasets for development tests.
-- Defining the CRAFT encoder, latent representation, temporal-evolution, and decoder interfaces.
+- Defining the CRAFT encoder, latent representation, temporal evolution, and decoder interfaces.
 - Building a small-scale notebook implementation of the complete model flow.
 - Preparing the one-hour-ahead, six-hour-horizon forecast setup.
 
 ## Blockers
 
-> No active technical blocker has been identified. Scratch is non-persistent, so important code, configuration, and experiment records need a persistent project copy. The data and derived samples must remain inside the private project environment.
+> The interpolation method is not good enough to maintain a good level of physical information.
 
 ## Plan for Next Week
 
