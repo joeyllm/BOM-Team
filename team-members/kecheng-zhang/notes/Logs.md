@@ -93,3 +93,11 @@ Completed the data interpolation.
 
 ## 2026-08-10
 Updated data processing notebook.
+
+## 2026-08-17
+Implemented the data processing according to the updated paper.
+
+## 2026-08-24
+Started investigating interpolation methods.
+
+Started working on the CNN head implementation.
