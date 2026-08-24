@@ -8,12 +8,12 @@
 
 ## Agenda
 
-1. Confirm access to the full ACCESS-SY wind dataset and review its structure.
-2. Confirm the privacy and storage requirements for source and derived data.
-3. Finish the remaining data-understanding work and prepare small test datasets.
-4. Review the decision to use genuine hourly states without temporal interpolation.
-5. Start assembling and testing the CRAFT model pipeline.
-6. Confirm the initial one-hour prediction step and six-hour forecast horizon.
+1. Confirm access to the full ACCESS-SY wind dataset and review its structure. 5 mins
+2. Confirm the privacy and storage requirements for source and derived data. 10 mins
+3. Finish the remaining data-understanding work and prepare small test datasets. 10 mins
+4. Review the decision to use genuine hourly states without temporal interpolation. 20 mins
+5. Start assembling and testing the CRAFT model pipeline. 10 mins
+6. Confirm the initial one-hour prediction step and six-hour forecast horizon. 5 mins
 
 ## Discussion
 
