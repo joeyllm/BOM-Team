@@ -34,7 +34,7 @@
 
 ## Progress Summary
 
-> Keep working on Sprint 1 goals.
+> Keep working on Sprint 4 goals.
 
 ## Completed This Week
 
